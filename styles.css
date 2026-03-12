@@ -1034,7 +1034,30 @@ h2 em {
     height: 100%;
 }
 
+.nav-brand-logo {
+    position: fixed;
+    left: 24px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    z-index: 105;
+}
 
+.nav-brand-logo img {
+    height: 32px; /* Roughly 1cm depending on screen density */
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color: var(--bg);
+}
+
+.nav-brand-logo:hover img {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
 
 .nav-pill {
     display: flex;
@@ -1258,6 +1281,11 @@ h2 em {
 /* Mobile Overrides (768px spec) */
 @media (max-width: 768px) {
     .site-nav {
+        top: 15px;
+    }
+
+    .nav-brand-logo {
+        left: 15px;
         top: 15px;
     }
 
