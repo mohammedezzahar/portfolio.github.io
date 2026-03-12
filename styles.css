@@ -1887,3 +1887,6 @@ h2 em {
         align-items: stretch;
     }
 }
+/* Fix Overlay */
+.hero { position: relative; }
+
