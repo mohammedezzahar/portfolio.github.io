@@ -154,8 +154,17 @@ img {
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    justify-content: center; /* Centered */
     gap: 12px;
 }
+
+.about-full-bleed .eyebrow::after {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--accent);
+}
+
 
 .eyebrow::before {
     content: '';
@@ -500,11 +509,17 @@ h2 em {
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr; /* Shifted weight to text */
-    gap: 60px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.about-text {
+    width: 100%;
+}
+
 
 
 
@@ -1517,7 +1532,10 @@ h2 em {
 
     .nav-burger {
         display: block;
-        right: 20px;
+        position: fixed; /* Ensure it stays on top of everything */
+        top: 25px;
+        right: 25px;
+        z-index: 10002;
     }
 }
 
