@@ -186,7 +186,6 @@ h2 em {
     padding-top: 6rem;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the container horizontally */
     background: #000;
 }
 
@@ -453,13 +452,83 @@ h2 em {
     margin-top: 8px;
 }
 
-/* About Section */
+/* About Section Transformation (Full-Bleed) */
+.about-full-bleed {
+    position: relative;
+    padding: 160px 0; /* Increased padding for impact */
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.about-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Balanced opacity for background feel */
+    filter: saturate(0.8) contrast(1.1);
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(8, 9, 15, 0.95) 0%, 
+        rgba(8, 9, 15, 0.8) 40%, 
+        transparent 100%
+    );
+    z-index: 1;
+}
+
+.about-full-bleed .container {
+    position: relative;
+    z-index: 2;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 100px;
+    gap: 80px;
     align-items: center;
 }
+
+.about-spacer {
+    /* Empty div to maintain grid structure */
+}
+
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(8, 9, 15, 0.9) 0%,
+            rgba(8, 9, 15, 0.7) 100%
+        );
+    }
+    
+    .about-spacer {
+        display: none;
+    }
+}
+
 
 .about-collage {
     position: relative;
@@ -1081,11 +1150,8 @@ h2 em {
 }
 
 @media (max-width: 768px) {
-    :root {
-        --padding-global: 24px; /* Reduced padding for mobile symmetry */
-    }
     section {
-        padding: 80px var(--padding-global);
+        padding: 80px 24px;
     }
 
     .stats-band {
@@ -1095,10 +1161,6 @@ h2 em {
     .stats-grid {
         flex-direction: column;
         gap: 40px;
-    }
-
-    .hero-name {
-        font-size: clamp(2.2rem, 12vw, 5rem);
     }
 
     .stat-item::after {
@@ -1413,6 +1475,56 @@ h2 em {
     filter: drop-shadow(0 0 12px currentColor);
 }
 
+/* Mobile Overrides (768px spec) */
+@media (max-width: 768px) {
+    .site-nav {
+        top: 15px;
+    }
+
+
+
+    .nav-pill {
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .pill-links,
+    .pill-divider {
+        display: none;
+    }
+
+    .hero-status {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-name {
+        font-size: clamp(2.5rem, 15vw, 5rem);
+        line-height: 0.85;
+        white-space: normal;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-job-eyebrow {
+        font-size: 0.75rem;
+        letter-spacing: 0.25em;
+        margin-bottom: 1rem;
+    }
+
+    .hero-divider {
+        margin: 1rem auto;
+    }
+
+    .hero-tagline-text {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .nav-burger {
+        display: block;
+        right: 20px;
+    }
+}
+
 /* Language Switcher */
 .lang-switch,
 .mobile-lang {
@@ -1451,59 +1563,6 @@ h2 em {
     font-size: 16px;
     padding: 8px 16px;
 }
-
-/* Mobile Overrides (768px spec) */
-@media (max-width: 768px) {
-    .site-nav {
-        top: 15px;
-    }
-
-
-
-    .nav-pill {
-        padding: 0.5rem 1rem;
-        gap: 1rem;
-    }
-
-    .pill-links,
-    .pill-divider,
-    #lang-switch {
-        display: none !important;
-    }
-
-    .hero-status {
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-name {
-        font-size: clamp(2.5rem, 15vw, 5rem);
-        line-height: 0.85;
-        white-space: normal;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-job-eyebrow {
-        font-size: 0.75rem;
-        letter-spacing: 0.25em;
-        margin-bottom: 1rem;
-    }
-
-    .hero-divider {
-        margin: 1rem auto;
-    }
-
-    .hero-tagline-text {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-
-    .nav-burger {
-        display: block;
-        right: 20px;
-    }
-}
-
-
 
 /* RTL Support */
 [dir="rtl"] {
