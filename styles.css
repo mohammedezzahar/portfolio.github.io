@@ -924,7 +924,6 @@ h2 em {
     color: var(--text);
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
     margin-bottom: 32px;
     display: block;
@@ -932,16 +931,6 @@ h2 em {
     text-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
 }
 
-.skill-group .group-label::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 60px;
-    height: 2px;
-    background: var(--accent);
-    box-shadow: 0 0 10px var(--accent-glow);
-}
 
 .bar-container {
     margin-bottom: 20px;
