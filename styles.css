@@ -1664,12 +1664,10 @@ h2 em {
         padding: 0 10px;
     }
 
+    /* Show the hamburger button */
     .nav-burger {
         display: flex;
-    }
-
-    .nav-pill {
-        display: none !important;
+        flex-shrink: 0;
     }
 }
 
