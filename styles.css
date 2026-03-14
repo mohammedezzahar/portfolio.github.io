@@ -1245,6 +1245,11 @@ h2 em {
 }
 
 /* Navigation Styles (Floating Pill) */
+@keyframes floatNav {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+}
+
 .site-nav {
     position: fixed;
     top: 24px;
@@ -1256,6 +1261,7 @@ h2 em {
     -webkit-backdrop-filter: none;
     border-bottom: none;
     z-index: 10001;
+    animation: floatNav 6s ease-in-out infinite;
 }
 
 .nav-pill-container {
@@ -1286,14 +1292,14 @@ h2 em {
     border-radius: 100px;
     padding: 0.35rem 1.25rem;
     gap: 1.25rem;
-    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .nav-pill:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02) translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .pill-links {
@@ -1309,7 +1315,8 @@ h2 em {
     letter-spacing: 0.05em;
     position: relative;
     padding: 8px 0;
-    transition: 0.3s;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
 }
 
 .nav-num {
@@ -1335,6 +1342,8 @@ h2 em {
 .pill-links a:hover,
 .pill-links a.active {
     color: var(--text);
+    transform: translateY(-2px) scale(1.05);
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 .pill-links a:hover::after,
@@ -1356,7 +1365,8 @@ h2 em {
 
 .pill-socials a {
     font-size: 1.045rem;
-    transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
 }
 
 .pill-socials a.social-linkedin {
@@ -1388,8 +1398,8 @@ h2 em {
 }
 
 .pill-socials a:hover {
-    transform: translateY(-2px);
-    filter: drop-shadow(0 0 8px currentColor);
+    transform: translateY(-6px) scale(1.2) rotate(8deg);
+    filter: drop-shadow(0 0 12px currentColor);
 }
 
 
