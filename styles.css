@@ -1609,12 +1609,30 @@ h2 em {
 
 
 
+    /* Show nav pill as a compact label holding just M.E */
     .nav-pill {
-        padding: 0.45rem 0.9rem;
-        gap: 0.8rem;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 0.4rem 0.9rem;
+        gap: 0;
+        box-sizing: border-box;
     }
 
+    /* Show the M.E monogram on mobile */
+    .pill-brand {
+        display: inline-block !important;
+        font-family: var(--font-tech);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: var(--text);
+    }
+
+    /* Hide desktop-only nav elements */
     .pill-links,
+    .pill-socials,
     .pill-divider,
     .lang-switch {
         display: none !important;
