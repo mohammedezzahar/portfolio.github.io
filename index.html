@@ -25,57 +25,10 @@
     <!-- Global Elements -->
     <div class="grain-overlay"></div>
 
-    <nav class="site-nav">
-        <div class="container nav-pill-container">
-
-            <div class="nav-pill">
-                <span class="pill-brand">M.E</span>
-                <div class="pill-links">
-                    <a href="#about" data-section="about" data-i18n="nav_about"><span class="nav-num">01</span>About</a>
-                    <a href="#experience" data-section="experience" data-i18n="nav_experience"><span
-                            class="nav-num">02</span>Methodology</a>
-                    <a href="#projects" data-section="projects" data-i18n="nav_projects"><span
-                            class="nav-num">03</span>Projects</a>
-                    <a href="#skills" data-section="skills" data-i18n="nav_skills"><span
-                            class="nav-num">04</span>Skills</a>
-                    <a href="#contact" data-section="contact" data-i18n="nav_contact"><span
-                            class="nav-num">05</span>Contact</a>
-                </div>
-
-                <div class="pill-divider"></div>
-
-                <div class="pill-socials">
-                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn"
-                        class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="social-x"><i
-                            class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium"
-                        class="social-medium"><i class="fa-brands fa-medium"></i></a>
-                    <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit"
-                        class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
-                    <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Substack"
-                        class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
-                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube"
-                        class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-
-                <div class="pill-divider"></div>
-
-                <div class="lang-switch" id="lang-switch">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="fr">FR</button>
-                    <button class="lang-btn" data-lang="ar">AR</button>
-                </div>
-            </div>
-
-            <button id="nav-burger" class="nav-burger" aria-label="Toggle Menu" aria-expanded="false">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
-        </div>
-    </nav>
+    <button id="nav-burger" class="nav-burger" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
 
     <div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
         <div class="mobile-links">
@@ -128,6 +81,36 @@
                 <p class="hero-tagline-text fade-up" data-i18n="hero_tagline">Mastery in Accounting &amp; AI Modeling</p>
             </div>
         </div>
+
+        <nav class="hero-nav-pill">
+            <div class="pill-links">
+                <a href="#about" data-section="about" data-i18n="nav_about"><span class="nav-num">01</span> About</a>
+                <a href="#experience" data-section="experience" data-i18n="nav_experience"><span class="nav-num">02</span> Methodology</a>
+                <a href="#projects" data-section="projects" data-i18n="nav_projects"><span class="nav-num">03</span> Projects</a>
+                <a href="#skills" data-section="skills" data-i18n="nav_skills"><span class="nav-num">04</span> Skills</a>
+                <a href="#contact" data-section="contact" data-i18n="nav_contact"><span class="nav-num">05</span> Contact</a>
+            </div>
+
+            <div class="pill-divider"></div>
+
+            <div class="pill-socials">
+                <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn" class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="social-x"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" class="social-medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit" class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
+                <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
+                <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube" class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="pill-divider"></div>
+
+            <div class="lang-switch" id="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </nav>
     </section>
 
 
@@ -156,9 +139,9 @@
 
                 <div class="testimonial-block fade-up">
                     <i class="fa-solid fa-quote-left quote-icon"></i>
-                    <p class="testimonial-text">"The work Mohammed and his team produced wasn't just technical—it was
-                        <strong>generational</strong> in Morocco's financial landscape."</p>
-                    <span class="testimonial-author">— From official Mentors &amp; Referees</span>
+                    <p class="testimonial-text" data-i18n="testimonial_text">"The work Mohammed and his team produced wasn&#39;t just technical—it was
+                        <strong>generational</strong> in Morocco&#39;s financial landscape."</p>
+                    <span class="testimonial-author" data-i18n="testimonial_author">— From official Mentors &amp; Referees</span>
                 </div>
 
             </div>
@@ -394,8 +377,8 @@
     <!-- Section 6: Contact -->
     <section id="contact" class="contact-section">
         <div class="container contact-container">
-            <div class="eyebrow fade-up">OPEN TO OPPORTUNITIES</div>
-            <h2 class="fade-up">Let's Build <em>Something Real</em></h2>
+            <div class="eyebrow fade-up" data-i18n="contact_eyebrow">OPEN TO OPPORTUNITIES</div>
+            <h2 class="fade-up" data-i18n="contact_h2">Let's Build <em>Something Real</em></h2>
             <p class="contact-lead fade-up" data-i18n="contact_lead">
                 Whether you're an institutional investor, a recruiting partner,
                 or building something at the intersection of finance and AI —
@@ -426,7 +409,7 @@
                     <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div class="ci-body">
                         <span class="ci-label">LOCATION</span>
-                        <span class="ci-value">Meknès, Morocco · Available Remotely</span>
+                        <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
                     </div>
                 </div>
 
@@ -447,14 +430,14 @@
             <div class="footer-inner">
                 <div class="footer-brand">
                     <span class="footer-name">Mohammed Ezzahar</span>
-                    <span class="footer-role">Financial &amp; Data Analyst · AI Developer</span>
+                    <span class="footer-role" data-i18n="footer_role">Financial &amp; Data Analyst · AI Developer</span>
                 </div>
                 <nav class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#experience">Methodology</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#about" data-i18n="nav_about_short">About</a>
+                    <a href="#experience" data-i18n="nav_experience_short">Methodology</a>
+                    <a href="#projects" data-i18n="nav_projects_short">Projects</a>
+                    <a href="#skills" data-i18n="nav_skills_short">Skills</a>
+                    <a href="#contact" data-i18n="nav_contact_short">Contact</a>
                 </nav>
                 <div class="footer-socials">
                     <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/"

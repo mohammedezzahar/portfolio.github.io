@@ -145,20 +145,98 @@ img {
     }
 }
 
-/* Typography Utilities */
-.eyebrow {
-    font-family: var(--font-tech);
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    color: var(--text-dim);
-    text-transform: uppercase;
+/* --- HERO NAVIGATION PILL (Bottom Center) --- */
+.hero-nav-pill {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(13, 14, 23, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 12px 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* Centered */
-    gap: 12px;
+    gap: 20px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+.pill-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pill-links a {
+    font-family: var(--font-tech);
+    font-size: 13px;
+    color: var(--text-mid);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+
+.pill-links a .nav-num {
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+.pill-links a:hover {
+    color: var(--accent);
+}
+
+.pill-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.pill-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pill-socials a {
+    color: var(--text-mid);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.pill-socials a:hover {
+    color: var(--accent);
+    transform: translateY(-2px) scale(1.1);
+}
+
+.hero-nav-pill .lang-switch {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.hero-nav-pill .lang-btn {
+    background: transparent;
+    border: none;
+    font-family: var(--font-tech);
+    font-size: 11px;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.hero-nav-pill .lang-btn.active,
+.hero-nav-pill .lang-btn:hover {
+    color: var(--accent);
+}
+
+/* Typography Utilities */
 .about-full-bleed .eyebrow::after {
     content: '';
     width: 32px;
@@ -1605,39 +1683,20 @@ h2 em {
 
 /* Mobile Overrides (768px spec) */
 @media (max-width: 768px) {
-    .site-nav {
-        top: 15px;
-    }
-
-
-
-    /* Show nav pill as a compact label holding just M.E */
-    .nav-pill {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        padding: 0.4rem 0.9rem;
-        gap: 0;
-        box-sizing: border-box;
-    }
-
-    /* Show the M.E monogram on mobile */
-    .pill-brand {
-        display: inline-block !important;
-        font-family: var(--font-tech);
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        color: var(--text);
-    }
-
-    /* Hide desktop-only nav elements */
-    .pill-links,
-    .pill-socials,
-    .pill-divider,
-    .lang-switch {
+    /* Hide the full bottom pill on mobile */
+    .hero-nav-pill {
         display: none !important;
+    }
+
+    /* Position the nav burger fixed to top right on mobile */
+    .nav-burger {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10002;
+        background: rgba(13, 14, 23, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
     }
 
     .hero-status {
