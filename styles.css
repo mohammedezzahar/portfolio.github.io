@@ -297,7 +297,7 @@ h2 em {
 
 .hero-name {
     font-family: var(--font-editorial);
-    font-size: clamp(2.8rem, 9.6vw, 7.6rem);
+    font-size: clamp(2.5rem, 8.6vw, 6.8rem);
     font-weight: 600;
     text-transform: uppercase;
     line-height: 0.9;
@@ -1590,7 +1590,7 @@ h2 em {
     }
 
     .hero-name {
-        font-size: clamp(2.5rem, 15vw, 5rem);
+        font-size: clamp(2.25rem, 13.5vw, 4.5rem);
         line-height: 0.85;
         white-space: normal;
         margin-bottom: 1.5rem;
