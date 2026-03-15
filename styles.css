@@ -151,10 +151,10 @@ img {
     top: 24px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(13, 14, 23, 0.75);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100px;
     padding: 8px 18px;
     display: flex;
