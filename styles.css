@@ -188,10 +188,10 @@ img {
 
 .pill-links a {
     font-family: var(--font-tech);
-    font-size: 8px;
+    font-size: 11px;
     color: var(--text-mid);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -200,7 +200,7 @@ img {
 
 .pill-links a .nav-num {
     opacity: 0.5;
-    font-size: 6px;
+    font-size: 8px;
 }
 
 .pill-links a:hover {
@@ -399,7 +399,7 @@ h2 em {
 }
 
 .hero-socials-row a {
-    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
     color: var(--text);
     opacity: 0.8;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -443,7 +443,7 @@ h2 em {
 
 .hero-job-badge {
     font-family: var(--font-tech);
-    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     letter-spacing: 0.3em;
     text-transform: uppercase;
     padding: 0.5rem 1.5rem;
@@ -457,7 +457,7 @@ h2 em {
 .hero-tagline-premium {
     font-family: var(--font-editorial);
     font-style: italic;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.7rem);
     color: #cbd5e1;
     opacity: 0.8;
     max-width: 60ch;
@@ -543,10 +543,10 @@ h2 em {
 
 @media (max-width: 480px) {
     .hero-name-serif .name-first {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
     .hero-name-serif .name-last {
-        font-size: 3.8rem;
+        font-size: 4.8rem;
     }
     .hero {
         padding-bottom: 8svh;
@@ -1644,27 +1644,36 @@ h2 em {
 
     /* Compact pill for mobile */
     .hero-nav-pill {
-        width: calc(100% - 24px);
-        max-width: 400px;
-        padding: 4px 8px;
-        gap: 6px;
-        top: 10px;
+        width: calc(100% - 12px);
+        max-width: 540px;
+        padding: 12px 16px;
+        gap: 16px;
+        top: 20px;
     }
 
     .pill-links {
-        gap: 6px;
+        gap: 14px;
     }
 
     .pill-links a {
-        font-size: 7px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
     }
 
     .pill-links a .nav-num {
-        font-size: 5.5px;
+        font-size: 9.5px;
+        opacity: 0.7;
     }
 
     .hero-nav-pill .lang-btn {
-        font-size: 7px;
+        font-size: 13px;
+        font-weight: 800;
+        padding: 8px 12px;
     }
 
 
