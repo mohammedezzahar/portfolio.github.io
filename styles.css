@@ -51,24 +51,15 @@ body {
     font-family: var(--font-body);
     font-weight: 300;
     line-height: 1.7;
+    /* Increased for readability */
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.01em;
-    cursor: url('custom-cursor.png'), auto;
-}
-
-a, button, [role="button"] {
-    cursor: url('custom-cursor.png'), pointer;
 }
 
 section {
     position: relative;
     padding: var(--section-padding) var(--padding-global);
     overflow: hidden;
-}
-
-section.hero {
-    padding: 2rem var(--padding-global); /* Much tighter than default section padding */
-    min-height: 70vh; /* Reduced for less empty space */
 }
 
 .container {
@@ -170,7 +161,7 @@ img {
     align-items: center;
     gap: 10px;
     z-index: 1000;
-    box-shadow: 
+    box-shadow:
         0 8px 16px rgba(0, 0, 0, 0.3),
         inset 0 0 1px 1px rgba(255, 255, 255, 0.05);
     animation: navFloat 6s ease-in-out infinite;
@@ -295,10 +286,12 @@ h2 em {
 
 /* Hero Section */
 .hero {
+    height: 100vh;
+    padding-top: 2rem;
+    /* Reduced from 6rem */
     display: flex;
     align-items: center;
     background: #000;
-    position: relative;
 }
 
 .hero-bg {
@@ -334,8 +327,9 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Moved from center to bottom */
     justify-content: center;
+    padding-bottom: 50px; /* Precise edge positioning */
     z-index: 1;
     position: relative;
     text-align: center;
@@ -404,17 +398,18 @@ h2 em {
 
 .hero-name {
     font-family: var(--font-editorial);
-    font-size: clamp(2.2rem, 7.5vw, 6rem); /* Scaled back up slightly for impact */
+    font-size: clamp(1.8rem, 6vw, 4.8rem);
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 0.85;
-    margin-bottom: 0.5rem; /* Tighter spacing */
+    line-height: 0.9;
+    margin-bottom: 0.75rem;
+    /* Reduced further */
     letter-spacing: -0.02em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.02em;
-    text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    gap: 0.05em;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .name-first {
@@ -452,31 +447,62 @@ h2 em {
 .hero-socials {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 0.5rem; /* Extremely tight */
+    gap: 15px;
+    /* Tighter gap */
+    margin-bottom: 1rem;
+    /* Further reduced from 1.2rem */
     position: relative;
     z-index: 10;
 }
 
 .hero-socials a {
-    font-size: 1.5rem; /* Slightly larger for better color impact */
+    font-size: 1.5rem;
+    /* Slightly larger for better color impact */
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    opacity: 1; /* Full opacity for vibrant colors */
+    opacity: 1;
+    /* Full opacity for vibrant colors */
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
 }
 
-.hero-socials a.social-linkedin { color: #0077b5; filter: drop-shadow(0 0 10px rgba(0, 119, 181, 0.4)); }
-.hero-socials a.social-github { color: #ffffff; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)); }
-.hero-socials a.social-x { color: #ffffff; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)); }
-.hero-socials a.social-medium { color: #00ab6c; filter: drop-shadow(0 0 10px rgba(0, 171, 108, 0.4)); }
-.hero-socials a.social-reddit { color: #ff4500; filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.4)); }
-.hero-socials a.social-substack { color: #ff6719; filter: drop-shadow(0 0 10px rgba(255, 103, 25, 0.4)); }
-.hero-socials a.social-youtube { color: #ff0000; filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.4)); }
+.hero-socials a.social-linkedin {
+    color: #0077b5;
+    filter: drop-shadow(0 0 10px rgba(0, 119, 181, 0.4));
+}
+
+.hero-socials a.social-github {
+    color: #ffffff;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+}
+
+.hero-socials a.social-x {
+    color: #ffffff;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+}
+
+.hero-socials a.social-medium {
+    color: #00ab6c;
+    filter: drop-shadow(0 0 10px rgba(0, 171, 108, 0.4));
+}
+
+.hero-socials a.social-reddit {
+    color: #ff4500;
+    filter: drop-shadow(0 0 10px rgba(255, 69, 0, 0.4));
+}
+
+.hero-socials a.social-substack {
+    color: #ff6719;
+    filter: drop-shadow(0 0 10px rgba(255, 103, 25, 0.4));
+}
+
+.hero-socials a.social-youtube {
+    color: #ff0000;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.4));
+}
 
 .hero-socials a:hover {
     opacity: 1;
     transform: translateY(-4px) scale(1.15);
-    filter: drop-shadow(0 0 20px currentColor); /* More intense glow */
+    filter: drop-shadow(0 0 15px currentColor);
 }
 
 
@@ -1710,31 +1736,40 @@ h2 em {
         top: 10px;
     }
 
-    .pill-links { gap: 6px; }
-    .pill-links a { font-size: 7px; }
-    .pill-links a .nav-num { font-size: 5.5px; }
-    .hero-nav-pill .lang-btn { font-size: 7px; }
+    .pill-links {
+        gap: 6px;
+    }
+
+    .pill-links a {
+        font-size: 7px;
+    }
+
+    .pill-links a .nav-num {
+        font-size: 5.5px;
+    }
+
+    .hero-nav-pill .lang-btn {
+        font-size: 7px;
+    }
 
 
     .hero-status {
         margin-bottom: 1.5rem;
     }
 
-    section.hero {
-        min-height: 60vh;
-        padding: 1.5rem 20px;
-    }
-
     .hero-name {
-        font-size: clamp(2rem, 12vw, 4rem);
-        line-height: 0.8;
-        margin-bottom: 0.2rem;
+        font-size: clamp(1.6rem, 9.5vw, 3rem);
+        line-height: 0.85;
+        white-space: normal;
+        margin-bottom: 0.25rem;
+        /* Extreme reduction */
     }
 
     .hero-job-eyebrow {
-        font-size: 0.6rem;
-        letter-spacing: 0.15em;
-        margin-bottom: 0.2rem;
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        margin-bottom: 0.25rem;
+        /* Extreme reduction */
         background: linear-gradient(90deg, #3b82f6 0%, #94a3b8 100%);
         -webkit-background-clip: text;
         background-clip: text;
