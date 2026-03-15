@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 7. Navbar Logic
     const burger = document.getElementById('nav-burger');
     const mobileMenu = document.getElementById('nav-mobile-menu');
-    const navLinks = document.querySelectorAll('.pill-links a, .mobile-links a');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-links a');
     const sections = document.querySelectorAll('section[id]');
 
     // Burger Toggle
@@ -110,6 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Handle Nav Background & Shrink on Scroll
+    const siteNav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            siteNav.classList.add('scrolled');
+        } else {
+            siteNav.classList.remove('scrolled');
+        }
+    }, { passive: true });
 
     // Stagger skill group entrance animation
     document.querySelectorAll('.skill-group-v2').forEach((group, i) => {
