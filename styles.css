@@ -156,10 +156,10 @@ img {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 100px;
-    padding: 12px 60px;
+    padding: 8px 24px;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     z-index: 10000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     max-width: calc(100vw - 40px);
@@ -218,19 +218,28 @@ img {
 .pill-socials {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .pill-socials a {
-    color: var(--text-mid);
     font-size: 14px;
-    transition: 0.3s;
+    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pill-socials a:hover {
-    color: var(--accent);
-    transform: translateY(-2px) scale(1.1);
+    transform: translateY(-3px) scale(1.2);
 }
+
+.pill-socials a.social-linkedin { color: #0077b5; }
+.pill-socials a.social-github { color: #ffffff; }
+.pill-socials a.social-x { color: #ffffff; }
+.pill-socials a.social-medium { color: #00ab6c; }
+.pill-socials a.social-reddit { color: #ff4500; }
+.pill-socials a.social-substack { color: #ff6719; }
+.pill-socials a.social-youtube { color: #ff0000; }
 
 .hero-nav-pill .lang-switch {
     display: flex;
@@ -329,10 +338,11 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
-    align-items: center; /* Re-centered for stability with large text */
+    align-items: flex-end;
+    /* Moved from center to bottom */
     justify-content: center;
-    padding-top: 100px; /* Safe clearance for the fixed navbar */
     padding-bottom: 50px;
+    /* Precise edge positioning */
     z-index: 1;
     position: relative;
     text-align: center;
@@ -387,7 +397,7 @@ h2 em {
 
 .hero-job-eyebrow {
     font-family: var(--font-tech);
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4em;
@@ -401,11 +411,12 @@ h2 em {
 
 .hero-name {
     font-family: var(--font-editorial);
-    font-size: clamp(4rem, 12vw, 10rem);
+    font-size: clamp(1.8rem, 6vw, 4.8rem);
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 0.85;
+    line-height: 0.9;
     margin-bottom: 0.75rem;
+    /* Reduced further */
     letter-spacing: -0.02em;
     display: flex;
     flex-direction: column;
@@ -435,7 +446,7 @@ h2 em {
 
 .hero-tagline-text {
     font-family: var(--font-editorial);
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-size: clamp(0.9rem, 1.8vw, 1.25rem);
     font-style: italic;
     color: var(--text-mid);
     letter-spacing: 0.05em;
@@ -449,16 +460,20 @@ h2 em {
 .hero-socials {
     display: flex;
     justify-content: center;
-    gap: 35px;
-    margin-bottom: 2rem;
+    gap: 15px;
+    /* Tighter gap */
+    margin-bottom: 1rem;
+    /* Further reduced from 1.2rem */
     position: relative;
     z-index: 10;
 }
 
 .hero-socials a {
-    font-size: 3rem;
+    font-size: 1.5rem;
+    /* Slightly larger for better color impact */
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     opacity: 1;
+    /* Full opacity for vibrant colors */
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
 }
 
@@ -1599,29 +1614,42 @@ h2 em {
         position: fixed !important;
         top: 15px !important;
         width: 95% !important;
-        max-width: 420px !important;
-        padding: 10px 30px !important;
-        gap: 15px !important;
+        max-width: 480px !important;
+        padding: 6px 12px !important;
+        gap: 8px !important;
         z-index: 10001 !important;
     }
 
+    .pill-socials {
+        gap: 8px !important;
+    }
+
+    .pill-socials a {
+        font-size: 11px !important;
+    }
+
+    .pill-divider {
+        height: 10px !important;
+    }
+
     .pill-links {
-        gap: 15px !important;
+        gap: 10px !important;
     }
 
     .pill-links a {
-        font-size: 11px !important;
+        font-size: 9px !important;
     }
 
     .pill-links a .nav-num {
-        font-size: 8px !important;
+        font-size: 7px !important;
     }
 
     .hero-nav-pill .lang-btn {
-        font-size: 11px !important;
+        font-size: 9px !important;
     }
 
-    .nav-burger, .nav-mobile-menu {
+    .nav-burger,
+    .nav-mobile-menu {
         display: none !important;
     }
 
@@ -1631,7 +1659,7 @@ h2 em {
     }
 
     .hero-name {
-        font-size: clamp(2.2rem, 12vw, 4.5rem);
+        font-size: clamp(1.6rem, 9.5vw, 3rem);
         line-height: 0.85;
         white-space: normal;
         margin-bottom: 0.25rem;
@@ -1639,7 +1667,7 @@ h2 em {
     }
 
     .hero-job-eyebrow {
-        font-size: 0.85rem;
+        font-size: 0.65rem;
         letter-spacing: 0.2em;
         margin-bottom: 0.25rem;
         /* Extreme reduction */
@@ -1654,7 +1682,7 @@ h2 em {
     }
 
     .hero-tagline-text {
-        font-size: 1.1rem;
+        font-size: 0.75rem;
         padding: 0 15px;
     }
 }
