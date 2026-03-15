@@ -156,14 +156,14 @@ img {
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 100px;
-    padding: 10px 24px;
+    padding: 8px 18px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     z-index: 1000;
     box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.4),
-        inset 0 0 20px rgba(255, 255, 255, 0.02);
+        0 15px 30px rgba(0, 0, 0, 0.4),
+        inset 0 0 15px rgba(255, 255, 255, 0.02);
     animation: navFloat 6s ease-in-out infinite;
     transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -176,24 +176,24 @@ img {
 .pill-links {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 18px;
 }
 
 .pill-links a {
     font-family: var(--font-tech);
-    font-size: 13px;
+    font-size: 11px;
     color: var(--text-mid);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     transition: color 0.3s;
 }
 
 .pill-links a .nav-num {
     opacity: 0.5;
-    font-size: 10px;
+    font-size: 8px;
 }
 
 .pill-links a:hover {
@@ -202,19 +202,19 @@ img {
 
 .pill-divider {
     width: 1px;
-    height: 24px;
+    height: 18px;
     background: rgba(255, 255, 255, 0.15);
 }
 
 .pill-socials {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .pill-socials a {
     color: var(--text-mid);
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
@@ -233,7 +233,7 @@ img {
     background: transparent;
     border: none;
     font-family: var(--font-tech);
-    font-size: 11px;
+    font-size: 10px;
     color: var(--text-dim);
     cursor: pointer;
     transition: 0.3s;
