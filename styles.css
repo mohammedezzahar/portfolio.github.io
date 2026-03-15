@@ -148,7 +148,7 @@ img {
 /* --- GLOBAL NAVIGATION PILL (Fixed Top) --- */
 .hero-nav-pill {
     position: fixed;
-    top: 24px;
+    top: 18px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
@@ -156,13 +156,13 @@ img {
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 100px;
-    padding: 8px 18px;
+    padding: 6px 14px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     z-index: 1000;
     box-shadow: 
-        0 15px 30px rgba(0, 0, 0, 0.4),
+        0 12px 24px rgba(0, 0, 0, 0.4),
         inset 0 0 1px 1px rgba(255, 255, 255, 0.1);
     animation: navFloat 6s ease-in-out infinite;
     transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -176,24 +176,24 @@ img {
 .pill-links {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 14px;
 }
 
 .pill-links a {
     font-family: var(--font-tech);
-    font-size: 11px;
+    font-size: 9.5px;
     color: var(--text-mid);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     transition: color 0.3s;
 }
 
 .pill-links a .nav-num {
     opacity: 0.5;
-    font-size: 8px;
+    font-size: 7px;
 }
 
 .pill-links a:hover {
@@ -202,19 +202,19 @@ img {
 
 .pill-divider {
     width: 1px;
-    height: 18px;
+    height: 14px;
     background: rgba(255, 255, 255, 0.15);
 }
 
 .pill-socials {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 .pill-socials a {
     color: var(--text-mid);
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.3s;
 }
 
@@ -233,7 +233,7 @@ img {
     background: transparent;
     border: none;
     font-family: var(--font-tech);
-    font-size: 10px;
+    font-size: 8.5px;
     color: var(--text-dim);
     cursor: pointer;
     transition: 0.3s;
@@ -1698,10 +1698,19 @@ h2 em {
 /* Mobile Overrides (768px spec) */
 @media (max-width: 768px) {
 
-    /* Hide the full bottom pill on mobile */
+    /* Keep pill visible but compact on mobile */
     .hero-nav-pill {
-        display: none !important;
+        width: calc(100% - 32px);
+        max-width: 450px;
+        padding: 5px 12px;
+        gap: 8px;
+        top: 12px;
     }
+
+    .pill-links { gap: 10px; }
+    .pill-links a { font-size: 8.5px; }
+    .pill-socials { display: none; } /* Hide socials on phone to save space */
+    .pill-divider { display: none; }
 
     /* Position the nav burger fixed to top right on mobile */
     .nav-burger {
