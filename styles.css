@@ -287,7 +287,7 @@ h2 em {
 /* Hero Section */
 .hero {
     height: 100vh;
-    padding-top: 6rem;
+    padding-top: 2rem; /* Reduced from 6rem */
     display: flex;
     align-items: center;
     background: #000;
@@ -445,23 +445,29 @@ h2 em {
     display: flex;
     justify-content: center;
     gap: 18px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem; /* Reduced from 1.8rem */
     position: relative;
     z-index: 10;
 }
 
 .hero-socials a {
-    color: var(--text-mid);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    opacity: 0.6;
+    opacity: 0.8; /* Higher base opacity for color visibility */
 }
 
+.hero-socials a.social-linkedin { color: #0077b5; }
+.hero-socials a.social-github { color: #ffffff; }
+.hero-socials a.social-x { color: #ffffff; }
+.hero-socials a.social-medium { color: #00ab6c; }
+.hero-socials a.social-reddit { color: #ff4500; }
+.hero-socials a.social-substack { color: #ff6719; }
+.hero-socials a.social-youtube { color: #ff0000; }
+
 .hero-socials a:hover {
-    color: #3b82f6;
     opacity: 1;
     transform: translateY(-4px) scale(1.15);
-    filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.5));
+    filter: drop-shadow(0 0 15px currentColor);
 }
 
 
@@ -1700,16 +1706,6 @@ h2 em {
     .pill-links a .nav-num { font-size: 5.5px; }
     .hero-nav-pill .lang-btn { font-size: 7px; }
 
-    /* Position the nav burger fixed to top right on mobile */
-    .nav-burger {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 10002;
-        background: rgba(13, 14, 23, 0.7);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-    }
 
     .hero-status {
         margin-bottom: 1.5rem;
@@ -1719,13 +1715,13 @@ h2 em {
         font-size: clamp(1.6rem, 9.5vw, 3rem);
         line-height: 0.85;
         white-space: normal;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem; /* Reduced from 1rem */
     }
 
     .hero-job-eyebrow {
         font-size: 0.65rem;
         letter-spacing: 0.2em;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem; /* Reduced */
         background: linear-gradient(90deg, #3b82f6 0%, #94a3b8 100%);
         -webkit-background-clip: text;
         background-clip: text;
@@ -1738,13 +1734,7 @@ h2 em {
 
     .hero-tagline-text {
         font-size: 0.75rem;
-        padding: 0 10px;
-    }
-
-    /* Show the hamburger button */
-    .nav-burger {
-        display: flex;
-        flex-shrink: 0;
+        padding: 0 15px;
     }
 }
 
