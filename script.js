@@ -84,8 +84,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 7. Navbar Logic
-    const navLinks = document.querySelectorAll('.pill-links a');
+    const burger = document.getElementById('nav-burger');
+    const mobileMenu = document.getElementById('nav-mobile-menu');
+    const navLinks = document.querySelectorAll('.pill-links a, .mobile-links a');
     const sections = document.querySelectorAll('section[id]');
+
+    // Burger Toggle
+    if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+            const isOpen = burger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+            burger.setAttribute('aria-expanded', isOpen);
+            mobileMenu.setAttribute('aria-hidden', !isOpen);
+        });
+    }
+
+    // Close mobile menu when a mobile link is clicked
+    document.querySelectorAll('.mobile-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (burger && mobileMenu) {
+                mobileMenu.classList.remove('open');
+                burger.classList.remove('open');
+                burger.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+            }
+        });
+    });
 
     // Handle Active States on Scroll
     window.addEventListener('scroll', () => {
