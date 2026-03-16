@@ -191,8 +191,8 @@ img {
 .pill-links a {
     font-family: var(--font-tech);
     font-size: 12.5px;
-    font-weight: 600;
-    color: var(--text);
+    font-weight: 500;
+    color: #E5E7EB;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     display: flex;
@@ -268,7 +268,7 @@ img {
     border: none;
     font-family: var(--font-tech);
     font-size: 12.5px;
-    color: var(--text-dim);
+    color: #cbd5e1;
     cursor: pointer;
     transition: 0.3s;
     text-transform: uppercase;
@@ -417,7 +417,7 @@ h2 em {
 
 .hero-job-eyebrow {
     font-family: var(--font-tech);
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4em;
@@ -466,7 +466,7 @@ h2 em {
 
 .hero-tagline-text {
     font-family: var(--font-editorial);
-    font-size: clamp(0.9rem, 1.8vw, 1.25rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
     font-style: italic;
     color: var(--text-mid);
     letter-spacing: 0.05em;
@@ -489,8 +489,7 @@ h2 em {
 }
 
 .hero-socials a {
-    font-size: 1.5rem;
-    /* Slightly larger for better color impact */
+    font-size: 1.8rem;
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     opacity: 1;
     /* Full opacity for vibrant colors */

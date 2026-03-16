@@ -67,7 +67,7 @@
 .name-first {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(3.5rem, 12vw, 7.5rem);
     color: #B0B8C1;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     opacity: 0;
@@ -80,7 +80,7 @@
 .name-last {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
-    font-size: clamp(4rem, 15vw, 10rem);
+    font-size: clamp(4.5rem, 17vw, 12rem);
     color: #FFFFFF;
     -webkit-text-stroke: 2px #00FF88;
     line-height: 0.8;
@@ -96,7 +96,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-style: italic;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
     color: #C9D1D9;
     opacity: 0.3;
     animation: subtitleOpacity 1.5s ease-out forwards 1.8s;
