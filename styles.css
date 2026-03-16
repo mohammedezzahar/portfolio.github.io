@@ -192,7 +192,7 @@ img {
     font-family: var(--font-tech);
     font-size: 12.5px;
     font-weight: 700;
-    color: #000000;
+    color: #000000 !important;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     display: flex;
@@ -202,7 +202,7 @@ img {
 }
 
 .pill-links a:hover {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .pill-divider {
@@ -269,7 +269,7 @@ img {
     font-family: var(--font-tech);
     font-size: 12.5px;
     font-weight: 700;
-    color: #000000;
+    color: #000000 !important;
     cursor: pointer;
     transition: 0.3s;
     text-transform: uppercase;
@@ -277,7 +277,7 @@ img {
 
 .hero-nav-pill .lang-btn.active,
 .hero-nav-pill .lang-btn:hover {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 /* Typography Utilities */
