@@ -364,13 +364,13 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    /* Keeps content at the bottom of the viewport */
+    align-items: center;
+    /* Changed from flex-end for better centering control */
     justify-content: center;
+    padding-top: 120px;
+    /* CLEARANCE for fixed navbar */
     padding-bottom: 60px;
-    /* INCREASED from 15px to lift it off the very bottom edge */
-    padding-top: 100px;
-    /* ADDED to ensure it clears the 60-80px nav pill even on small screens */
+    /* BALANCE for bottom edge */
     z-index: 10;
     position: relative;
     text-align: center;
