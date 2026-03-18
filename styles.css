@@ -453,11 +453,15 @@ h2 em {
 }
 
 [lang="ar"] .hero-name {
-    line-height: 0.85;
-    /* Reduced from 1.25 */
+    line-height: 0.8;
+    /* Reduced further from 0.85 */
     padding-top: 20px;
     gap: 0;
-    /* Tightened from 0.05em */
+}
+
+[lang="ar"] .hero-name .name-last {
+    margin-top: -0.1em;
+    /* Shifts the second word closer to the first */
 }
 
 .name-first {
