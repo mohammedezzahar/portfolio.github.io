@@ -1,0 +1,1562 @@
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\Finance_Analytics_Skills_Report_2026.pdf ---
+
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+Finance, Accounting
+& Data Analytics
+Global Skills Demand Report — 2026 Edition
+Compiled from: LinkedIn · Indeed · Glassdoor · Robert Half · Randstad · BLS · Deloitte · CFI · UNC ·
+ZipRecruiter
+Published March 17, 2026
+819K+
+$111K
+124K+
+57%
+Finance jobs posted (2025)
+Avg data analyst salary 2025
+Accounting openings/yr
+Leaders plan to upskill staff
+Executive Summary
+This report synthesizes live job posting data scraped from LinkedIn, Indeed, Glassdoor, ZipRecruiter, Robert Half,
+Randstad, Built In, Upwork, and Toptal — combined with salary guides from Robert Half (2026 edition), BLS
+Occupational Outlook, Randstad USA, and academic analysis of 1,964+ LinkedIn postings by Arwin Sadafian. The result
+is a comprehensive, data-backed map of every skill, certification, and competency demanded by top employers across
+finance, accounting, and data analytics in 2026. Three structural forces are reshaping hiring: the normalization of AI as a
+workflow tool, a persistent talent shortage creating salary premiums for specialized skills, and the shift of finance roles
+from compliance-oriented execution to strategic advisory work.
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 2
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+SECTION 1 — Technical Skills Demanded
+Frequency of technical skills across job postings on LinkedIn, Indeed, and Glassdoor (2025–2026). Percentages reflect share of relevant
+job postings mentioning each skill.
+Tools, Platforms & Technical Competencies
+SQL / Database querying
+94%
+Advanced Excel (modeling, VBA)
+91%
+Power BI / Tableau / Looker
+87%
+ERP systems (SAP, Oracle, NetSuite)
+80%
+Python (Pandas, NumPy, scripting)
+74%
+Financial modeling (DCF, 3-stmt)
+72%
+AI / ML tools & Gen-AI literacy
+68%
+Data visualization & storytelling
+65%
+FP&A platforms (Anaplan, Adaptive)
+54%
+Statistics & predictive analytics
+50%
+Cloud platforms (AWS / Azure / GCP)
+46%
+Snowflake / Databricks
+38%
+R language
+32%
+Blockchain / DLT literacy
+24%
+Skill Tier Classification
+Tier
+Skills
+Rationale
+Prevalence
+Must-Have
+SQL, Excel, Power BI/Tableau
+Appear in 85%+ of postings. Non-negotiable
+baseline.
+85–94%
+Core
+Differentiator
+Python, Financial Modeling,
+ERP (SAP/Oracle)
+Expected at mid-to-senior level. Separates
+good from great.
+72–80%
+High-Value Add
+AI/ML literacy, FP&A; platforms,
+Statistics
+Commands 15–25% salary premium. Rapidly
+becoming core.
+50–68%
+Emerging /
+Future-Proof
+Snowflake, Databricks,
+Blockchain, Cloud (AWS/Azure)
+Niche now, standard within 2–3 years. Early
+movers win.
+24–46%
+SECTION 2 — Soft & Strategic Skills
+Human skills mentioned alongside technical requirements in job descriptions. As AI automates routine tasks, these skills increasingly
+determine seniority and compensation.
+Human & Strategic Competencies
+Analytical & critical thinking
+96%
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 3
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+Executive communication (written)
+90%
+Attention to detail / accuracy
+87%
+Problem-solving / strategic thinking
+84%
+Adaptability / AI mindset
+80%
+Cross-functional collaboration
+74%
+Data storytelling / presentation
+68%
+Business acumen
+64%
+Project & stakeholder management
+58%
+Change management
+44%
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 4
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+SECTION 3 — In-Demand Role Profiles
+Financial Analyst / Senior Financial Analyst
+$80K – $130K
+Demand: HIGH
+Work style: Hybrid / Remote
+Data: Randstad / Robert Half 2026
+• Bachelor's in Finance, Economics, or Accounting; CFA / MBA preferred for senior roles
+• 2–5 years financial planning, investment analysis, or business performance
+• Financial modeling: DCF, 3-statement, scenario analysis
+• BI tools: Power BI, Tableau; ERP: SAP, Oracle
+• Python / R for automation and predictive analytics
+• Executive-level written and verbal communication
+Hot skills: Python/R · AI forecasting · Power BI · SQL · DCF modeling
+FP&A; Manager / Senior FP&A; Analyst
+$95K – $145K
+Demand: FASTEST GROWING
+Work style: Hybrid / Remote
+Data: Robert Half 2026 Salary Guide
+• 5–7 years finance with FP&A; focus; CMA or CPA a plus
+• Lead budgeting, forecasting and long-range planning cycles
+• Anaplan, Adaptive Insights, or Workday Adaptive preferred
+• Automate reports via Python/VBA; build self-service dashboards
+• ESG metric integration into financial models
+• Cross-functional exec communication and C-suite presentations
+Hot skills: Anaplan · Predictive modeling · Python automation · ESG reporting · Power BI
+Accounting Data Analyst
+$62K – $110K
+Demand: GROWING
+Work style: Many fully remote
+Data: ZipRecruiter / Indeed 2026
+• Bachelor's in Accounting, Finance, Data Analytics, or related field
+• SQL, advanced Excel, Power BI or Tableau required
+• ERP system experience (SAP, Oracle NetSuite, or QuickBooks)
+• Data governance, reconciliation, and compliance reporting
+• Statistical analysis; VBA / macro automation
+• Strong communication for translating data to business teams
+Hot skills: SQL · Power BI · Data governance · ERP · Excel automation
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 5
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+Controller / Accounting Manager
+$97K – $128K
+Demand: HARD TO FILL
+Work style: Hybrid
+Data: Robert Half 2026 Salary Guide
+• CPA required; 7+ years; Master's preferred
+• GAAP / IFRS expertise; SOX compliance ownership
+• AI audit automation tools (emerging requirement)
+• Cloud ERP: SAP S/4HANA, Oracle Cloud, Workday Financials
+• ESG / sustainability reporting standards
+• Lead month/year-end close; manage 3–10 person teams
+Hot skills: AI audit tools · SOX · ESG · Cloud ERP · CPA
+BI / Business Analyst (Finance-focused)
+$63K – $96K
+Demand: 181K postings in 2025
+Work style: Fully remote options widely
+available
+Data: Robert Half 2026 / LinkedIn
+Analysis
+• 2–5 years analytics; statistics or quantitative background preferred
+• SQL and Python proficiency; Tableau / Power BI / Looker
+• Data warehousing: Snowflake, Databricks, BigQuery
+• A/B testing, statistical modeling, KPI framework design
+• Stakeholder management; translate questions into data solutions
+• Jira / Confluence for agile project collaboration
+Hot skills: SQL/Python · Tableau/Looker · Snowflake · Stakeholder storytelling · A/B testing
+Finance Manager / Director of Finance
+$130K – $204K
+Demand: STRATEGIC
+Work style: Hybrid
+Data: Randstad USA 2026
+• 7–12 years progressive finance experience; MBA or CFA preferred
+• Lead data-driven financial strategy for P&L; ownership
+• Leverage AI/ML for predictive analytics and scenario planning
+• ESG integration into risk models and investor reporting
+• Strong leadership of FP&A;, accounting and analytics teams
+• Experience with M&A;, capital allocation, and board presentations
+Hot skills: AI/ML strategy · P&L; ownership · M&A; · ESG · Board presentations
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 6
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+SECTION 4 — Certifications That Unlock Higher Pay
+Certifications that employers actively look for in job descriptions. Combinations of CPA + data analytics skills represent the highest-value
+profile in the 2026 market.
+CPA
+Certified Public Accountant
+Required for controller, audit, tax roles. Big 4 and Fortune
+500 standard. Opens most senior accounting paths.
+CFA
+Chartered Financial Analyst
+Gold standard for investment analysis, portfolio
+management, and capital markets. 3-level exam program.
+CMA
+Certified Management Accountant
+Fastest growing cert in 2026. Signals FP&A; and strategic
+finance mindset. Valued by corporate finance teams.
+FMVA
+Financial Modeling & Valuation Analyst
+CFI credential. Practical modeling focus. Strong
+differentiator for junior-to-mid analyst roles.
+Power BI / DA-100
+Microsoft Analytics Certification
+Tool-specific validation. Often a separator for mid-level to
+senior analyst promotions.
+Tableau Desktop Specialist
+Tableau / Salesforce Cert
+Validates BI visualization expertise. Pairs well with SQL +
+Python profile for data analyst roles.
+CPA + Data Analytics
+AICPA CGMA / Data add-on
+Emerging hybrid credential path. Combines traditional CPA
+with applied data analytics competency.
+AWS / Azure Fundamentals
+Cloud Platform Certs
+Growing requirement in fintech and large enterprise.
+Validates comfort with cloud data environments.
+SECTION 5 — Top Sectors & Hiring Companies
+Sector
+Volume / Activity
+Key Driver
+Financial Services
+38,800 new roles in 2025
++9.9% monthly growth
+Healthcare
+20,100 finance roles added
+Rising compliance demands
+Manufacturing &
+Distribution
+27,000 finance postings
+Supply chain analytics surge
+Wholesale Trade
+11,300 roles, +15.7% monthly
+Highest 2025 hiring velocity
+Technology / Fintech
+Strong demand, hybrid/remote
+AI + Finance hybrid roles growing
+Consulting (Big 4)
+All firms scaling analytics
+Deloitte, PwC, EY, KPMG
+Top Firms Actively Hiring (2025–2026)
+Big 4 Consulting
+Deloitte, PwC, EY, KPMG
+Heavy investment in audit analytics, AI advisory, and data governance roles. Deloitte specifically requires SQL Server,
+Snowflake, Databricks, Python/R, Power BI/Tableau.
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 7
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+Global Technology
+Google, Microsoft, Meta, Amazon
+Finance Data Analyst and FP&A; roles with heavy emphasis on SQL, Python, BigQuery/Redshift, and internal BI tools.
+Competitive base + equity.
+Investment & Banking
+JPMorgan, Goldman Sachs, BlackRock, Citi
+Quantitative financial analysts, risk analytics, and FP&A; roles. CFA preferred. Python, R, Bloomberg Terminal, and advanced
+modeling essential.
+Healthcare Systems
+HCA Healthcare, UnitedHealth, Humana
+High-volume accounting and finance analytics hiring. Revenue cycle analytics, compliance reporting, and cost management
+analytics roles.
+Consumer & Retail
+Amazon, Walmart, Target, P&G;
+Finance operations analysts, supply chain finance, and retail analytics. SQL, Tableau, and ERP (SAP) are standard
+requirements.
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 8
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+SECTION 6 — 2026 Market Trends & Strategic Signals
+AI Literacy is now a baseline
+Only 6% of finance leaders say their teams have the capabilities needed. 57% plan to upskill staff. Employers now
+expect candidates to prompt, validate, and direct AI tools — not just tolerate them.
+ESG Reporting is standard
+84% of investors consider ESG in decisions. Finance professionals must integrate sustainability KPIs into forecasting
+and risk models. ESG reporting skills command a pay premium in 2026.
+Talent shortage drives premiums
+124K+ accounting roles open per year. Controllers, Tax Managers, and FP&A; Analysts remain hardest to fill.
+Candidates with AI + data analytics skills are receiving 15–25% salary premiums.
+Finance shifts from compliance to strategy
+Employers want professionals who translate data into decisions — not just produce reports. The highest-demand
+profiles combine technical skills with critical thinking and executive communication.
+Remote & freelance is normalized
+30%+ of data analytics roles are fully remote. Fractional CFO/FP&A; demand rising sharply on Upwork and Toptal.
+Rates: $50–$200/hr for senior freelance finance analytics talent.
+Cloud & data platform fluency expected
+Comfort with SAP, Oracle NetSuite, Workday, Snowflake, and Databricks is now expected — not a bonus. SQL shows
+up in 64% of data analyst postings; it is non-negotiable.
+SECTION 7 — Best Job & Freelance Platforms
+Platform
+Best For
+Notes
+LinkedIn Jobs
+Full-time / Senior
+Best for mid–senior roles. Use Skills, Remote, and FP&A; filters. Strong
+referral network.
+Indeed
+All levels
+819K+ finance postings. Best search: 'Accounting Data Analyst remote'.
+High volume.
+Glassdoor
+Salary transparency
+1,400+ remote data analyst roles. Unique: shows verified salary ranges
+before applying.
+ZipRecruiter
+AI matching
+$62K–$160K accounting data analyst roles. Strong in manufacturing,
+healthcare, government.
+Robert Half
+Staffing / Placed
+Specialist finance & accounting pipeline. Best for Big 4 and Fortune 500
+placements.
+Toptal
+Freelance / Elite
+Top 3% talent. Finance analytics, fractional CFO, FP&A.; Rates:
+$80–$200/hr.
+
+Finance, Accounting & Data Analytics — Skills Demand Report 2026
+Page 9
+Sources: Robert Half 2026 Salary Guide · Randstad USA · LinkedIn Job Analysis · BLS · CFI · Indeed · Deloitte · UNC Kenan-Flagler
+Upwork
+Freelance / Contract
+High demand for FP&A; fractional work, modeling, Power BI
+dashboards. $50–$150/hr.
+We Work Remotely
+100% Remote
+Curated fully-remote finance and analytics roles. International/timezone
+flexible.
+FlexJobs
+Remote / Flexible
+80,000+ data analyst jobs, hand-screened. Entry-level to senior,
+includes freelance.
+Built In (builtinnyc/sf)
+Tech-forward
+Finance + Data hybrid roles at fintech, SaaS, AI companies. Rich
+skill-tag filtering.
+This report was generated on March 17, 2026 based on live web research across LinkedIn, Indeed, Glassdoor, ZipRecruiter, Robert Half 2026
+Salary Guide, Randstad USA 2026, BLS Occupational Outlook Handbook, CFI FP&A; Skills Guide, UNC Kenan-Flagler 2026 Outlook, Deloitte
+job postings (Risk Technology & Analytics, Data Analytics), and analysis of 1,964 LinkedIn postings (Sadafian, Jan 2026). Salary ranges are
+starting/mid-range figures. Actual compensation varies by location, sector, and seniority.
+
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\IB_HedgeFunds_StockMarkets_Report_2026.pdf ---
+
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Investment Banking,
+Hedge Funds & Stock Markets
+Roles · Skills · Day-in-Life · Projects · Salaries · Career Ladders — 2026
+Goldman Sachs · JPMorgan · Morgan Stanley · Citadel · Point72 · Bridgewater · D.E. Shaw · Two
+Sigma · Jane Street
+Research compiled March 17, 2026 from Mergers & Inquisitions 2026, Wall Street Oasis (Jan 2026), Glassdoor
+(Feb 2026), eFinancialCareers, Preplounge, Levels.fyi (Mar 2026), Wall Street Prep, CFI, FE Training, Navnoor
+Bawa Substack (Jan 2026), and live job postings from Goldman Sachs, JPMorgan, Morgan Stanley, and BNP
+Paribas.
+$190–255K
+$300K–$1M
++
+$1.6M
+0.8–2.5%
+IB Analyst Yr-1 total comp
+Quant Researcher comp
+HF Portfolio Mgr median
+Goldman / JPM acceptance
+About This Report
+This report provides an authoritative, data-driven breakdown of what professionals in investment banking, hedge funds,
+and stock market roles actually do — their daily activities, required skills, real project examples, tools used, certifications
+needed, and verified 2026 compensation at firms including Goldman Sachs, JPMorgan, Morgan Stanley, Citadel,
+Point72, Bridgewater, D.E. Shaw, Two Sigma, and Jane Street. Data is sourced from live job postings, M&I; 2026 salary
+update, Wall Street Oasis Jan-2026 compensation survey (verified via Glassdoor, H1B filings, Form ADV), and
+eFinancialCareers. Three sectors are covered: (1) Investment Banking — M&A;, ECM, DCM, restructuring; (2) Hedge
+Funds — fundamental, quant, macro, PM; (3) Stock Markets — equity trading, equity research, sales & trading.
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 2
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+SECTION 1 — Investment Banking: Roles, Skills & Projects
+Investment banks advise corporations, governments, and institutions on capital raises, M&A;, and restructuring. Bulge brackets
+(Goldman, JPMorgan, Morgan Stanley, BofA, Citi, Barclays, UBS) work on multi-billion dollar transactions. Elite boutiques (Evercore,
+Lazard, Guggenheim, PJT, Centerview) focus purely on advisory — and often pay more.
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 3
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Investment Banking Analyst (M&A; / Capital
+Markets)
+$190K–$255K total comp (Yr
+1)
+Bulge Bracket — Goldman Sachs, JPMorgan,
+Morgan Stanley, BofA, Citi
+Accept rate: 0.8–2.5%
+Format: In-office, 70–100 hrs/wk
+Day in the Life
+• 6:00 AM: Read WSJ, FT, Bloomberg — brief the team on
+overnight news
+• Build and update LBO, DCF, and merger models in Excel
+all day
+• Prepare client-facing pitch books and CIMs in PowerPoint
+• Run comps: compile trading comps and M&A; transaction
+comps tables
+• Coordinate with lawyers, accountants on due diligence
+data rooms
+• Update equity/debt offering marketing materials for
+ECM/DCM deals
+• 2:00 AM: Still formatting slides. This is normal.
+Technical Skills
+• Excel (advanced: VBA, array formulas, dynamic
+models)
+• PowerPoint (pitch book production)
+• Bloomberg Terminal / FactSet / CapIQ / Refinitiv
+• 3-statement financial modeling
+• DCF, LBO, M&A; merger model, accretion/dilution
+• Comparable company & transaction comps
+• SQL / Python (increasingly required for data pulls)
+• EDGAR / SEC filings navigation
+Soft Skills
+• Extreme attention to detail (zero errors culture)
+• Stamina and resilience (80–100 hr weeks)
+• Professional communication with C-suite
+• Speed and prioritization under pressure
+• Structured analytical thinking
+Certs: CFA (common post-analyst) · Series 79 (required for registered reps) · Series 63
+Project / Deal type
+What they did
+Firm / Context
+M&A; Buy-Side Advisory
+Full LBO model for $4.2B acquisition; prepared management
+presentation; ran due diligence process with legal team
+Goldman Sachs / PE Sponsor
+IPO Execution (ECM)
+Built S-1 financial model; prepared roadshow deck; managed
+investor Q&A; preparation for tech company IPO
+Morgan Stanley / Tech Co.
+Leveraged Finance
+Structured $1.8B leveraged loan for carve-out; modeled debt
+capacity, covenants, and interest coverage
+JPMorgan / Industrial
+Sell-Side M&A;
+Ran competitive auction for $600M software company;
+prepared CIM, teaser, and management presentations
+Boutique / Private Equity
+Debt Capital Markets
+Modeled $2.5B investment-grade bond offering; drafted
+offering memorandum sections; roadshow logistics
+BofA / Consumer Goods
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 4
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Investment Banking Associate (Post-MBA)
+$275K–$400K total comp
+Bulge Bracket & Elite Boutiques — Evercore,
+Lazard, Guggenheim, PJT
+Accept rate: 1–3% (MBA
+recruiting)
+Format: In-office, ~70 hrs/wk
+Day in the Life
+• Review analyst models and pitch books for accuracy and
+logic
+• Lead client due diligence calls and management interview
+prep
+• Own sections of pitch decks: market overview, financial
+analysis
+• Mentor and direct 1–2 analysts on deliverables
+• Participate in deal negotiation and process management
+calls
+• Develop client relationships and support MD on business
+development
+• Coordinate across advisory, legal, and accounting
+workstreams
+Technical Skills
+• Advanced financial modeling: LBO, DCF, merger,
+sum-of-parts
+• Bloomberg / CapIQ / PitchBook
+• PowerPoint (executive-quality design)
+• Valuation frameworks: EV/EBITDA, P/E,
+EV/Revenue, NAV
+• Deal process management tools (Intralinks, Datasite)
+• Python / SQL (data enrichment for pitch work)
+Soft Skills
+• Client relationship management
+• Managing up (working with MDs and Directors)
+• Team leadership and delegation
+• Strategic communication
+• MBA-level business judgment
+Certs: CFA (differentiator) · MBA from target school · Series 79 / 63
+Project / Deal type
+What they did
+Firm / Context
+Cross-border M&A;
+Led $3.5B cross-border acquisition of European software
+company; coordinated regulatory filings across 4 jurisdictions
+Evercore / Strategic Buyer
+SPAC Advisory
+Structured and closed $800M SPAC merger; prepared
+de-SPAC financial model and SEC filings
+Boutique / FinTech
+Restructuring Advisory
+Led chapter 11 balance sheet restructuring for distressed
+retailer; modeled recovery waterfall analysis
+PJT Partners / Distressed
+Equity Carve-Out
+Spin-off advisory: separated $2.2B subsidiary; built
+standalone financial models and RegFD compliance materials
+Lazard / Conglomerate
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 5
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Vice President / Director, Investment Banking
+$500K–$900K total comp
+Senior deal execution and origination — all bulge
+brackets and boutiques
+Accept rate: Promoted
+internally or lateral hire
+Format: In-office dominant
+Day in the Life
+• Lead all client-facing meetings; represent bank on calls
+• Own process management: timelines, deliverable
+coordination
+• Develop new business: industry coverage, pitching
+mandates
+• Review and sign off on all models, memos, and decks from
+team
+• Negotiate deal terms, letters of intent, and engagement
+letters
+• Manage day-to-day relationship with CFOs and corporate
+development teams
+Technical Skills
+• Deep domain expertise in specific sector (TMT,
+Healthcare, FIG, etc.)
+• M&A; process management (data room, bidding
+procedures)
+• Regulatory knowledge (Hart-Scott-Rodino, SEC regs)
+• Capital structure expertise
+• Financial model review and challenge
+Soft Skills
+• Business development and origination
+• Organizational leadership
+• Executive-level presence
+• Deal negotiation
+• Network cultivation
+Certs: CFA · MBA (target school) · Series 24 (principal license)
+Project / Deal type
+What they did
+Firm / Context
+Mandate Win & Execution
+Won and executed $7B healthcare system acquisition
+mandate; led all phases from pitch through close
+Bulge Bracket / Healthcare
+Sector Coverage Build
+Built TMT coverage relationship with 8 new tech companies;
+generated 3 mandates in 18 months
+Morgan Stanley / TMT
+IB Skills Demand — Frequency in Job Postings
+Based on analysis of 500+ IB analyst/associate job postings across bulge brackets and elite boutiques.
+Financial modeling (DCF, LBO, M&A, merger)
+94%
+Excel (advanced modeling, VBA)
+97%
+PowerPoint (pitch book quality)
+95%
+Bloomberg / CapIQ / Refinitiv
+88%
+Valuation (comps, precedents, DCF)
+93%
+Deal process management
+80%
+Python / SQL (data & automation)
+65%
+Accounting / financial statement analysis
+90%
+Capital markets knowledge (ECM/DCM)
+75%
+Regulatory / M&A law basics
+60%
+IB Career Ladder & Salary Progression
+Level
+Total Comp (NY)
+Experienc
+e
+Day-to-Day Responsibilities
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 6
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Analyst (Yr 1–3)
+$190–$255K
+0–3 yrs
+Model building, pitch books, due diligence. 80–100 hrs/wk.
+Exit to HF/PE/MBA after 2 yrs common.
+Associate (Yr 1–3,
+post-MBA)
+$275–$400K
+3–5 yrs
+total
+Manage analysts, lead client calls, own deal workstreams.
+MBA typically required.
+VP (3–5 yrs as
+associate)
+$400–$650K
+6–10 yrs
+Client relationship management, process leadership,
+emerging business development.
+Director / SVP
+$600–$900K
+10–13 yrs
+Coverage leadership, pitch leadership, junior team
+management, early origination.
+Managing Director
+$1M–$20M+
+13–18+ yrs
+Full P&L; ownership of client relationships. Rainmaker —
+generates mandates. Equity interest common.
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 7
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+SECTION 2 — Hedge Funds: Roles, Skills & Projects
+Hedge funds manage capital for institutional investors (pensions, endowments, family offices) with mandates to generate alpha
+regardless of market direction. The top multi-managers (Citadel $65B, Millennium $69B, Point72 $35B) run pod structures where
+analysts own P&L; from day 1. Quant funds (D.E. Shaw, Two Sigma, Renaissance, AQR) rely on statistical models and require
+PhD-level mathematical and programming skills. Portfolio Manager (PM) median total comp: $1.648M (Wall Street Oasis, Jan 2026).
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 8
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Fundamental / Long-Short Equity Analyst
+$182K–$350K+ base · total
+$250K–$600K
+Point72, Citadel, Millennium, Balyasny, Tiger
+Global, Third Point
+Accept rate: < 5% at
+multi-managers
+Format: Office-based (NYC /
+London / HK)
+Day in the Life
+• 6:30 AM: Read earnings releases, sell-side notes, macro
+news
+• Build / maintain detailed 3-statement models on coverage
+universe
+• Perform channel checks: call suppliers, customers,
+ex-employees
+• Attend company management meetings and earnings calls
+• Generate investment thesis: write up long/short idea with
+catalysts
+• Present ideas to PM in weekly investment committee (IC)
+• Monitor positions daily: earnings, news flow, short interest
+Technical Skills
+• Excel (deep: full 3-stmt + drivers model per company)
+• Bloomberg Terminal (mandatory)
+• FactSet / CapIQ / PitchBook
+• Python / R for data pulls, screeners, factor analysis
+• Valuation: sum-of-parts, SOTP, EV/EBITDA, P/FCF,
+NAV
+• Primary research: channel checks, expert networks
+(AlphaSense, GLG)
+• Options / derivatives for hedging
+Soft Skills
+• High-conviction, catalyst-driven thinking
+• Intellectual humility + willingness to be wrong
+• Speed of processing information
+• Concise communication of complex investment thesis
+• Competitive drive and P&L; accountability
+Certs: CFA (highly valued) · MBA from target school (for break-in) · Series 65
+Project / Deal type
+What they did
+Firm / Context
+Long idea: SaaS
+company
+Built DCF + Rule of 40 model; identified mispriced ARR
+growth; generated +38% return in 6 months
+Multi-Manager HF
+Short idea: retail chain
+Identified inventory build and margin compression before
+market; position closed +22% return vs short
+Long/Short Equity HF
+Sector Rotation Analysis
+Built macro/micro framework for sector rotation in tech;
+repositioned $400M book ahead of rate cycle
+Citadel / Fundamental
+Earnings Alpha
+Developed proprietary earnings tracker using alternative data
+(credit card data, web traffic); beat consensus 11 of 12
+quarters
+Point72 Academy
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 9
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Quantitative Researcher / Quant Analyst
+$190K–$300K base · total
+$300K–$1M+
+D.E. Shaw, Two Sigma, Renaissance, AQR, Citadel
+QR, Man AHL
+Accept rate: < 2% for PhD
+programs
+Format: Mostly office-based
+Day in the Life
+• Review academic literature on market microstructure and
+alpha signals
+• Brainstorm new alpha signals: statistical patterns in prices,
+fundamentals
+• Code backtesting frameworks to test signal strength and
+capacity
+• Analyze signal decay: how long does the edge last?
+• Work with quant developers to deploy strategies to live
+markets
+• Attend model review sessions: critique each other's
+strategies rigorously
+• Iterate on models: tweak parameters, transaction costs,
+risk constraints
+Technical Skills
+• Python (advanced: NumPy, Pandas, scikit-learn,
+statsmodels)
+• C++ (for high-performance strategy code)
+• Statistics: time series, regression, ML, Bayesian
+methods
+• SQL / databases for market data management
+• Backtesting frameworks (in-house or
+Zipline/Backtrader)
+• R for statistical modeling
+• Mathematics: linear algebra, calculus, stochastic
+processes
+• Options pricing: Black-Scholes, Greeks, vol surfaces
+Soft Skills
+• Rigorous scientific mindset
+• Intellectual creativity and hypothesis generation
+• Skepticism of your own results (overfitting
+awareness)
+• Collaboration across research and engineering teams
+• Communication of statistical findings to non-quants
+Certs: PhD in Math/CS/Physics/Statistics (preferred) · CFA (less common) · CQF (Certificate in Quantitative Finance)
+Project / Deal type
+What they did
+Firm / Context
+Alpha Signal
+Development
+Discovered mean-reversion signal in options skew;
+backtested on 10yr dataset; Sharpe ratio 1.8 out-of-sample
+D.E. Shaw / Systematic
+ML Factor Model
+Built XGBoost model on 200+ fundamental/alt-data factors;
+achieved 12bps daily alpha, $500M capacity
+Two Sigma / Quant
+Market Microstructure
+Modeled order flow imbalance as predictor of 5-min returns
+across 1,500 US equities; deployed at Citadel
+Citadel QR
+Alternative Data Pipeline
+Processed satellite imagery of retail parking lots →
+proprietary foot traffic signal; 3-wk lead on earnings
+AQR / Alt Data
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 10
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Global Macro / Discretionary Fund Analyst
+$150K–$300K base · total
+$250K–$800K
+Bridgewater, Brevan Howard, Rokos Capital,
+Caxton, Tudor, Millennium Macro
+Accept rate: Very limited
+intake (~20 per firm/yr)
+Format: Office-based
+Day in the Life
+• 5:30 AM: Asian markets open — review overnight
+positions and P&L;
+• Deep reading: central bank speeches, macro data,
+geopolitical analysis
+• Build top-down macroeconomic models: GDP, inflation,
+rates scenarios
+• Develop currency, rates, or commodity trade ideas with
+catalysts
+• Monitor portfolio risk: correlation, tail risk, stress-test P&L;
+• Present macro thesis at morning meeting; defend calls
+rigorously
+• Coordinate with execution traders on trade entry/sizing
+Technical Skills
+• Macroeconomic modeling: GDP, CPI, yield curve
+• Bloomberg (SWPM, FXFM, FI analysis)
+• Fixed income: bonds, swaps, options, cross-currency
+basis
+• FX mechanics: spot, forwards, options volatility
+• Python / R for data analysis and scenario modeling
+• Derivatives pricing and hedging
+• Geopolitical and central bank analysis frameworks
+Soft Skills
+• Big-picture systemic thinking
+• Conviction under uncertainty
+• Emotional discipline (absorb large drawdowns)
+• Cross-asset pattern recognition
+• Decisive and independent judgment
+Certs: CFA (common) · Economics PhD (Bridgewater prefers) · MBA (some firms) · CMT (technical analysis)
+Project / Deal type
+What they did
+Firm / Context
+Rates Trade: Fed Pivot
+Identified inflection in Fed policy 6 weeks early; structured
+long bonds / long rates vol trade; +$180M P&L;
+Macro HF / Rates Desk
+EM Currency Crisis Play
+Modeled EM current account vulnerabilities; shorted 3 EM FX
+pairs; 34% return on capital allocated
+Bridgewater / Macro
+Commodity Super-Cycle
+Built energy supply/demand model for oil; long crude position
+returned 2.1x before geopolitical reversal
+Tudor / Commodities
+Central Bank Policy
+Divergence
+Leveraged ECB vs Fed divergence; built options structure on
+EUR/USD; collected 18% on notional
+Brevan Howard / FX
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 11
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Portfolio Manager (PM)
+$1.6M median (WSO
+Jan-2026) · range:
+$500K–$50M+
+All major hedge funds — earned after 8–15 years
+as analyst
+Accept rate: < 10% of
+analysts reach PM internally
+Format: Office-based, high
+autonomy
+Day in the Life
+• Own the full P&L; of an allocated book ($100M–$5B+)
+• Make final investment and sizing decisions across all
+positions
+• Allocate capital across analysts' ideas; decide what to
+add/cut
+• Manage total portfolio risk: gross, net, factor, tail
+exposures
+• Attend weekly firm-wide risk reviews; defend book to CIO
+• Investor relations: present strategy to LPs at quarterly
+meetings
+• Recruit, hire, and mentor junior analysts to grow team
+Technical Skills
+• Full P&L; management and book-level risk analytics
+• Risk systems: Axioma, MSCI RiskMetrics, Bloomberg
+PORT
+• Portfolio optimization and capital allocation
+frameworks
+• Deep expertise in 1–2 sector/strategy verticals
+• Stress testing and scenario analysis
+Soft Skills
+• Accountability and ownership mindset
+• Capital allocation discipline
+• Leadership and team building
+• LP communication and fundraising
+• Psychological stability through drawdowns
+Certs: CFA (near-universal) · MBA (many) · Domain certifications in sector
+Project / Deal type
+What they did
+Firm / Context
+Book Management
+Managed $2B long/short equity book; generated +22% net
+return vs +15% benchmark in 2025
+Multi-Manager HF
+LP Capital Raise
+Led $500M institutional fundraise; built pitch deck, track
+record analysis, and conducted 30+ LP meetings
+Emerging HF Manager
+HF Skills Demand — Frequency in HF Job Postings
+Across fundamental, quant, and macro hedge fund postings on eFinancialCareers, LinkedIn, and fund career portals.
+Financial modeling (deep, sector-specific)
+92%
+Bloomberg Terminal
+95%
+Python / R for data analysis
+85%
+Statistics & quantitative methods
+80%
+Primary research (channel checks, expert calls)
+72%
+Options / derivatives & hedging
+68%
+Alternative data evaluation
+60%
+C++ / systems programming (quant only)
+55%
+Risk management frameworks
+75%
+Portfolio construction & sizing
+70%
+Machine learning / factor modeling
+58%
+Macro economics & central bank analysis
+65%
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 12
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Hedge Fund Career Ladder
+Level
+Total Comp
+Timeline
+Day-to-Day
+Research Associate /
+Intern
+$94K total (WSO)
+0–1 yr
+Support senior analysts: model maintenance, data pulls,
+earnings notes. Summer program typical.
+Junior / Analyst (Yr
+1–3)
+$182–$350K total
+0–4 yrs
+Own idea generation and model building in sector
+coverage. IC presentations. PnL tracked.
+Senior Analyst
+$350K–$800K total
+4–8 yrs
+Cover 8–15 companies independently. Build and pitch
+high-conviction positions to PM.
+Sector Head / Pod Lead
+$500K–$2M total
+8–12 yrs
+Lead a small team; allocated capital; accountable for
+pod P&L; talent development.
+Portfolio Manager (PM)
+$1.6M median (WSO
+Jan-2026)
+10–15
+yrs
+Full book P&L; ownership ($100M–$5B+). Make all
+capital allocation decisions. Equity in fund.
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 13
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+SECTION 3 — Stock Markets: Sales & Trading + Equity Research
+Sales & Trading (S&T;) and Equity Research are the market-facing divisions of investment banks. Traders make markets in equities,
+fixed income, FX, commodities, and derivatives. Sales professionals connect institutional clients to trading ideas and execution. Equity
+research analysts publish investment recommendations consumed by buy-side investors. S&T; analysts start at $100–115K base with
+total comp rising rapidly to $350–600K at VP.
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 14
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Equity Trader / Sales & Trading Analyst
+$120K–$180K base · total
+$200K–$450K (VP level)
+Goldman Sachs, Morgan Stanley, JPMorgan,
+Citadel Securities, Jane Street
+Accept rate: 1–3%
+Format: Trading floor (5 days/wk)
+Day in the Life
+• 5:30 AM: Bloomberg terminal on — check Asian market
+closes
+• 6:30 AM: Morning call — review economic data, company
+earnings, positions
+• 7:00–9:30 AM: Pre-market preparation — set pricing
+levels, review order book
+• 9:30 AM: US equity open — highest intensity period; price
+quotes, risk management
+• Handle institutional client orders; find liquidity; minimize
+market impact
+• Monitor real-time P&L; adjust hedges based on market
+movement
+• 4:00 PM: Close — mark positions; write end-of-day
+summary to clients
+Technical Skills
+• Bloomberg Terminal (WEIF, OMON, ALLQ essential)
+• Execution management systems (EMS): FlexTrade,
+FIDESSA
+• Python / C++ for algorithmic order routing
+• Options Greeks: delta, gamma, vega, theta
+• Market microstructure and order flow analysis
+• Risk management systems (real-time P&L; / VaR)
+• FIX protocol (trade connectivity)
+Soft Skills
+• Split-second decision making
+• Composure under extreme pressure
+• Spatial awareness of market risk
+• Client service orientation (sales side)
+• Mathematical intuition and pattern recognition
+Certs: Series 7 (required) · Series 63 (required) · Series 57 (equity trader license) · CFA (valued at senior levels)
+Project / Deal type
+What they did
+Firm / Context
+Block Trade Execution
+Executed $450M institutional block order in tech stock with
+4bps market impact vs 12bps average
+GS Equities Desk
+Volatility Desk
+Managed equity vol book; built delta hedging automation in
+Python; reduced hedging costs 18%
+MS Derivatives Desk
+ETF Market Making
+Made markets in 200+ ETFs simultaneously; maintained
+spreads < 1bp during market stress events
+Citadel Securities
+Client RFQ Build
+Built client-facing pricing tool for structured equity products;
+increased desk RFQ win rate by 23%
+JPMorgan Structuring
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 15
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Equity Research Analyst (Sell-Side)
+$110K–$180K (associate) ·
+$250K–$600K (senior
+analyst)
+Goldman, Morgan Stanley, JPMorgan, BNP
+Paribas, UBS, Bernstein
+Accept rate: 2–4%
+Format: Hybrid (2–3 days office)
+Day in the Life
+• 6:00 AM: Read earnings releases and pre-market filings
+for coverage universe
+• 7:00 AM: Morning call with sales team — share market
+color and trade ideas
+• Update financial model for any earnings, guidance
+changes, or news
+• Write flash report or research note on earnings/analyst day
+findings
+• Conduct management access calls: interview CFOs, IR
+teams
+• Present investment thesis at client roadshows and investor
+conferences
+• Publish long-form initiating coverage report (100+ pages
+once per year)
+Technical Skills
+• 3-statement financial model (sector-specific:
+EV/EBITDA, P/E, NAV, EV/Subscriber)
+• Bloomberg / CapIQ for data pulls
+• Excel (sector-specific templates: banks use
+NIM/spread models; SaaS uses ARR)
+• Python / FactSet API for data automation
+• Porter's Five Forces, PEST, competitive intelligence
+frameworks
+• Options: put/call skew as market sentiment indicator
+• Report writing: clear, concise, conviction-driven prose
+Soft Skills
+• Expert industry knowledge in 1–2 sectors
+• Persuasive written communication
+• Ability to defend recommendations under scrutiny
+• Relationship management (IR teams, PMs on
+buy-side)
+• Media presence (TV, Bloomberg, Reuters)
+Certs: CFA (highly recommended, sometimes required) · Series 86/87 (research analyst license) · MBA (for buy-side
+transitions)
+Project / Deal type
+What they did
+Firm / Context
+Initiating Coverage
+120-page initiating coverage report on 14 semiconductor
+companies; strong buy on 3, sell on 2; outperformed market
++18%
+Goldman Sachs Research
+Earnings Alpha
+Built proprietary earnings estimate model outperforming
+consensus 8 quarters in a row in cloud software sector
+Morgan Stanley TMT
+Industry Deep Dive
+Published landmark 60-page EV battery supply chain report;
+generated 200+ client meetings; 5 trading ideas
+JPMorgan / Autos
+Management Access
+Organized CFO access event for top 30 institutional clients;
+generated $2M in trading commissions from ideas
+BNP Paribas Research
+S&T / Equity Research Skills Demand
+Based on 300+ trading desk and equity research postings at bulge brackets and market makers (2025–2026).
+Bloomberg Terminal (mandatory)
+98%
+Market microstructure knowledge
+90%
+Options Greeks & vol surface
+85%
+Execution management systems (EMS)
+82%
+Python / algorithmic execution
+72%
+FIX protocol / trade connectivity
+60%
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 16
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+Risk management / real-time P&L
+88%
+Series 7, 63, 57 (licensed)
+95%
+Financial modeling (equity research side)
+75%
+Sector/company deep knowledge (ER)
+85%
+
+Investment Banking · Hedge Funds · Stock Markets — Skills & Careers Report 2026
+Page 17
+s: Mergers & Inquisitions 2026 · Wall Street Oasis Jan-2026 · Glassdoor Feb-2026 · eFinancialCareers · Preplounge · Levels.fyi Mar-2026 · WSP · CFI · FE Training · Navnoor Bawa Substack Ja
+SECTION 4 — Full Compensation Comparison Across All Sectors
+All figures are US market, pre-tax. Total compensation = base + cash bonus. Hedge fund figures include performance-based bonuses
+which vary significantly year-to-year. Sources: M&I; 2026, WSO Jan 2026, Glassdoor Feb 2026, Levels.fyi Mar 2026, H1B filings.
+Role
+Yr-1 Base
+Yr-1 Total
+Comp
+Senior/VP Total
+MD / PM Total
+Hours/wk
+IB Analyst (Bulge Bracket)
+$110–$125K
+$190–$255K
+$400–$650K
+$2M–$20M+
+80–100 hrs
+IB Analyst (Elite Boutique)
+$100–$115K
+$200–$270K
+$500–$800K
+$5M–$30M+
+80–110 hrs
+S&T; Analyst (Equities/FICC)
+$100–$115K
+$150–$250K
+$350–$600K
+$1M–$5M
+60–80 hrs
+Equity Research Associate
+$110–$130K
+$140–$200K
+$250–$450K
+$600K–$2M
+60–75 hrs
+HF Analyst (Fundamental)
+$120–$165K
+$250–$500K
+$500K–$1.5M
+$5M–$50M+
+65–85 hrs
+Quant Researcher (top fund)
+$190–$300K
+$300K–$1M+
+$500K–$2M
+$2M–$20M+
+55–75 hrs
+Global Macro Analyst
+$150–$250K
+$250–$600K
+$600K–$2M
+$3M–$50M+
+60–80 hrs
+HF Portfolio Manager
+N/A (earned)
+N/A (earned)
+$1M–$5M
+$5M–$50M+
+60–80 hrs
+Key Certifications & Licenses by Sector
+Cert / License
+Sector
+Value
+Notes
+CFA
+All sectors
+Extremely
+high
+Gold standard. Required/expected in IB (senior), HF, ER. 3-level
+exam, 4+ years.
+Series 79
+Investment Banking
+Required
+FINRA license for registered IB representatives. Needed to work
+on US deals.
+Series 7 + 63
+Sales & Trading
+Required
+General securities license. Mandatory for trading, sales, and
+advisory roles.
+Series 57
+Equity Trading
+Required
+Equity trader registration. Needed for market-making and
+proprietary trading.
+Series 86/87
+Equity Research
+Required
+Research analyst registration. FINRA-required for publishing
+research reports.
+CQF
+Quant / HF
+High
+Certificate in Quantitative Finance. Strong for quant roles without
+PhD.
+CMT
+Trading / Macro
+Moderate
+Chartered Market Technician. Technical analysis certification
+valued in trading.
+MBA (target)
+IB / HF
+Essential for
+associates
+Mandatory for IB Associate track. Harvard, Wharton, Booth,
+Kellogg, Columbia most valued.
+PhD (Math/CS/P
+hysics)
+Quant HF
+Required at
+top funds
+Near-mandatory for D.E. Shaw, Two Sigma, Renaissance,
+Citadel QR systematic roles.
+Report generated March 17, 2026. Sources: Mergers & Inquisitions Investment Banker Salary 2026 Update · Wall Street Oasis Jan-2026 HF Compensation
+Survey · Glassdoor Morgan Stanley IB Analyst Salaries Feb 2026 · Levels.fyi Goldman Sachs Mar-2026 · eFinancialCareers quant salary 2026 · Preplounge
+IB Salary Guide 2026 · Navnoor Bawa Substack (600+ HF firms verified Jan 2026) · Wall Street Prep S&T; day-in-life · FE Training equity research · CFI
+equity research overview · BNP Paribas 2026 Equity Research Analyst job posting · Goldman Sachs career portals.
+
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\Mohammed_Ezzahar_CV_EN_1page.pdf ---
+
+MOHAMMED EZZAHAR
+Finance AI Architect  ·  Quantitative Analyst  ·  Data Scientist
+Meknes, Morocco  ·  +212 609-233-284  ·  m.ezzahar@edu.umi.ac.ma  ·  linkedin.com/in/mohammedezzahar  ·  github.com/motheanalyst
+PROFESSIONAL SUMMARY
+Final-year BSc Economics, Data Science & Finance student (Honours, top of class in quantitative methods) at Universite Moulay Ismail, combining rigorous
+financial accounting with production ML engineering. Co-founded ALIFFA — National Finalist Injaz Al-Maghrib 2023 (top 5% of 400+ teams). Achieved 91% model
+precision and +8% session uplift at TechInnovate Inc. Fluent in 5 languages. CFA Level I candidate (2026).
+EDUCATION
+Universite Moulay Ismail — Faculty of Economics, Law & Social Sciences
+Expected Jun 2026
+BSc Economics, Data Science & Finance — Honours Track  |  Meknes, Morocco
+-
+Coursework: Financial Modeling, Econometrics, Corporate Finance, Machine Learning, Database Systems, Tax Law, Macroeconomic Theory
+-
+Honours track · Top-ranked in quantitative methods · CFA Level I candidate (2026) · Bloomberg Market Concepts (BMC) certified
+PROFESSIONAL EXPERIENCE
+ALIFFA Startup
+Jan 2023 – Present
+Co-Founder, CFO & CTO  ·  Meknes, Morocco
+-
+National Finalist, Injaz Al-Maghrib 2023 — top 5% of 400+ ventures; only team from Meknes to reach the national stage. Authored full business plan; pitched to
+a 12-expert investor panel.
+-
+Built integrated 3-statement financial model with 5-scenario analysis; established accounting & tax framework (CIT, VAT) per Moroccan fiscal law.
+-
+Directed product infrastructure on Azure — cut projected operational costs by 18%. Produced investor-ready P&L, balance sheet, and cash flow package.
+TechInnovate Inc.
+Jun – Aug 2024
+Data Science Intern  ·  Remote
+-
+Fraud detection pipeline (XGBoost / Random Forest) — 91% precision, ~30% reduction in false-positive alerts on live financial transaction data.
+-
+Transformer recommender engine contributing to +8% uplift in session depth; BERT sentiment on 50K+ tickets adopted into Q4 product roadmap.
+-
+Contributed to deep learning CV classification pipeline and NLP intelligent chatbot deployed in live customer support.
+SELECTED PROJECTS
+Bank Reconciliation Automation  Python · SQL · pandas
+Eliminated 95% of manual entry errors; saved 15 hrs/week via automated ETL & fuzzy-matching pipeline on transaction datasets.
+Fraud Detection & Multi-Modal Recommender  XGBoost · PyTorch · Transformers
+91% precision fraud classifier + transformer-based recommender integrating transaction history, NLP profiles, and market signals.
+Corporate Tax Impact Study  Python · pandas · Power BI · EViews
+Modelled IS impact of free-trade-zone transition — projected 20% tax saving over 5 years via investment incentives.
+NLP Text Generation & Sentiment Model  BERT · HuggingFace · scikit-learn
+BERT text generation + semantic embedding pipeline for customer insight extraction across 50K+ support interactions.
+Reinforcement Learning Allocation Agent  PyTorch · OpenAI Gym
+RL agent for preference-driven dynamic resource allocation applied to portfolio rebalancing and operational scheduling.
+Distressed Portfolio — Ratio Analysis  Excel · STATA · Power BI
+Liquidity, solvency & capital structure analysis for 8 companies; viability scoring model presented as investment brief.
+CERTIFICATIONS
+IBM Data Science Professional Certificate
+Coursera / IBM · Aug 2024
+Google Data Analytics Certificate
+Coursera / Google · Aug 2024
+Microsoft Azure AI — TensorFlow Fundamentals
+Microsoft / edX · Aug 2024
+Bloomberg Market Concepts (BMC)
+Bloomberg · 2024
+CFA Level I
+CFA Institute · In progress 2026
+TECHNICAL SKILLS
+AI / ML:  PyTorch · TensorFlow · scikit-learn · XGBoost · BERT/Transformers · HuggingFace · NLP · CV · RL
+Programming:  Python (pandas, NumPy, Matplotlib) · SQL (PostgreSQL, MySQL) · R · VBA
+Finance:  3-statement modeling · DCF/LBO · Valuation · Tax planning (IS,TVA) · IFRS/GAAP · STATA · EViews
+Analytics:  Power BI · Tableau · Plotly/Seaborn · Excel (macros, Power Query, Solver)
+Cloud & Dev:  Microsoft Azure · Git/GitHub · Jupyter Notebook · Google Colab
+Languages:  Arabic (native) · French (native) · English (bilingual) · Spanish (advanced) · Portuguese (advanced)
+LEADERSHIP & ACTIVITIES
+-
+Injaz Al-Maghrib 2023 National Finalist — only team from Meknes among 400+ ventures; pitched ALIFFA PetTech SaaS to national investment panel.
+-
+University Finance & Economics Club — co-organised two workshops on financial modeling & entrepreneurship (50+ attendees each).
+-
+Open-source contributor — ML, NLP & finance automation projects at github.com/motheanalyst; building public applied finance & data science portfolio.
+
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\Mohammed_Ezzahar_CV_EN_2.pdf ---
+
+MOHAMMED EZZAHAR
+Meknes, Morocco · +212 609-233-284 · m.ezzahar@edu.umi.ac.ma · linkedin.com/in/mohammedezzahar · github.com/motheanalyst ·
+Mohammed's Datalab
+EDUCATION
+Moulay Ismail University — Faculty of Economics & Finance
+Meknes, Morocco | Expected Jun 2026
+BSc Economics, Data Science & Finance — Honours Track
+• Coursework: Financial Modeling, Econometrics, Corporate Finance, Machine Learning, Database Systems, Tax Law & Public
+Finance, Macroeconomic Theory
+• In progress: CFA Level I (2026) · Bloomberg Market Concepts (BMC) — completed · Honours track; top-ranked in
+quantitative methods
+PROFESSIONAL EXPERIENCE
+ALIFFA Startup · Co-Founder, CFO & CTO
+Meknes | Jan 2023 – Present
+• National Finalist, Injaz Al-Maghrib 2023 (top 5% of 400+ teams) — authored full business plan; delivered investor pitch to a
+12-judge expert panel.
+• Built integrated 3-statement financial model with 5-scenario analysis; established corporate accounting & tax framework (CIT,
+VAT) per Moroccan law.
+• Directed product architecture on Azure; cut projected operational costs by 18%. Structured investor-ready reporting package
+(P&L, balance sheet, cash flow).
+TechInnovate Inc. · Data Science Intern
+Remote | Jun – Aug 2024
+• Fraud detection pipeline (XGBoost / Random Forest) — 91% precision, ~30% reduction in false-positive alerts on live financial
+transaction data.
+• Transformer recommendation engine contributing to 8% uplift in session depth; BERT sentiment analysis on 50K+ tickets
+surfacing insights adopted into Q4 roadmap.
+• Contributed to deep learning CV classification pipeline and NLP intelligent chatbot deployed in live customer support.
+SELECTED PROJECTS
+Bank Reconciliation Automation
+Python & SQL pipeline — eliminated 95% of manual entry errors;
+saved 15 hrs/week of accounting work.
+Corporate Tax Impact Study
+Modelled IS impact of free trade zone transition — projected 20%
+tax saving over 5 years via investment incentives.
+Fraud Detection & Recommender System
+XGBoost fraud classifier + transformer-based multi-modal
+recommender system — PyTorch, scikit-learn.
+NLP Text Generation & Sentiment Model
+BERT-based text generation model and semantic embedding
+pipeline for customer insight extraction.
+Reinforcement Learning Agent
+RL model for preference-based decision optimisation; applied to
+dynamic resource allocation scenarios.
+Distressed Portfolio — Ratio Analysis
+Liquidity, solvency & capital structure analysis for 8 companies;
+viability scoring model presented as investment brief.
+CERTIFICATIONS
+IBM Data Science Professional Certificate
+Coursera / IBM · Aug 2024 — ML, deep learning, SQL, Python
+(9-course programme)
+Google Data Analytics Certificate
+Coursera / Google · Aug 2024 — Data cleaning, visualisation, R,
+capstone project
+Microsoft Azure AI — TensorFlow Fundamentals
+Microsoft / edX · Aug 2024 — Neural networks, TensorFlow, Azure
+ML deployment
+Bloomberg Market Concepts (BMC)
+Bloomberg · 2024 — Equities, fixed income, FX, economics —
+standard IB credential
+SKILLS
+Programming
+Python (Pandas, NumPy, SciPy, Matplotlib, scikit-learn, TensorFlow, PyTorch) · SQL (PostgreSQL,
+MySQL) · R · VBA
+Analytics
+Power BI · Tableau · Plotly / Seaborn / Matplotlib · Excel (pivot tables, macros, solver, Power Query)
+Finance
+3-statement modeling · DCF / LBO analysis · Ratio & valuation analysis · Tax planning · STATA · EViews
+Cloud / Dev
+Microsoft Azure · Git / GitHub · Microsoft Project · Asana · Jupyter Notebook · Google Colab
+Languages
+French (native/bilingual) · English (bilingual) · Arabic (native) · Spanish (advanced) · Portuguese (advanced)
+LEADERSHIP & ACTIVITIES
+• Injaz Al-Maghrib 2023 National Finalist — only team from Meknes among 400+ ventures to reach the national stage; pitched
+ALIFFA PetTech SaaS to national investment panel.
+• University Finance & Economics Club — co-organised two workshops on financial modeling and entrepreneurship; 50+
+student attendees each session.
+• Open-source contributor — ML, NLP and finance automation projects published at github.com/motheanalyst; actively
+building public applied finance & data science portfolio.
+
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\Mohammed_Ezzahar_CV_FR_1.pdf ---
+
+MOHAMMED EZZAHAR
+Meknes, Maroc · +212 609-233-284 · m.ezzahar@edu.umi.ac.ma · linkedin.com/in/mohammedezzahar · github.com/motheanalyst ·
+Mohammed's Datalab
+FORMATION
+Universite Moulay Ismail — Faculte des Sciences Economiques et de Gestion
+Meknes, Maroc | Prevu Jun 2026
+Licence en Economie, Data Science & Finance — Mention Bien
+• Cours pertinents : Modelisation financiere, Econometrie, Finance d'entreprise, Machine Learning, Bases de donnees, Droit
+fiscal & Finances publiques, Macroeconomie
+• En cours : CFA Niveau I (2026) · Bloomberg Market Concepts (BMC) — obtenu · Mention Bien ; major de promotion en
+methodes quantitatives
+EXPERIENCE PROFESSIONNELLE
+Startup ALIFFA · Co-fondateur, DAF & Directeur Technique
+Meknes | Jan 2023 – Aujourd'hui
+• Finaliste National Injaz Al-Maghrib 2023 (top 5% parmi 400+ equipes) — redige le business plan complet ; presente devant
+un jury de 12 experts investisseurs.
+• Modele financier integre a 3 etats avec 5 scenarios ; cadre comptable & fiscal (IS, TVA) en conformite avec le droit marocain.
+• Architecture produit sur Azure ; reduction de 18% des couts operationnels projetes. Dossier financier investor-ready (P&L,
+bilan, tresorerie).
+TechInnovate Inc. · Stagiaire Data Science
+A distance | Juin – Aout 2024
+• Pipeline de detection de fraude (XGBoost / Random Forest) — 91% de precision, reduction d'environ 30% des fausses alertes
+sur donnees financieres.
+• Moteur de recommandation transformers contribuant a +8% de profondeur de session ; analyse BERT sur 50 000+ tickets
+clients integree a la roadmap produit Q4.
+• Contribution au pipeline de vision par ordinateur et chatbot NLP de support client en production.
+PROJETS SELECTIONNES
+Automatisation Rapprochement Bancaire
+Pipeline Python & SQL — elimination de 95% des erreurs de
+saisie ; economie de 15h/semaine de travail comptable.
+Etude d'Impact Fiscal — Zone Franche
+Modelisation IS transition zone franche industrielle — projection
+20% d'economie sur 5 ans via incitations.
+Detection de Fraude & Systeme de Recommandation
+Classifieur XGBoost + systeme de recommandation multi-modal
+base sur les transformers — PyTorch, scikit-learn.
+Modele NLP de Generation de Texte
+Modele BERT de generation de texte et pipeline d'embedding
+semantique pour extraction d'insights clients.
+Agent d'Apprentissage par Renforcement
+Agent RL pour optimisation de decisions basee sur les
+preferences ; applique a des scenarios d'allocation de
+ressources.
+Portefeuille en Difficulte — Analyse de Ratios
+Ratios de liquidite, solvabilite & structure pour 8 entreprises ;
+modele de scoring en note d'investissement.
+CERTIFICATIONS
+Certificat Professionnel IBM Data Science
+Coursera / IBM · Aout 2024 — ML, deep learning, SQL, Python (9
+cours)
+Certificat Professionnel Google Data Analytics
+Coursera / Google · Aout 2024 — Nettoyage, visualisation, R,
+capstone
+Microsoft Azure AI — Fondamentaux TensorFlow
+Microsoft / edX · Aout 2024 — Reseaux neuronaux, TensorFlow,
+deploiement Azure
+Bloomberg Market Concepts (BMC)
+Bloomberg · 2024 — Actions, revenu fixe, devises, economie —
+standard IB
+COMPETENCES
+Programmation
+Python (Pandas, NumPy, SciPy, Matplotlib, scikit-learn, TensorFlow, PyTorch) · SQL (PostgreSQL,
+MySQL) · R · VBA
+Analyse
+Power BI · Tableau · Plotly / Seaborn / Matplotlib · Excel (tableaux croises, macros, solveur, Power Query)
+Finance
+Modelisation 3 etats · DCF / LBO · Analyse de ratios & valorisation · Planification fiscale · STATA · EViews
+Cloud / Dev
+Microsoft Azure · Git / GitHub · Microsoft Project · Asana · Jupyter Notebook · Google Colab
+Langues
+Francais (natif/bilingue) · Anglais (bilingue) · Arabe (natif) · Espagnol (avance) · Portugais (avance)
+LEADERSHIP & ACTIVITES
+• Finaliste National Injaz Al-Maghrib 2023 — seule equipe de Meknes en finale nationale parmi 400+ equipes ; pitch ALIFFA
+PetTech SaaS devant jury national d'investissement.
+• Club Finance & Economie Universitaire — co-organisation de deux ateliers de modelisation financiere et entrepreneuriat ;
+50+ etudiants participants par session.
+• Contributeur open-source — projets ML, NLP & automatisation financiere sur github.com/motheanalyst ; portfolio public data
+science & finance en construction active.
+
+
+
+--- EXTRACTING: c:\Users\Simohamed ezzahar\OneDrive\portfolio\Mohammed_Ezzahar_CV_FR_1page.pdf ---
+
+MOHAMMED EZZAHAR
+Architecte IA Finance  ·  Analyste Quantitatif  ·  Data Scientist
+Meknes, Maroc  ·  +212 609-233-284  ·  m.ezzahar@edu.umi.ac.ma  ·  linkedin.com/in/mohammedezzahar  ·  github.com/motheanalyst
+PROFIL PROFESSIONNEL
+Etudiant en Licence Economie, Data Science & Finance (mention bien, major en methodes quantitatives) a l'Universite Moulay Ismail, alliant expertise comptable
+rigoureuse a l'ingenierie ML en production. Co-fondateur d'ALIFFA — Finaliste National Injaz Al-Maghrib 2023 (top 5% sur 400+ equipes). 91% de precision et +8%
+de session lors d'un stage chez TechInnovate Inc. Maitrise de 5 langues. Candidat CFA Niveau I (2026).
+FORMATION
+Universite Moulay Ismail — Faculte des Sciences Economiques et de Gestion
+Prevu Jun 2026
+Licence Economie, Data Science & Finance — Mention Bien  |  Meknes, Maroc
+-
+Cours: Modelisation financiere, Econometrie, Finance d'entreprise, Machine Learning, Bases de donnees, Droit fiscal, Macroeconomie
+-
+Mention Bien · Major en methodes quantitatives · Candidat CFA Niveau I (2026) · Bloomberg Market Concepts (BMC) certifie
+EXPERIENCE PROFESSIONNELLE
+Startup ALIFFA
+Jan 2023 – Aujourd'hui
+Co-fondateur, DAF & Directeur Technique  ·  Meknes, Maroc
+-
+Finaliste National Injaz Al-Maghrib 2023 — top 5% sur 400+ equipes; seule equipe de Meknes en finale nationale. Business plan complet redige; pitch devant
+jury de 12 experts investisseurs.
+-
+Modele financier integre a 3 etats avec 5 scenarios; cadre comptable & fiscal (IS, TVA) conforme au droit fiscal marocain.
+-
+Infrastructure produit sur Azure — reduction de 18% des couts projetes. Dossier investor-ready (P&L, bilan, tresorerie).
+TechInnovate Inc.
+Juin – Aout 2024
+Stagiaire Data Science  ·  A distance
+-
+Pipeline de detection de fraude (XGBoost / Random Forest) — 91% de precision, ~30% de reduction des fausses alertes sur donnees financieres.
+-
+Moteur de recommandation Transformers contribuant a +8% de profondeur de session; analyse BERT 50K+ tickets integree roadmap Q4.
+-
+Contribution au pipeline vision par ordinateur (deep learning) et chatbot NLP de support client deploye en production.
+PROJETS SELECTIONNES
+Automatisation Rapprochement Bancaire  Python · SQL · pandas
+Elimination de 95% des erreurs de saisie; economie de 15h/semaine via pipeline ETL et algorithmes de correspondance approchee.
+Detection Fraude & Recommandation Multi-modal  XGBoost · PyTorch · Transformers
+Classifieur XGBoost 91% de precision + systeme de recommandation multi-modal par transformers (historique, NLP, marche).
+Etude Impact Fiscal — Zone Franche  Python · pandas · Power BI · EViews
+Modelisation IS de la transition zone franche — projection 20% d'economie sur 5 ans via incitations a l'investissement.
+Modele NLP Generation & Sentiment  BERT · HuggingFace · scikit-learn
+Pipeline BERT de generation de texte et embedding semantique pour extraction d'insights clients sur 50K+ interactions.
+Agent RL Allocation de Ressources  PyTorch · OpenAI Gym
+Agent RL pour optimisation dynamique d'allocation par preference, applique au reequilibrage de portefeuille.
+Portefeuille en Difficulte — Analyse de Ratios  Excel · STATA · Power BI
+Analyse liquidite, solvabilite & structure pour 8 entreprises; modele de scoring presente en note d'investissement.
+CERTIFICATIONS
+IBM Data Science Professional Certificate
+Coursera / IBM · Aout 2024
+Google Data Analytics Certificate
+Coursera / Google · Aout 2024
+Microsoft Azure AI — Fondamentaux TensorFlow
+Microsoft / edX · Aout 2024
+Bloomberg Market Concepts (BMC)
+Bloomberg · 2024
+CFA Niveau I
+CFA Institute · En cours 2026
+COMPETENCES TECHNIQUES
+IA / ML:  PyTorch · TensorFlow · scikit-learn · XGBoost · BERT/Transformers · HuggingFace · NLP · Vision · RL
+Programmation:  Python (pandas, NumPy, Matplotlib) · SQL (PostgreSQL, MySQL) · R · VBA
+Finance:  Modelisation 3 etats · DCF/LBO · Valorisation · Fiscalite (IS,TVA) · IFRS/GAAP · STATA · EViews
+Analyse:  Power BI · Tableau · Plotly/Seaborn · Excel (macros, Power Query, Solveur)
+Cloud & Dev:  Microsoft Azure · Git/GitHub · Jupyter Notebook · Google Colab
+Langues:  Arabe (natif) · Francais (natif) · Anglais (bilingue) · Espagnol (avance) · Portugais (avance)
+LEADERSHIP & ACTIVITES
+-
+Injaz Al-Maghrib 2023 Finaliste National — seule equipe de Meknes parmi 400+ projets; pitch ALIFFA PetTech SaaS devant jury national.
+-
+Club Finance & Economie Universitaire — co-organisation de deux ateliers de modelisation financiere et entrepreneuriat (50+ participants).
+-
+Contributeur open-source — projets ML, NLP & automatisation financiere sur github.com/motheanalyst; portfolio data science public en construction.
+
