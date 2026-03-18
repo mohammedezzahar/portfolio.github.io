@@ -453,8 +453,11 @@ h2 em {
 }
 
 [lang="ar"] .hero-name {
-    line-height: 1.25;
+    line-height: 0.85;
+    /* Reduced from 1.25 */
     padding-top: 20px;
+    gap: 0;
+    /* Tightened from 0.05em */
 }
 
 .name-first {
