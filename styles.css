@@ -8,7 +8,7 @@
     --border: rgba(255, 255, 255, 0.07);
     --border-m: rgba(255, 255, 255, 0.12);
     --text: #F0F2F5;
-    --text-dim: #7A8490;
+    --text-dim: #9CA3AF;
     --text-mid: #B8C0CC;
     --accent: #FFFFFF;
     /* Shift to Pure White */
@@ -199,6 +199,7 @@ img {
     align-items: center;
     gap: 4px;
     transition: color 0.3s;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .pill-links a:hover {
@@ -273,6 +274,7 @@ img {
     cursor: pointer;
     transition: 0.3s;
     text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero-nav-pill .lang-btn.active,
@@ -1244,6 +1246,18 @@ h2 em {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+    }
+
+    .hero-nav-pill {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 10px 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    .hero-nav-pill::-webkit-scrollbar {
+        display: none;
     }
 }
 
