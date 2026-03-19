@@ -2021,4 +2021,13 @@ h2 em {
         width: 100%;
         margin-top: 2rem;
     }
-}
+}
+
+/* Custom Social Navbar Brand Colors */
+.pill-socials a.yt-link, .mobile-socials a.yt-link { color: #FF0000 !important; }
+.pill-socials a.sub-link, .mobile-socials a.sub-link { color: #FF6719 !important; }
+.pill-socials a.red-link, .mobile-socials a.red-link { color: #FF4500 !important; }
+.pill-socials a.med-link, .mobile-socials a.med-link { color: #00AB6C !important; }
+.pill-socials a.x-link, .mobile-socials a.x-link { color: #FFFFFF !important; }
+.pill-socials a.gh-link, .mobile-socials a.gh-link { color: #FFFFFF !important; }
+.pill-socials a.li-link, .mobile-socials a.li-link { color: #0A66C2 !important; }
