@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="seo_title">Mohammed Ezzahar | Financial Analyst · AI/Data Engineer · Accounting Automation</title>
-    <meta name="description" content="Mohammed Ezzahar — Financial Analyst & AI Engineer. Python · SQL · Power BI · XGBoost · Financial Modeling · Accounting Automation. Co-founder CFO/CTO at ALIFFA Startup. Based in Morocco, available globally.">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Mohammed Ezzahar | Financial Analyst & AI Engineer">
-    <meta property="og:image" content="cinematic_3_boardroom.png">
-    <meta property="og:description" content="Bridging Accounting Integrity with AI-Driven Financial Intelligence. 5 production projects across fraud detection, bank automation, NLP sentiment, tax advisory, and deep recommendation systems.">
+    <title>Mohammed Ezzahar | Financial &amp; Data Analyst</title>
+    <meta name="description"
+        content="Mohammed Ezzahar — Financial &amp; Data Analyst specializing in AI Modeling and Accounting.">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mohammed Ezzahar | Financial &amp; Data Analyst">
+    <meta property="og:image" content="cinematic_3_boardroom.png">
+    <meta property="og:description" content="Mastery in Accounting &amp; AI Modeling">
+
+    <link rel="icon" href="youtube_art/logo.png" type="image/png">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="styles.css">
@@ -24,68 +25,25 @@
     <!-- Global Elements -->
     <div class="grain-overlay"></div>
 
-    <nav class="site-nav">
-        <div class="container nav-pill-container">
+    <nav class="hero-nav-pill">
+        <div class="pill-links">
+            <a href="#about" data-section="about" data-i18n="nav_about">About</a>
+            <a href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
+            <a href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
+            <a href="#contact" data-section="contact" data-i18n="nav_contact">Contact</a>
+        </div>
 
-            <div class="nav-pill">
-                <div class="pill-links">
-                    <a href="#about" data-section="about" data-i18n="nav_about"><span class="nav-num">01</span>About</a>
-                    <a href="#experience" data-section="experience" data-i18n="nav_experience"><span class="nav-num">02</span>Experience</a>
-                    <a href="#projects" data-section="projects" data-i18n="nav_projects"><span class="nav-num">03</span>Projects</a>
-                    <a href="#skills" data-section="skills" data-i18n="nav_skills"><span class="nav-num">04</span>Skills</a>
-                </div>
 
-                <div class="pill-divider"></div>
 
-                <div class="pill-socials">
-                    <a href="#" target="_blank" title="YouTube" class="yt-link"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" target="_blank" title="Substack" class="sub-link" style="display:flex;align-items:center;"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg></a>
-                    <a href="#" target="_blank" title="Reddit" class="red-link"><i class="fa-brands fa-reddit"></i></a>
-                    <a href="#" target="_blank" title="Medium" class="med-link"><i class="fa-brands fa-medium"></i></a>
-                    <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="x-link"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://github.com/motheanalyst" target="_blank" title="GitHub" class="gh-link"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn" class="li-link"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-
-                <div class="pill-divider"></div>
-
-                <div class="lang-switch" id="lang-switch">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="fr">FR</button>
-                    <button class="lang-btn" data-lang="ar">AR</button>
-                </div>
+        <div class="pill-lang">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
             </div>
-
-            <button id="nav-burger" class="nav-burger" aria-label="Toggle Menu" aria-expanded="false">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
         </div>
     </nav>
 
-    <div id="nav-mobile-menu" class="nav-mobile-menu" aria-hidden="true">
-        <div class="mobile-links">
-            <a href="#about" data-section="about" data-i18n="nav_about"><span class="nav-num">01</span>About</a>
-            <a href="#experience" data-section="experience" data-i18n="nav_experience"><span class="nav-num">02</span>Experience</a>
-            <a href="#projects" data-section="projects" data-i18n="nav_projects"><span class="nav-num">03</span>Projects</a>
-            <a href="#skills" data-section="skills" data-i18n="nav_skills"><span class="nav-num">04</span>Skills</a>
-            <a href="#contact" data-section="contact" data-i18n="nav_contact"><span class="nav-num">05</span>Contact</a>
-        </div>
-        <div class="mobile-socials">
-            <a href="#" target="_blank" class="yt-link"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" target="_blank" class="sub-link" style="display:flex;align-items:center;justify-content:center;"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg></a>
-            <a href="#" target="_blank" class="red-link"><i class="fa-brands fa-reddit"></i></a>
-            <a href="#" target="_blank" class="med-link"><i class="fa-brands fa-medium"></i></a>
-            <a href="https://x.com/MohammedEzzahar" target="_blank" class="x-link"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://github.com/motheanalyst" target="_blank" class="gh-link"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" class="li-link"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div class="mobile-lang">
-            <button class="lang-btn active" data-lang="en">EN</button>
-            <button class="lang-btn" data-lang="fr">FR</button>
-            <button class="lang-btn" data-lang="ar">AR</button>
-        </div>
-    </div>
 
     <!-- Section 1: Hero -->
     <section class="hero" id="hero">
@@ -96,97 +54,75 @@
 
         <div class="container hero-container">
             <div class="hero-text">
+                <div class="hero-socials fade-up">
+                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn"
+                        class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="social-x"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" class="social-medium"><i
+                            class="fa-brands fa-medium"></i></a>
+                    <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit"
+                        class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
+                    <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" class="social-substack"><i
+                            class="fa-solid fa-bookmark"></i></a>
+                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube"
+                        class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
                 <h1 class="hero-name fade-up">
                     <span class="name-first" data-i18n="hero_name_first">MOHAMMED</span>
                     <span class="name-last" data-i18n="hero_name_last">EZZAHAR</span>
                 </h1>
-                <div class="eyebrow fade-up" data-i18n="hero_eyebrow">Financial Analyst · AI/Data Engineer · Accounting Automation</div>
-            <p class="hero-tagline fade-up" data-i18n="hero_tagline">Engineering the intersection of Accounting Integrity, Python Automation, and AI-Driven Financial Intelligence — from Morocco to global markets.</p>
+                <div class="hero-job-eyebrow fade-up" data-i18n="hero_eyebrow">Financial &amp; Data Analyst</div>
+                <div class="hero-divider fade-up"></div>
+                <p class="hero-tagline-text fade-up" data-i18n="hero_tagline">Mastery in Accounting &amp; AI Modeling
+                </p>
             </div>
         </div>
+
     </section>
 
 
-    <!-- Section 3: About -->
-    <section id="about" class="about">
+    <!-- Section 2: About -->
+    <section id="about" class="about-full-bleed">
+        <div class="about-bg">
+            <img src="cinematic_1_wallstreet.png" alt="Background">
+        </div>
+        <div class="about-overlay"></div>
         <div class="container about-grid">
-            <div class="about-collage fade-up">
-                <img src="cinematic_2_patagonia.png" alt="Finance Context" class="main-img">
-                <img src="cinematic_1_wallstreet.png" alt="Trading View" class="overlay-img">
-            </div>
             <div class="about-text fade-up">
                 <div class="eyebrow" data-i18n="about_eyebrow">THE PHILOSOPHY</div>
-                <h2 data-i18n="about_h2">The Convergence of <em>Logic & Capital</em></h2>
-                <p class="text-lead" data-i18n="about_p1">Rooted in the academic precision of <strong>Université Moulay Ismail</strong> and forged as Co-founder and CFO/CTO of <strong>ALIFFA Startup</strong>, I represent a rare 2026 profile: the synthesis of <strong>Accounting Integrity</strong> (IFRS, GAAP, SOX-adjacent frameworks), <strong>Python-driven automation</strong>, and <strong>AI/ML engineering</strong> — the exact convergence demanded by Deloitte's Omnia AI teams, PwC's digital advisory, and fintech quant desks globally.</p>
-                <p data-i18n="about_p2">From engineering automated bank reconciliation pipelines that eliminate 95% of manual errors, to building XGBoost fraud classifiers at 91% precision and transformer-based financial recommenders — every project I build is calibrated to the standards expected by top-tier firms in the Big 4, investment banking, and data-driven hedge fund analytics. My edge: <strong>financial domain knowledge that makes my code meaningful</strong>, and technical depth that makes my accounting decisions measurable.</p>
-                
-                <div class="about-stats-mini fade-up">
-                    <div class="stat-row">
-                        <span data-i18n="about_stats">95% error reduction · 91% fraud precision · 20% tax savings modeled · 5 production projects</span>
-                    </div>
+                <h2 data-i18n="about_h2">The Convergence of <em>Logic &amp; Capital</em></h2>
+                <p class="text-lead" data-i18n="about_lead">Bridge the gap between raw data and monumental decisions. My
+                    approach transcends simple analysis—it is about architecting clarity in a world of financial noise.
+                </p>
+
+                <p data-i18n="about_p1">Rooted in the academic precision of <strong>Université Moulay Ismail</strong>
+                    and forged in the high-stakes environment of <strong>ALIFFA Startup</strong>, my work represents a
+                    rare synthesis of <strong>Accounting Integrity</strong> and <strong>AI-Driven Innovation</strong>.
+                </p>
+
+                <p data-i18n="about_p2">As a Co-founder and CFO/CTO, I don't just build models; I engineer strategic
+                    advantages. From national finals to elite-level tax optimization, my mission is to deliver the
+                    technical certainty the global market demands.</p>
+
+                <div class="testimonial-block fade-up">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text" data-i18n="testimonial_text">"The work Mohammed and his team produced
+                        wasn&#39;t just technical—it was
+                        <strong>generational</strong> in Morocco&#39;s financial landscape."
+                    </p>
+                    <span class="testimonial-author" data-i18n="testimonial_author">— From official Mentors &amp;
+                        Referees</span>
                 </div>
 
-                <div class="about-stats-mini fade-up">
-                    <div class="s-mini">
-                        <span class="number">01</span>
-                        <span class="label" data-i18n="about_s1">Strategic Vision</span>
-                    </div>
-                    <div class="s-mini">
-                        <span class="number">02</span>
-                        <span class="label" data-i18n="about_s2">Technical Depth</span>
-                    </div>
-                    <div class="s-mini">
-                        <span class="number">03</span>
-                        <span class="label" data-i18n="about_s3">Fiscal Precision</span>
-                    </div>
-                        <span class="number">03</span>
-                        <span class="label" data-i18n="about_s3">Fiscal Precision</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: Methodology -->
-    <section id="experience" class="methodology">
-        <div class="container">
-            <div class="eyebrow fade-up" data-i18n="method_eyebrow">MY METHODOLOGY</div>
-            <h2 class="fade-up" data-i18n="method_h2">From Data <em>To Decision</em></h2>
 
-            <div class="method-grid">
-                <div class="method-card fade-up">
-                    <span class="num">01</span>
-                    <div class="accent-bar"></div>
-                    <h4 data-i18n="method_c1_h">Extraction</h4>
-                    <p data-i18n="method_c1_p">Gathering raw financial and commercial data from diverse digital and
-                        institutional sources.</p>
-                </div>
-                <div class="method-card fade-up">
-                    <span class="num">02</span>
-                    <div class="accent-bar"></div>
-                    <h4 data-i18n="method_c2_h">Processing</h4>
-                    <p data-i18n="method_c2_p">Applying AI models and accounting logic to clean, structure, and validate
-                        information integrity.</p>
-                </div>
-                <div class="method-card fade-up">
-                    <span class="num">03</span>
-                    <div class="accent-bar"></div>
-                    <h4 data-i18n="method_c3_h">Analysis</h4>
-                    <p data-i18n="method_c3_p">Identifying trends, risks, and strategic opportunities using advanced
-                        financial frameworks.</p>
-                </div>
-                <div class="method-card fade-up">
-                    <span class="num">04</span>
-                    <div class="accent-bar"></div>
-                    <h4 data-i18n="method_c4_h">Reporting</h4>
-                    <p data-i18n="method_c4_p">Delivering high-end dashboards and actionable intelligence for
-                        professional stakeholders.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 9: Projects -->
+    <!-- Section 4: Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="eyebrow fade-up" data-i18n="projects_eyebrow">SELECTED WORKS</div>
@@ -197,8 +133,8 @@
                     <img src="cinematic_4_tradingdesk.png" alt="Fintech AI Engine">
                 </div>
                 <a href="project-fintech-ai.html" class="f-content">
-                    <div class="eyebrow" data-i18n="proj_f_eyebrow">FEATURED · FINTECH & AI</div>
-                    <h3 data-i18n="proj_f_title">Fintech & AI Analytics Engine</h3>
+                    <div class="eyebrow" data-i18n="proj_f_eyebrow">FEATURED · FINTECH &amp; AI</div>
+                    <h3 data-i18n="proj_f_title">Fintech &amp; AI Analytics Engine</h3>
                     <p class="text-mid" data-i18n="proj_f_p">A comprehensive risk management platform specializing in
                         the deployment of AI for real-time asset management and automated data analysis.</p>
                 </a>
@@ -213,7 +149,8 @@
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_1_eyebrow">ACCOUNTING · AUTOMATION</div>
                         <h4 data-i18n="proj_1_title">Bank Reconciliation Pipeline</h4>
-                        <p class="text-mid" data-i18n="proj_1_p">Python & SQL automated reconciliation pipeline eliminating manual entry errors by 95%.</p>
+                        <p class="text-mid" data-i18n="proj_1_p">Automated reconciliation system reducing manual
+                            verification by 80% using custom Python logic.</p>
                     </div>
                 </a>
                 <a href="project-market-bot.html" class="p-card fade-up">
@@ -222,9 +159,10 @@
                         <img src="cinematic_1_wallstreet.png" alt="Market Bot">
                     </div>
                     <div class="p-info">
-                        <div class="eyebrow" data-i18n="proj_2_eyebrow">ALT DATA · EQUITY INTELLIGENCE · NLP</div>
-                        <h4 data-i18n="proj_2_title">NLP Text Generation & Sentiment Model</h4>
-                        <p class="text-mid" data-i18n="proj_2_p">BERT-based text generation and semantic embedding pipeline extracting insights across 50K+ customer interactions.</p>
+                        <div class="eyebrow" data-i18n="proj_2_eyebrow">DATA SCIENCE · FINANCE</div>
+                        <h4 data-i18n="proj_2_title">Sentiment-AI Market Bot</h4>
+                        <p class="text-mid" data-i18n="proj_2_p">Natural Language Processing bot filtering market
+                            sentiment from news feeds to forecast trends.</p>
                     </div>
                 </a>
                 <a href="project-tax-study.html" class="p-card fade-up">
@@ -233,9 +171,10 @@
                         <img src="cinematic_3_boardroom.png" alt="Tax Study">
                     </div>
                     <div class="p-info">
-                        <div class="eyebrow" data-i18n="proj_3_eyebrow">TAX ADVISORY · ECONOMETRIC MODELING · EMERGING MARKETS</div>
+                        <div class="eyebrow" data-i18n="proj_3_eyebrow">FINANCE · TAX STRATEGY</div>
                         <h4 data-i18n="proj_3_title">Corporate Tax Impact Study</h4>
-                        <p class="text-mid" data-i18n="proj_3_p">Econometric Python & Power BI modeling forecasting a 20% corporate tax (IS) savings.</p>
+                        <p class="text-mid" data-i18n="proj_3_p">Comprehensive analysis of Moroccan fiscal frameworks
+                            for institutional investment planning.</p>
                     </div>
                 </a>
                 <a href="project-recommender.html" class="p-card fade-up">
@@ -246,116 +185,89 @@
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_4_eyebrow">AI · MULTI-MODAL</div>
                         <h4 data-i18n="proj_4_title">Deep Recommender System</h4>
-                        <p class="text-mid" data-i18n="proj_4_p">Multi-vector recommendation engine for personalized financial product matching.</p>
+                        <p class="text-mid" data-i18n="proj_4_p">Multi-vector recommendation engine for personalized
+                            financial product matching.</p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-
-    <!-- Section 6: Skills -->
+    <!-- Section 5: Skills -->
     <section id="skills" class="skills-section">
         <div class="container">
+            <div class="eyebrow fade-up" data-i18n="skills_eyebrow">TECHNICAL ARSENAL</div>
             <h2 class="fade-up" data-i18n="skills_h2">Technical <em>Infrastructure</em></h2>
-            <div class="skills-grid">
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g1">PROGRAMMING</span>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-brands fa-python skill-icon"></i>Python (TensorFlow,
-                                PyTorch)</span><span>92%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="92%"></div>
-                        </div>
+
+            <div class="skills-grid-v2">
+
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">01</span>
+                    <div class="sg-header">
+                        <i class="fa-brands fa-python"></i>
+                        <span class="sg-title" data-i18n="skills_g1">Programming</span>
                     </div>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i
-                                    class="fa-solid fa-database skill-icon"></i>SQL</span><span>85%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-file-excel skill-icon"></i><span
-                                    data-i18n="skill_excel">VBA / Excel</span></span><span>88%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="88%"></div>
-                        </div>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> TensorFlow</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> PyTorch</span>
+                        <span class="sg-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                        <span class="sg-tag"><i class="fa-solid fa-file-excel"></i> VBA / Excel</span>
+                        <span class="sg-tag"><i class="fa-solid fa-table"></i> Pandas</span>
+                        <span class="sg-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
+                        <span class="sg-tag"><i class="fa-solid fa-code-branch"></i> Scikit-learn</span>
                     </div>
                 </div>
 
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g2">DATA ANALYSIS & BI</span>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-chart-bar skill-icon"></i>PowerBI /
-                                Tableau</span><span>80%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="80%"></div>
-                        </div>
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">02</span>
+                    <div class="sg-header">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span class="sg-title" data-i18n="skills_g2">Data &amp; BI</span>
                     </div>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-chart-line skill-icon"></i>Matplotlib /
-                                Seaborn</span><span>88%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="88%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g3">FINANCE & ACCOUNTING</span>
-                    <div class="tags-mini">
-                        <span class="s-tag"><i class="fa-solid fa-file-invoice-dollar"></i> Financial Modeling</span>
-                        <span class="s-tag"><i class="fa-solid fa-file-contract"></i> GAAP / IFRS / SOX-adjacent</span>
-                        <span class="s-tag"><i class="fa-solid fa-arrows-rotate"></i> FP&A Frameworks</span>
-                        <span class="s-tag"><i class="fa-solid fa-leaf"></i> ESG Reporting Awareness</span>
-                        <span class="s-tag"><i class="fa-solid fa-magnifying-glass-dollar"></i> Forensic Analytics</span>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> PowerBI</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> Tableau</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-area"></i> Matplotlib</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-column"></i> Seaborn</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-simple"></i> Plotly</span>
+                        <span class="sg-tag"><i class="fa-solid fa-layer-group"></i> Streamlit</span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Pandas Profiling</span>
                     </div>
                 </div>
 
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g5">FINANCIAL MODELING & VALUATION</span>
-                    <div class="tags-mini">
-                        <span class="s-tag"><i class="fa-solid fa-diagram-project"></i> DCF Modeling</span>
-                        <span class="s-tag"><i class="fa-solid fa-file-invoice-dollar"></i> 3-Statement Models</span>
-                        <span class="s-tag"><i class="fa-solid fa-scale-balanced"></i> LBO Fundamentals</span>
-                        <span class="s-tag"><i class="fa-solid fa-chart-pie"></i> EV/EBITDA Valuation</span>
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">03</span>
+                    <div class="sg-header">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span class="sg-title" data-i18n="skills_g3">Finance &amp; Accounting</span>
+                    </div>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> Financial
+                            Modeling</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> Tax Planning
+                            (MA)</span>
+                        <span class="sg-tag"><i class="fa-solid fa-building-columns"></i> Bank Reconciliation</span>
+                        <span class="sg-tag"><i class="fa-solid fa-clipboard-check"></i> Audit Frameworks</span>
+                        <span class="sg-tag"><i class="fa-solid fa-book-open"></i> IFRS Standards</span>
+                        <span class="sg-tag"><i class="fa-solid fa-money-bill-trend-up"></i> Fiscal Optimization</span>
                     </div>
                 </div>
 
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g6">CLOUD, ERP & INFRASTRUCTURE</span>
-                    <div class="tags-mini">
-                        <span class="s-tag"><i class="fa-brands fa-aws"></i> AWS / GCP</span>
-                        <span class="s-tag"><i class="fa-solid fa-database"></i> PostgreSQL / Redis</span>
-                        <span class="s-tag"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="s-tag"><i class="fa-solid fa-server"></i> ERP (SAP/Oracle)</span>
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">04</span>
+                    <div class="sg-header">
+                        <i class="fa-solid fa-brain"></i>
+                        <span class="sg-title" data-i18n="skills_g4">AI &amp; Strategy</span>
                     </div>
-                </div>
-                <div class="skill-group fade-up">
-                    <span class="group-label" data-i18n="skills_g4">SOFT SKILLS & STRATEGY</span>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-landmark skill-icon"></i><span
-                                    data-i18n="skill_politics">Politics & Geopolitics
-                                    Understanding</span></span><span>85%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-brain skill-icon"></i><span
-                                    data-i18n="skill_critical">Critical Thinking &
-                                    Analysis</span></span><span>94%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="94%"></div>
-                        </div>
-                    </div>
-                    <div class="bar-container">
-                        <div class="bar-info"><span><i class="fa-solid fa-comments skill-icon"></i><span
-                                    data-i18n="skill_comm">Strategic Communication</span></span><span>88%</span></div>
-                        <div class="bar-bg">
-                            <div class="bar-fill" data-width="88%"></div>
-                        </div>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> LSTMs /
+                            Transformers</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-language"></i> NLP / FinBERT</span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass"></i> Vector Search (FAISS)</span>
+                        <span class="sg-tag"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
+                        <span class="sg-tag"><i class="fa-solid fa-globe"></i> Geopolitical Analysis</span>
+                        <span class="sg-tag"><i class="fa-solid fa-comments"></i> Strategic Communication</span>
                     </div>
                 </div>
 
@@ -363,52 +275,92 @@
         </div>
     </section>
 
-    <!-- Section 8: Certifications -->
-    <section id="certifications" class="cert-section">
+    <!-- Section 6: Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="eyebrow fade-up" data-i18n="contact_eyebrow">OPEN TO OPPORTUNITIES</div>
+            <h2 class="fade-up" data-i18n="contact_h2">Let's Build <em>Something Real</em></h2>
+            <p class="contact-lead fade-up" data-i18n="contact_lead">
+                Whether you're an institutional investor, a recruiting partner,
+                or building something at the intersection of finance and AI —
+                I want to hear from you.
+            </p>
+
+            <div class="contact-grid fade-up">
+
+                <a href="mailto:mohammedezzahar278@gmail.com" class="contact-item">
+                    <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">EMAIL</span>
+                        <span class="ci-value">mohammedezzahar278@gmail.com</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                </a>
+
+                <a href="tel:+212609233284" class="contact-item">
+                    <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">PHONE</span>
+                        <span class="ci-value">+212 6 09 23 32 84</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                </a>
+
+                <div class="contact-item contact-item--static">
+                    <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">LOCATION</span>
+                        <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="contact-availability fade-up">
+                <span class="avail-dot"></span>
+                <span data-i18n="contact_avail">Currently available for full-time roles and consulting
+                    engagements</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="eyebrow fade-up" data-i18n="cert_eyebrow">CREDENTIALS</div>
-            <h2 class="fade-up" data-i18n="cert_h2">Certifications & <em>Specializations</em></h2>
-            <div class="cert-grid">
-                <div class="cert-card fade-up">
-                    <div class="cert-status completed" data-i18n="cert_status_c">COMPLETED</div>
-                    <h4 data-i18n="cert_1_h">Moroccan Finance Law & IS Tax Framework</h4>
-                    <p data-i18n="cert_1_p">Demonstrated via Corporate Tax Study project</p>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-name">Mohammed Ezzahar</span>
+                    <span class="footer-role" data-i18n="footer_role">Financial &amp; Data Analyst · AI Developer</span>
                 </div>
-                <div class="cert-card fade-up">
-                    <div class="cert-status in-progress" data-i18n="cert_status_p">IN PROGRESS</div>
-                    <h4 data-i18n="cert_2_h">CFA Level 1</h4>
-                    <p data-i18n="cert_2_p">Targeting deep expertise in Investment Analysis</p>
-                </div>
-                <div class="cert-card fade-up">
-                    <div class="cert-status in-progress" data-i18n="cert_status_p">IN PROGRESS</div>
-                    <h4 data-i18n="cert_3_h">FMVA® (Financial Modeling & Valuation)</h4>
-                    <p data-i18n="cert_3_p">Corporate Finance Institute</p>
-                </div>
-                <div class="cert-card fade-up">
-                    <div class="cert-status completed" data-i18n="cert_status_c">COMPLETED</div>
-                    <h4 data-i18n="cert_4_h">Python & SQL for Data Science</h4>
-                    <p data-i18n="cert_4_p">Applied in 5 production-grade projects</p>
+                <nav class="footer-links">
+                    <a href="#about" data-i18n="nav_about_short">About</a>
+                    <a href="#experience" data-i18n="nav_experience_short">Methodology</a>
+                    <a href="#projects" data-i18n="nav_projects_short">Projects</a>
+                    <a href="#skills" data-i18n="nav_skills_short">Skills</a>
+                    <a href="#contact" data-i18n="nav_contact_short">Contact</a>
+                </nav>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank"
+                        class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohammedezzahar" target="_blank" class="social-github"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/MohammedEzzahar" target="_blank" class="social-x"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@mohammedezzahar278" target="_blank" class="social-medium"><i
+                            class="fa-brands fa-medium"></i></a>
+                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" class="social-youtube"><i
+                            class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Section 10: CTA Banner -->
-    <section id="contact" class="cta-banner">
-        <div class="container cta-content">
-            <h2 class="fade-up" data-i18n="cta_h2">Let's Build the <em>Future of Finance</em></h2>
-            <p class="cta-p fade-up" data-i18n="cta_p">Whether you're hiring for <strong>Big 4 financial analytics</strong>, a <strong>fintech data science</strong> role, or building at the intersection of <strong>AI and institutional finance</strong> — I build production-grade systems that combine accounting rigor with machine learning precision. Open to full-time, remote, and international opportunities.</p>
-
-
-            <div class="cta-row fade-up">
-                <span>mohammedezzahar278@gmail.com</span>
-                <span class="cta-dot">·</span>
-                <span>(+212) 609-233-284</span>
-                <span class="cta-dot">·</span>
-                <span data-i18n="cta_location">Meknès, Morocco</span>
+            <div class="footer-bottom">
+                <span class="copyright">© 2026 Mohammed Ezzahar</span>
+                <span class="dot">·</span>
+                <span data-i18n="footer_location">Meknès, Morocco</span>
             </div>
         </div>
-    </section>
+    </footer>
 
 
     <script src="script.js"></script>
