@@ -3084,41 +3084,67 @@ a.contact-item:hover .ci-value {
     }
 }
 
-.method-card-v2 {
+.method-card-v3 {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border);
-    padding: 40px 32px;
-    border-radius: 4px;
+    border-radius: 8px;
+    overflow: hidden;
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.method-card-v3:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.mc-image {
     position: relative;
+    height: 220px;
+    overflow: hidden;
 }
 
-.method-card-v2:hover {
-    border-color: var(--accent);
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.04);
+.mc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: saturate(0.8) brightness(0.9);
 }
 
-.method-card-v2 .m-num {
-    font-family: var(--font-tech);
-    font-size: 0.7rem;
-    color: var(--accent);
-    letter-spacing: 0.2em;
+.method-card-v3:hover .mc-image img {
+    transform: scale(1.05);
+    filter: saturate(1) brightness(1);
+}
+
+.mc-content {
+    padding: 32px;
+    flex-grow: 1;
+}
+
+.mc-content .m-num {
     display: block;
-    margin-bottom: 24px;
+    font-family: var(--font-tech);
+    font-size: 0.75rem;
+    color: var(--accent);
+    margin-bottom: 12px;
 }
 
-.method-card-v2 h4 {
-    font-family: var(--font-editorial);
-    font-size: 1.4rem;
-    margin-bottom: 16px;
-    color: var(--text);
+.mc-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--text-bright);
 }
 
-.method-card-v2 p {
-    font-size: 0.95rem;
-    color: var(--text-mid);
-    line-height: 1.7;
+.mc-content p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.method-card-v3 .mf-overlay {
+    background: linear-gradient(0deg, var(--bg-2) 0%, transparent 40%);
 }
 
 @media (max-width: 768px) {
