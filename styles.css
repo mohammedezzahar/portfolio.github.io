@@ -2964,7 +2964,67 @@ a.contact-item:hover .ci-value {
 
 @media (max-width: 1024px) {
     .pill-socials {
-        display: none;
+        display: flex; /* Ensure icons show as requested */
+        gap: 12px;
+    }
+}
+
+/* Experience Section (Methodology V2) */
+.methodology-v2 {
+    background: var(--bg-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    padding: var(--section-padding) var(--padding-global);
+}
+
+.method-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.method-card-v2 {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border);
+    padding: 40px 32px;
+    border-radius: 4px;
+    transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.method-card-v2:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.method-card-v2 .m-num {
+    font-family: var(--font-tech);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.method-card-v2 h4 {
+    font-family: var(--font-editorial);
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.method-card-v2 p {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .method-grid-v2 {
+        grid-template-columns: 1fr;
     }
 }
 
