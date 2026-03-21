@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
             proj_4_p: "Multi-vector recommendation engine for personalized financial product matching."
         },
         fr: {
-            nav_about: "À propos",
+            nav_about: "About",
             nav_experience: "Expérience",
             nav_projects: "Projets",
             nav_skills: "Compétences",
@@ -413,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_location: "Mekn\u00e8s, Maroc \u00b7 Disponible \u00e0 Distance",
             footer_role: "Analyste Financier &amp; de Donn\u00e9es \u00b7 D\u00e9veloppeur IA",
             footer_location: "Mekn\u00e8s, Maroc",
-            nav_about_short: "\u00c0 propos",
+            nav_about_short: "About",
             nav_projects_short: "Projets",
             nav_skills_short: "Comp\u00e9tences",
             nav_contact_short: "Contact",
