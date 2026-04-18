@@ -314,8 +314,8 @@ h2 em {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    padding-top: 2rem;
+    min-height: 100vh;
+    padding-top: 140px; /* Provision space for the fixed nav pill */
     display: flex;
     align-items: center;
     background: #000;
@@ -358,13 +358,10 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    /* Moved from center to bottom */
+    align-items: center; /* Centering content within the hero after padding */
     justify-content: center;
-    padding-bottom: 15px;
-    /* Precise edge positioning */
+    padding-bottom: 60px;
     z-index: 10;
-    /* High z-index to stay above overlays */
     position: relative;
     text-align: center;
 }
@@ -3397,10 +3394,10 @@ a.contact-item:hover .ci-value {
 }
 
 [lang="ar"] .hero-name { 
-    line-height: 1.3; 
-    font-size: clamp(2rem, 8vw, 5rem); 
-    margin-top: 160px; /* Provisioning clearance for nav pill */
-    gap: 0.2em; 
+    line-height: 1.2; 
+    font-size: clamp(2.2rem, 9vw, 5.5rem); 
+    margin-top: 0; /* Cleared by hero padding */
+    gap: 0.1em; 
 }
 
 [lang="ar"] .hero-job-eyebrow, 
@@ -3411,20 +3408,15 @@ a.contact-item:hover .ci-value {
 }
 
 [lang="ar"] .hero-nav-pill {
-    flex-direction: row-reverse; /* Ensure logical order in RTL */
+    flex-direction: row-reverse;
 }
 
 [lang="ar"] .pill-links {
     flex-direction: row-reverse;
 }
 
-[lang="ar"] .pill-lang {
-    margin-right: auto;
-    margin-left: 0;
-}
-
 [lang="ar"] .hero-tagline-text {
     max-width: 800px;
-    font-size: clamp(1rem, 2.5vw, 1.6rem);
-    line-height: 1.6;
+    font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+    line-height: 1.4;
 }
