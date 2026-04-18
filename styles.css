@@ -315,7 +315,7 @@ h2 em {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    padding-top: 140px; /* Provision space for the fixed nav pill */
+    padding-top: 200px; /* Provision space for the fixed nav pill */
     display: flex;
     align-items: center;
     background: #000;
@@ -3394,10 +3394,10 @@ a.contact-item:hover .ci-value {
 }
 
 [lang="ar"] .hero-name { 
-    line-height: 1.2; 
-    font-size: clamp(2.2rem, 9vw, 5.5rem); 
-    margin-top: 0; /* Cleared by hero padding */
-    gap: 0.1em; 
+    line-height: 1.1; 
+    font-size: clamp(2rem, 8vw, 4.8rem); 
+    margin-top: 0; 
+    gap: 0; 
 }
 
 [lang="ar"] .hero-job-eyebrow, 
