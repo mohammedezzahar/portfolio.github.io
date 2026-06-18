@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporate Tax Impact Study | Mohammed Ezzahar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title data-i18n="page_title_tax">Corporate Tax Impact Study | Mohammed Ezzahar</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="grain-overlay"></div>
+    <div class="project-lang-switch">
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </div>
 
     <header class="project-detail-hero">
         <a href="index.html#projects" class="project-nav-back">
@@ -64,29 +90,21 @@
             <div class="key-results-grid fade-up">
                 <div class="result-metric">
                     <span class="metric-val">20%</span>
-                    <span class="metric-label">Projected Tax Savings</span>
+                    <span class="metric-label" data-i18n="proj_3_metric_lbl_1">Projected Tax Savings</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">5 Yrs</span>
-                    <span class="metric-label">Investment Forecast Horizon</span>
+                    <span class="metric-label" data-i18n="proj_3_metric_lbl_2">Investment Forecast Horizon</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">IS</span>
-                    <span class="metric-label">Corporate Tax (IS) Optimization</span>
+                    <span class="metric-label" data-i18n="proj_3_metric_lbl_3">Corporate Tax (IS) Optimization</span>
                 </div>
             </div>
 
             <div class="detail-text">
-                <h3>Global Parallel: Big 4 Tax Technology</h3>
-                <p>PwC's Tax Technology practice deploys the same multi-scenario modeling 
-                approach — using Python and Power BI — to optimize corporate tax structures 
-                across jurisdictions. EY's Transfer Pricing teams use econometric 
-                benchmarking to optimize intercompany arrangements across 15+ countries. 
-                This study demonstrates the same rigour: regulatory mapping, scenario 
-                quantification, and a board-ready strategic roadmap — compressed into a 
-                single-analyst engagement. The Moroccan Free Trade Zone context is a 
-                distinctive emerging-market specialization that no European candidate can 
-                replicate.</p>
+                <h3 data-i18n="proj_3_relevance_h">Global Parallel: Big 4 Tax Technology</h3>
+                <p data-i18n="proj_3_relevance_p">PwC's Tax Technology practice deploys the same multi-scenario modeling approach — using Python and Power BI — to optimize corporate tax structures across jurisdictions. EY's Transfer Pricing teams use econometric benchmarking to optimize intercompany arrangements across 15+ countries. This study demonstrates the same rigour: regulatory mapping, scenario quantification, and a board-ready strategic roadmap — compressed into a single-analyst engagement. The Moroccan Free Trade Zone context is a distinctive emerging-market specialization that no European candidate can replicate.</p>
 
                 <p data-i18n="proj_3_long_p1">This comprehensive econometric study models the Corporate Tax (IS) impact for enterprises transitioning into designated Free Trade Zones, leveraging Python and Power BI to forecast strategic investment incentives over a multi-year horizon.</p>
                 
@@ -130,7 +148,7 @@
                 <div class="source-actions">
                     <a href="index.html#contact" class="btn-secondary">
                         <i class="fa-solid fa-file-contract"></i>
-                        <span>Request Full Study</span>
+                        <span data-i18n="btn_request_study">Request Full Study</span>
                     </a>
                 </div>
             </section>
@@ -141,18 +159,18 @@
                 <span class="sidebar-heading" data-i18n="detail_tools">Research Tools</span>
                 <div class="tech-item">
                     <i class="fa-solid fa-file-invoice-dollar"></i>
-                    <h5>Fiscal Modeling</h5>
-                    <p>Python (pandas), EViews</p>
+                    <h5 data-i18n="proj_3_tech_item_1_h">Fiscal Modeling</h5>
+                    <p data-i18n="proj_3_tech_item_1_p">Python (pandas), EViews</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-table"></i>
-                    <h5>Data Visualization</h5>
-                    <p>Power BI, Interactive Dashboards</p>
+                    <h5 data-i18n="proj_3_tech_item_2_h">Data Visualization</h5>
+                    <p data-i18n="proj_3_tech_item_2_p">Power BI, Interactive Dashboards</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-scale-balanced"></i>
-                    <h5>Framework</h5>
-                    <p>Moroccan Corporate Tax (IS) Code</p>
+                    <h5 data-i18n="proj_3_tech_item_3_h">Framework</h5>
+                    <p data-i18n="proj_3_tech_item_3_p">Moroccan Corporate Tax (IS) Code</p>
                 </div>
             </div>
         </aside>
@@ -160,7 +178,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

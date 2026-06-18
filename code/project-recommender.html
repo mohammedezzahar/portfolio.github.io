@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deep Recommender System | Mohammed Ezzahar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title data-i18n="page_title_recommender">Deep Recommender System | Mohammed Ezzahar</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="grain-overlay"></div>
+    <div class="project-lang-switch">
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </div>
 
     <header class="project-detail-hero">
         <a href="index.html#projects" class="project-nav-back">
@@ -64,27 +90,21 @@
             <div class="key-results-grid fade-up">
                 <div class="result-metric">
                     <span class="metric-val">40%</span>
-                    <span class="metric-label">Conversion Increase</span>
+                    <span class="metric-label" data-i18n="proj_4_metric_lbl_1">Conversion Increase</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">5M+</span>
-                    <span class="metric-label">Vector Comparisons</span>
+                    <span class="metric-label" data-i18n="proj_4_metric_lbl_2">Vector Comparisons</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">25%</span>
-                    <span class="metric-label">User Retention Boost</span>
+                    <span class="metric-label" data-i18n="proj_4_metric_lbl_3">User Retention Boost</span>
                 </div>
             </div>
 
             <div class="detail-text">
-                <h3>Financial Services Application</h3>
-                <p>The same embedding + vector search architecture used in this project 
-                is deployed by robo-advisory platforms (Betterment, Wealthfront) and 
-                institutional wealth managers to match clients to financial products based 
-                on latent risk profiles. At scale, FAISS-based similarity search enables 
-                sub-millisecond personalization across thousands of product options — 
-                critical for high-frequency advisory interactions in retail banking and 
-                wealth management contexts.</p>
+                <h3 data-i18n="proj_4_relevance_h">Financial Services Application</h3>
+                <p data-i18n="proj_4_relevance_p">The same embedding + vector search architecture used in this project is deployed by robo-advisory platforms (Betterment, Wealthfront) and institutional wealth managers to match clients to financial products based on latent risk profiles. At scale, FAISS-based similarity search enables sub-millisecond personalization across thousands of product options — critical for high-frequency advisory interactions in retail banking and wealth management contexts.</p>
 
                 <p data-i18n="proj_4_long_p1">This deep recommender system translates complex client behavioral data and risk tolerance history into dense embedding vectors. By utilizing FAISS for multi-vector similarity matching, the engine aligns individual investors with optimal structured products, mutual funds, and ETFs, mirroring the quantitative product matching models used by top-tier buy-side wealth advisory platforms.</p>
                 
@@ -128,7 +148,7 @@
                 <div class="source-actions">
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="btn-primary">
                         <i class="fa-brands fa-github" style="font-size:14px"></i>
-                        <span>View Source Code</span>
+                        <span data-i18n="btn_view_source">View Source Code</span>
                     </a>
                 </div>
             </section>
@@ -139,18 +159,18 @@
                 <span class="sidebar-heading" data-i18n="detail_tools">Research Tools</span>
                 <div class="tech-item">
                     <i class="fa-solid fa-brain"></i>
-                    <h5>Deep Learning</h5>
-                    <p>TensorFlow, Keras, Embedding Layers</p>
+                    <h5 data-i18n="proj_4_tech_item_1_h">Deep Learning</h5>
+                    <p data-i18n="proj_4_tech_item_1_p">TensorFlow, Keras, Embedding Layers</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <h5>Vector Search</h5>
-                    <p>FAISS, Pinecone integration</p>
+                    <h5 data-i18n="proj_4_tech_item_2_h">Vector Search</h5>
+                    <p data-i18n="proj_4_tech_item_2_p">FAISS, Pinecone integration</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-cloud"></i>
-                    <h5>Infrastructure</h5>
-                    <p>Google Cloud Platform, Vertex AI</p>
+                    <h5 data-i18n="proj_4_tech_item_3_h">Infrastructure</h5>
+                    <p data-i18n="proj_4_tech_item_3_p">Google Cloud Platform, Vertex AI</p>
                 </div>
             </div>
         </aside>
@@ -158,7 +178,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

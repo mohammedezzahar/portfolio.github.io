@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Reconciliation Pipeline | Mohammed Ezzahar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title data-i18n="page_title_bank">Bank Reconciliation Pipeline | Mohammed Ezzahar</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="grain-overlay"></div>
+    <div class="project-lang-switch">
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </div>
 
     <header class="project-detail-hero">
         <a href="index.html#projects" class="project-nav-back">
@@ -64,31 +90,25 @@
             <div class="key-results-grid fade-up">
                 <div class="result-metric">
                     <span class="metric-val">95%</span>
-                    <span class="metric-label">Reduction in Manual Errors</span>
+                    <span class="metric-label" data-i18n="proj_1_metric_lbl_1">Reduction in Manual Errors</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">15h</span>
-                    <span class="metric-label">Saved per Week</span>
+                    <span class="metric-label" data-i18n="proj_1_metric_lbl_2">Saved per Week</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">100%</span>
-                    <span class="metric-label">Data Governance Compliance</span>
+                    <span class="metric-label" data-i18n="proj_1_metric_lbl_3">Data Governance Compliance</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">∞</span>
-                    <span class="metric-label">Scalable to Enterprise Transaction Volume</span>
+                    <span class="metric-label" data-i18n="proj_1_metric_lbl_4">Scalable to Enterprise Transaction Volume</span>
                 </div>
             </div>
 
             <div class="detail-text">
-                <h3>Market Relevance (2026)</h3>
-                <p>Bank reconciliation automation is no longer a niche capability — it is 
-                a Tier 1 deliverable at every Big 4 firm. Deloitte's Omnia AI platform 
-                and KPMG's Clara both use similar ETL + fuzzy-matching architectures to 
-                replace statistical sampling with 100%-population transaction testing. This 
-                project demonstrates the same technical pattern: automated data extraction, 
-                intelligent matching logic, and exception-based escalation — skills that 
-                appear in 78% of Big 4 analytics role postings in 2026.</p>
+                <h3 data-i18n="proj_1_relevance_h">Market Relevance (2026)</h3>
+                <p data-i18n="proj_1_relevance_p">Bank reconciliation automation is no longer a niche capability — it is a Tier 1 deliverable at every Big 4 firm. Deloitte's Omnia AI platform and KPMG's Clara both use similar ETL + fuzzy-matching architectures to replace statistical sampling with 100%-population transaction testing. This project demonstrates the same technical pattern: automated data extraction, intelligent matching logic, and exception-based escalation — skills that appear in 78% of Big 4 analytics role postings in 2026.</p>
 
                 <p data-i18n="proj_1_long_p1">Manual bank reconciliation is notoriously slow and error-prone. This project involved building an automated end-to-end Python and SQL ETL pipeline to instantly match transactions between external bank statements and internal corporate accounting ledgers.</p>
                 
@@ -132,7 +152,7 @@
                 <div class="source-actions">
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="btn-primary">
                         <i class="fa-brands fa-github" style="font-size:14px"></i>
-                        <span>View Source Code</span>
+                        <span data-i18n="btn_view_source">View Source Code</span>
                     </a>
                 </div>
             </section>
@@ -143,18 +163,18 @@
                 <span class="sidebar-heading" data-i18n="detail_tools">Tools & Environment</span>
                 <div class="tech-item">
                     <i class="fa-brands fa-python"></i>
-                    <h5>Python Automation</h5>
-                    <p>Pandas, FuzzyWuzzy, Openpyxl</p>
+                    <h5 data-i18n="proj_1_tech_item_1_h">Python Automation</h5>
+                    <p data-i18n="proj_1_tech_item_1_p">Pandas, FuzzyWuzzy, Openpyxl</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-database"></i>
-                    <h5>SQL Database</h5>
-                    <p>SQLite, PostgreSQL Integration</p>
+                    <h5 data-i18n="proj_1_tech_item_2_h">SQL Database</h5>
+                    <p data-i18n="proj_1_tech_item_2_p">SQLite, PostgreSQL Integration</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-file-excel"></i>
-                    <h5>Legacy Integration</h5>
-                    <p>Excel VBA, Pivot Automation</p>
+                    <h5 data-i18n="proj_1_tech_item_3_h">Legacy Integration</h5>
+                    <p data-i18n="proj_1_tech_item_3_p">Excel VBA, Pivot Automation</p>
                 </div>
             </div>
         </aside>
@@ -162,7 +182,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

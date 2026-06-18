@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintech & AI Analytics Engine | Mohammed Ezzahar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title data-i18n="page_title_fintech">Fintech & AI Analytics Engine | Mohammed Ezzahar</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="grain-overlay"></div>
+    <div class="project-lang-switch">
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </div>
 
     <header class="project-detail-hero">
         <a href="index.html#projects" class="project-nav-back">
@@ -64,15 +90,15 @@
             <div class="key-results-grid fade-up">
                 <div class="result-metric">
                     <span class="metric-val">91%</span>
-                    <span class="metric-label">Fraud Detection Precision</span>
+                    <span class="metric-label" data-i18n="proj_f_metric_lbl_1">Fraud Detection Precision</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">30%</span>
-                    <span class="metric-label">Reduction in False Positives</span>
+                    <span class="metric-label" data-i18n="proj_f_metric_lbl_2">Reduction in False Positives</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">+8%</span>
-                    <span class="metric-label">Session Depth Uplift</span>
+                    <span class="metric-label" data-i18n="proj_f_metric_lbl_3">Session Depth Uplift</span>
                 </div>
             </div>
 
@@ -93,13 +119,8 @@
                 <h3 data-i18n="detail_h_methodology">Methodology</h3>
                 <div class="methodology-timeline">
                     <div class="method-step fade-up">
-                        <h4>Model Architecture Rationale</h4>
-                        <p>XGBoost was selected over deep learning for fraud detection due to 
-                        its interpretability advantage — regulators and compliance teams require 
-                        explainable model decisions, not black boxes. For the recommender, 
-                        Transformers were chosen for their ability to model sequential 
-                        transaction history as temporal context, mirroring approaches used in 
-                        buy-side portfolio analytics engines.</p>
+                        <h4 data-i18n="proj_f_method_step_h">Model Architecture Rationale</h4>
+                        <p data-i18n="proj_f_method_step_p">XGBoost was selected over deep learning for fraud detection due to its interpretability advantage — regulators and compliance teams require explainable model decisions, not black boxes. For the recommender, Transformers were chosen for their ability to model sequential transaction history as temporal context, mirroring approaches used in buy-side portfolio analytics engines.</p>
                     </div>
                     <div class="method-step fade-up">
                         <h4 data-i18n="method_1_h">Discovery & Data Audit</h4>
@@ -128,11 +149,11 @@
                 <div class="source-actions">
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="btn-primary">
                         <i class="fa-brands fa-github" style="font-size:14px"></i>
-                        <span>View Source Code</span>
+                        <span data-i18n="btn_view_source">View Source Code</span>
                     </a>
                     <a href="index.html#contact" class="btn-secondary">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>Discuss Implementation</span>
+                        <span data-i18n="btn_discuss_impl">Discuss Implementation</span>
                     </a>
                 </div>
             </section>
@@ -143,23 +164,23 @@
                 <span class="sidebar-heading" data-i18n="detail_tools">Tools & Environment</span>
                 <div class="tech-item">
                     <i class="fa-brands fa-python"></i>
-                    <h5>Python Ecosystem</h5>
-                    <p>Pandas, Scikit-learn, XGBoost</p>
+                    <h5 data-i18n="proj_f_tech_item_1_h">Python Ecosystem</h5>
+                    <p data-i18n="proj_f_tech_item_1_p">Pandas, Scikit-learn, XGBoost</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-brain"></i>
-                    <h5>Deep Learning</h5>
-                    <p>PyTorch, Transformers, BERT</p>
+                    <h5 data-i18n="proj_f_tech_item_2_h">Deep Learning</h5>
+                    <p data-i18n="proj_f_tech_item_2_p">PyTorch, Transformers, BERT</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-database"></i>
-                    <h5>Data Storage</h5>
-                    <p>PostgreSQL, Redis</p>
+                    <h5 data-i18n="proj_f_tech_item_3_h">Data Storage</h5>
+                    <p data-i18n="proj_f_tech_item_3_p">PostgreSQL, Redis</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-cloud"></i>
-                    <h5>Deployment</h5>
-                    <p>Docker, AWS EC2, S3</p>
+                    <h5 data-i18n="proj_f_tech_item_4_h">Deployment</h5>
+                    <p data-i18n="proj_f_tech_item_4_p">Docker, AWS EC2, S3</p>
                 </div>
             </div>
         </aside>
@@ -167,7 +188,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

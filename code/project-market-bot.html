@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment-AI Market Bot | Mohammed Ezzahar</title>
-    <link rel="stylesheet" href="styles.css">
+    <title data-i18n="page_title_market">Sentiment-AI Market Bot | Mohammed Ezzahar</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="grain-overlay"></div>
+    <div class="project-lang-switch">
+        <div class="lang-switch">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+    </div>
 
     <header class="project-detail-hero">
         <a href="index.html#projects" class="project-nav-back">
@@ -64,27 +90,21 @@
             <div class="key-results-grid fade-up">
                 <div class="result-metric">
                     <span class="metric-val">50K+</span>
-                    <span class="metric-label">Support Interactions Analyzed</span>
+                    <span class="metric-label" data-i18n="proj_2_metric_lbl_1">Support Interactions Analyzed</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">100%</span>
-                    <span class="metric-label">Automated Insight Extraction</span>
+                    <span class="metric-label" data-i18n="proj_2_metric_lbl_2">Automated Insight Extraction</span>
                 </div>
                 <div class="result-metric">
                     <span class="metric-val">Q4</span>
-                    <span class="metric-label">Adopted into Product Roadmap</span>
+                    <span class="metric-label" data-i18n="proj_2_metric_lbl_3">Adopted into Product Roadmap</span>
                 </div>
             </div>
 
             <div class="detail-text">
-                <h3>Why This Matters in 2026</h3>
-                <p>Alternative data — including sentiment signals derived from unstructured 
-                text — is now a standard input to equity research models at Goldman Sachs, 
-                Morgan Stanley, and buy-side hedge funds including AQR and Point72. 
-                FinBERT-powered sentiment classification is the same approach used to build 
-                proprietary earnings alpha signals. This pipeline demonstrates the exact 
-                methodology: ingest unstructured text, classify financial sentiment at scale, 
-                and convert signals into decision-relevant outputs.</p>
+                <h3 data-i18n="proj_2_relevance_h">Why This Matters in 2026</h3>
+                <p data-i18n="proj_2_relevance_p">Alternative data — including sentiment signals derived from unstructured text — is now a standard input to equity research models at Goldman Sachs, Morgan Stanley, and buy-side hedge funds including AQR and Point72. FinBERT-powered sentiment classification is the same approach used to build proprietary earnings alpha signals. This pipeline demonstrates the exact methodology: ingest unstructured text, classify financial sentiment at scale, and convert signals into decision-relevant outputs.</p>
 
                 <p data-i18n="proj_2_long_p1">This AI pipeline leverages BERT and alternative data evaluation to extract deep customer sentiment and semantic embeddings from massive datasets of unstructured support interactions and feedback.</p>
                 
@@ -128,7 +148,7 @@
                 <div class="source-actions">
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="btn-primary">
                         <i class="fa-brands fa-github" style="font-size:14px"></i>
-                        <span>View Source Code</span>
+                        <span data-i18n="btn_view_source">View Source Code</span>
                     </a>
                 </div>
             </section>
@@ -139,18 +159,18 @@
                 <span class="sidebar-heading" data-i18n="detail_tools">Tools & Environment</span>
                 <div class="tech-item">
                     <i class="fa-brands fa-python"></i>
-                    <h5>NLP Pipeline</h5>
-                    <p>HuggingFace, NLTK, Spacy</p>
+                    <h5 data-i18n="proj_2_tech_item_1_h">NLP Pipeline</h5>
+                    <p data-i18n="proj_2_tech_item_1_p">HuggingFace, NLTK, Spacy</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-bolt"></i>
-                    <h5>Real-time Processing</h5>
-                    <p>FastAPI, Celery, RabbitMQ</p>
+                    <h5 data-i18n="proj_2_tech_item_2_h">Real-time Processing</h5>
+                    <p data-i18n="proj_2_tech_item_2_p">FastAPI, Celery, RabbitMQ</p>
                 </div>
                 <div class="tech-item">
                     <i class="fa-solid fa-chart-pie"></i>
-                    <h5>Visualization</h5>
-                    <p>Plotly, Streamlit Dashboard</p>
+                    <h5 data-i18n="proj_2_tech_item_3_h">Visualization</h5>
+                    <p data-i18n="proj_2_tech_item_3_p">Plotly, Streamlit Dashboard</p>
                 </div>
             </div>
         </aside>
@@ -158,7 +178,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>

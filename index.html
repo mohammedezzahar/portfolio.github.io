@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" class="lang-ar">
 
 <head>
+    <!-- Language and Direction Sync -->
+    <script>
+        (function() {
+            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            document.documentElement.lang = savedLang;
+            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            if (savedLang === 'ar') {
+                document.documentElement.classList.add('lang-ar');
+                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
+                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
+                document.documentElement.style.setProperty('--font-size-scale', '1.1');
+            } else {
+                document.documentElement.classList.remove('lang-ar');
+                document.documentElement.style.removeProperty('--font-body');
+                document.documentElement.style.removeProperty('--font-display');
+                document.documentElement.style.removeProperty('--font-size-scale');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Ezzahar | Financial &amp; Data Analyst</title>
@@ -16,7 +35,7 @@
     <link rel="icon" href="youtube_art/logo.png" type="image/png">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.2">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -38,13 +57,13 @@
         </div>
 
         <div class="pill-socials">
-            <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn" class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="social-x"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" class="social-medium"><i class="fa-brands fa-medium"></i></a>
-            <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit" class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
-            <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
-            <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube" class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank" title="LinkedIn" data-i18n-title="title_linkedin" class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" data-i18n-title="title_github" class="social-github"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" data-i18n-title="title_x" class="social-x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" data-i18n-title="title_medium" class="social-medium"><i class="fa-brands fa-medium"></i></a>
+            <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit" data-i18n-title="title_reddit" class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
+            <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" data-i18n-title="title_substack" class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
+            <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube" data-i18n-title="title_youtube" class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
 
         <div class="pill-lang">
@@ -127,7 +146,7 @@
                 <div class="mf-content">
                     <span class="m-num">01</span>
                     <h4 data-i18n="exp_1_title">ALIFFA Startup Portfolio</h4>
-                    <p data-i18n="exp_1_p">Engineered a 15% increase in tax efficiency and a 40% speedup in audit readiness during my tenure as CFO/CTO.</p>
+                    <p data-i18n="exp_1_p">Directed product infrastructure on Microsoft Azure, cutting projected operational costs by 18% and establishing a robust accounting framework.</p>
                     <div class="mf-status">
                         <span class="status-dot"></span>
                         <span data-i18n="exp_status">Co-Founder & CFO/CTO</span>
@@ -148,7 +167,7 @@
                     <div class="mc-content">
                         <span class="m-num">02</span>
                         <h4 data-i18n="exp_2_title">Accounting Automation</h4>
-                        <p data-i18n="exp_2_p">Developed proprietary ETL pipelines that reduced manual bank reconciliation verification time by 90%.</p>
+                        <p data-i18n="exp_2_p">Developed proprietary ETL pipelines saving 15 hours/week and eliminating 95% of manual entry errors.</p>
                     </div>
                 </div>
                 <div class="method-card-v3 fade-up">
@@ -193,8 +212,7 @@
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_1_eyebrow">ACCOUNTING · AUTOMATION</div>
                         <h4 data-i18n="proj_1_title">Bank Reconciliation Pipeline</h4>
-                        <p class="text-mid" data-i18n="proj_1_p">Automated reconciliation system reducing manual
-                            verification by 80% using custom Python logic.</p>
+                        <p class="text-mid" data-i18n="proj_1_p">Automated reconciliation pipeline saving 15 hours/week and eliminating 95% of manual entry errors using custom Python and SQL logic.</p>
                     </div>
                 </a>
                 <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/project-market-bot.md" class="p-card fade-up">
@@ -203,10 +221,9 @@
                         <img src="cinematic_1_wallstreet.png" alt="Market Bot">
                     </div>
                     <div class="p-info">
-                        <div class="eyebrow" data-i18n="proj_2_eyebrow">DATA SCIENCE · FINANCE</div>
-                        <h4 data-i18n="proj_2_title">Sentiment-AI Market Bot</h4>
-                        <p class="text-mid" data-i18n="proj_2_p">Natural Language Processing bot filtering market
-                            sentiment from news feeds to forecast trends.</p>
+                        <div class="eyebrow" data-i18n="proj_2_eyebrow">DATA SCIENCE · NLP</div>
+                        <h4 data-i18n="proj_2_title">NLP Customer Sentiment Model</h4>
+                        <p class="text-mid" data-i18n="proj_2_p">BERT-based generation model and semantic embedding pipeline for customer insight extraction.</p>
                     </div>
                 </a>
                 <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/project-tax-study.md" class="p-card fade-up">
@@ -252,14 +269,14 @@
                         <span class="sg-title" data-i18n="skills_g1">Programming</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-python"></i> Python</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> TensorFlow</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> PyTorch</span>
-                        <span class="sg-tag"><i class="fa-solid fa-database"></i> SQL</span>
-                        <span class="sg-tag"><i class="fa-solid fa-file-excel"></i> VBA / Excel</span>
-                        <span class="sg-tag"><i class="fa-solid fa-table"></i> Pandas</span>
-                        <span class="sg-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
-                        <span class="sg-tag"><i class="fa-solid fa-code-branch"></i> Scikit-learn</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-python"></i> <span data-i18n="skill_python">Python</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> <span data-i18n="skill_tensorflow">TensorFlow</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> <span data-i18n="skill_pytorch">PyTorch</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-database"></i> <span data-i18n="skill_sql">SQL</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-file-excel"></i> <span data-i18n="skill_excel">VBA / Excel</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-table"></i> <span data-i18n="skill_pandas">Pandas</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-calculator"></i> <span data-i18n="skill_numpy">NumPy</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-code-branch"></i> <span data-i18n="skill_scikit">Scikit-learn</span></span>
                     </div>
                 </div>
 
@@ -270,13 +287,13 @@
                         <span class="sg-title" data-i18n="skills_g2">Data &amp; BI</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> PowerBI</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> Tableau</span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-area"></i> Matplotlib</span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-column"></i> Seaborn</span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-simple"></i> Plotly</span>
-                        <span class="sg-tag"><i class="fa-solid fa-layer-group"></i> Streamlit</span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Pandas Profiling</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_powerbi">PowerBI</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> <span data-i18n="skill_tableau">Tableau</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-area"></i> <span data-i18n="skill_matplotlib">Matplotlib</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-column"></i> <span data-i18n="skill_seaborn">Seaborn</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-simple"></i> <span data-i18n="skill_plotly">Plotly</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-layer-group"></i> <span data-i18n="skill_streamlit">Streamlit</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_pandas_profiling">Pandas Profiling</span></span>
                     </div>
                 </div>
 
@@ -287,14 +304,12 @@
                         <span class="sg-title" data-i18n="skills_g3">Finance &amp; Accounting</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> Financial
-                            Modeling</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> Tax Planning
-                            (MA)</span>
-                        <span class="sg-tag"><i class="fa-solid fa-building-columns"></i> Bank Reconciliation</span>
-                        <span class="sg-tag"><i class="fa-solid fa-clipboard-check"></i> Audit Frameworks</span>
-                        <span class="sg-tag"><i class="fa-solid fa-book-open"></i> IFRS Standards</span>
-                        <span class="sg-tag"><i class="fa-solid fa-money-bill-trend-up"></i> Fiscal Optimization</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_modeling">Financial Modeling</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_tax">Tax Planning (MA)</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-building-columns"></i> <span data-i18n="skill_reconciliation">Bank Reconciliation</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-clipboard-check"></i> <span data-i18n="skill_audit">Audit Frameworks</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-book-open"></i> <span data-i18n="skill_ifrs">IFRS Standards</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-money-bill-trend-up"></i> <span data-i18n="skill_fiscal_opt">Fiscal Optimization</span></span>
                     </div>
                 </div>
 
@@ -305,13 +320,12 @@
                         <span class="sg-title" data-i18n="skills_g4">AI &amp; Strategy</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> LSTMs /
-                            Transformers</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-language"></i> NLP / FinBERT</span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass"></i> Vector Search (FAISS)</span>
-                        <span class="sg-tag"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
-                        <span class="sg-tag"><i class="fa-solid fa-globe"></i> Geopolitical Analysis</span>
-                        <span class="sg-tag"><i class="fa-solid fa-comments"></i> Strategic Communication</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> <span data-i18n="skill_lstm_trans">LSTMs / Transformers</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-language"></i> <span data-i18n="skill_nlp_finbert">NLP / FinBERT</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="skill_vector_search">Vector Search (FAISS)</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="skill_critical">Critical Thinking</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-globe"></i> <span data-i18n="skill_geopolitical">Geopolitical Analysis</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-comments"></i> <span data-i18n="skill_strategic_comm">Strategic Communication</span></span>
                     </div>
                 </div>
 
@@ -322,12 +336,12 @@
                         <span class="sg-title" data-i18n="skills_g5">Financial Modeling & Valuation</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-diagram-project"></i> DCF Modeling</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> 3-Statement Models</span>
-                        <span class="sg-tag"><i class="fa-solid fa-scale-balanced"></i> LBO Fundamentals</span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-pie"></i> EV/EBITDA Valuation</span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Scenario Analysis</span>
-                        <span class="sg-tag"><i class="fa-solid fa-coins"></i> Working Capital Analysis</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="skill_dcf">DCF Modeling</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_three_statement">3-Statement Models</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_lbo">LBO Fundamentals</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_ev_ebitda">EV/EBITDA Valuation</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_scenario">Scenario Analysis</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-coins"></i> <span data-i18n="skill_working_capital">Working Capital Analysis</span></span>
                     </div>
                 </div>
 
@@ -338,12 +352,12 @@
                         <span class="sg-title" data-i18n="skills_g6">Cloud, ERP & Infrastructure</span>
                     </div>
                     <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-aws"></i> AWS / GCP</span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-database"></i> PostgreSQL / Redis</span>
-                        <span class="sg-tag"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="sg-tag"><i class="fa-solid fa-server"></i> ERP Awareness (SAP/Oracle)</span>
-                        <span class="sg-tag"><i class="fa-solid fa-snowflake"></i> Snowflake (learning)</span>
-                        <span class="sg-tag"><i class="fa-solid fa-gear"></i> FastAPI / Celery</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-aws"></i> <span data-i18n="skill_aws_gcp">AWS / GCP</span></span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-database"></i> <span data-i18n="skill_postgres_redis">PostgreSQL / Redis</span></span>
+                        <span class="sg-tag"><i class="fa-brands fa-docker"></i> <span data-i18n="skill_docker">Docker</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-server"></i> <span data-i18n="skill_erp">ERP Awareness (SAP/Oracle)</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-snowflake"></i> <span data-i18n="skill_snowflake">Snowflake (learning)</span></span>
+                        <span class="sg-tag"><i class="fa-solid fa-gear"></i> <span data-i18n="skill_fastapi_celery">FastAPI / Celery</span></span>
                     </div>
                 </div>
 
@@ -364,11 +378,11 @@
 
             <div class="contact-grid fade-up">
 
-                <a href="mailto:mohammedezzahar278@gmail.com" class="contact-item">
+                <a href="mailto:m.ezzahar@edu.umi.ac.ma" class="contact-item">
                     <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div class="ci-body">
-                        <span class="ci-label">EMAIL</span>
-                        <span class="ci-value">mohammedezzahar278@gmail.com</span>
+                        <span class="ci-label" data-i18n="ci_label_email">EMAIL</span>
+                        <span class="ci-value">m.ezzahar@edu.umi.ac.ma</span>
                     </div>
                     <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
                 </a>
@@ -376,7 +390,7 @@
                 <a href="tel:+212609233284" class="contact-item">
                     <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
                     <div class="ci-body">
-                        <span class="ci-label">PHONE</span>
+                        <span class="ci-label" data-i18n="ci_label_phone">PHONE</span>
                         <span class="ci-value">+212 6 09 23 32 84</span>
                     </div>
                     <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
@@ -385,7 +399,7 @@
                 <div class="contact-item contact-item--static">
                     <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div class="ci-body">
-                        <span class="ci-label">LOCATION</span>
+                        <span class="ci-label" data-i18n="ci_label_location">LOCATION</span>
                         <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
                     </div>
                 </div>
@@ -407,7 +421,7 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-brand">
-                    <span class="footer-name">Mohammed Ezzahar</span>
+                    <span class="footer-name" data-i18n="footer_brand_name">Mohammed Ezzahar</span>
                     <span class="footer-role" data-i18n="footer_role">Financial &amp; Data Analyst · AI Developer</span>
                 </div>
                 <nav class="footer-links">
@@ -418,7 +432,7 @@
                     <a href="#contact" data-i18n="nav_contact_short">Contact</a>
                 </nav>
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank"
+                    <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank"
                         class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="social-github"><i
                             class="fa-brands fa-github"></i></a>
@@ -431,7 +445,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span class="copyright">© 2026 Mohammed Ezzahar</span>
+                <span class="copyright" data-i18n="footer_copyright">© 2026 Mohammed Ezzahar</span>
                 <span class="dot">·</span>
                 <span data-i18n="footer_location">Meknès, Morocco</span>
             </div>
@@ -439,7 +453,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1.2"></script>
 </body>
 
 </html>
