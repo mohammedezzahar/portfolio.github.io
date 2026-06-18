@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Reem+Kufi:wght@400;700&family=Kufam:wght@400;700&family=El+Messiri:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400&display=swap');
 
 :root {
     /* Color Palette - Monochrome Luxury */
@@ -3726,4 +3726,25 @@ nav, .hero-nav-pill {
 .skill-tag:hover {
   background: rgba(201, 168, 76, 0.15);
   border-color: rgba(201, 168, 76, 0.4);
+}
+
+/* Custom adjustments for Arabic Name spacing and typography */
+[lang="ar"] .hero-name,
+body.font-ar .hero-name {
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif !important;
+    line-height: 0.75 !important;
+    gap: 0 !important;
+}
+
+[lang="ar"] .name-first,
+body.font-ar .name-first {
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+[lang="ar"] .name-last,
+body.font-ar .name-last {
+    font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif !important;
+    margin-top: -0.35em !important;
+    font-weight: 700 !important;
 }

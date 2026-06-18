@@ -589,8 +589,8 @@ const translations = {
     nav_contact_short: "تواصل",
 
     // Hero
-    hero_name_first: "مـحـمد",
-    hero_name_last: "الـزهـر",
+    hero_name_first: "محمد",
+    hero_name_last: "الزهر",
     hero_eyebrow: "محلل مالي · مهندس ذكاء اصطناعي/بيانات · أتمتة المحاسبة",
     hero_tagline: "هندسة نقطة تلاقي النزاهة المحاسبية والذكاء المالي المدعوم بالذكاء الاصطناعي.",
     hero_status: "تحليل نشط",
