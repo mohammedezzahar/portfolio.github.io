@@ -5,22 +5,18 @@
     <!-- Language and Direction Sync -->
     <script>
         (function() {
-            const savedLang = localStorage.getItem('preferred_lang') || 'ar';
+            const savedLang = localStorage.getItem('lang') || 'en';
             document.documentElement.lang = savedLang;
-            document.documentElement.setAttribute('dir', savedLang === 'ar' ? 'rtl' : 'ltr');
+            document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
             if (savedLang === 'ar') {
                 document.documentElement.classList.add('lang-ar');
-                document.documentElement.style.setProperty('--font-body', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Outfit', sans-serif");
-                document.documentElement.style.setProperty('--font-display', "'IBM Plex Sans Arabic', 'Tajawal', 'Cairo', 'Playfair Display', sans-serif");
-                document.documentElement.style.setProperty('--font-size-scale', '1.1');
             } else {
                 document.documentElement.classList.remove('lang-ar');
-                document.documentElement.style.removeProperty('--font-body');
-                document.documentElement.style.removeProperty('--font-display');
-                document.documentElement.style.removeProperty('--font-size-scale');
             }
         })();
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Ezzahar | Financial &amp; Data Analyst</title>
@@ -100,7 +96,20 @@
 
 
     <!-- Section 2: About -->
-    <section id="about" class="about-full-bleed">
+        <!-- Section 1.5: About -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <span class="section-label" data-i18n="about_label">WHO I AM</span>
+        <h2 data-i18n="about_title">Mohammed <em>Ezzahar</em></h2>
+        <p data-i18n="about_body">
+          Financial analyst, AI engineer, and Co-Founder of ALIFFA —
+          bridging accounting integrity with machine learning to deliver
+          institutional-grade financial intelligence.
+        </p>
+      </div>
+    </section>
+
+    <section id="philosophy" class="about-full-bleed">
         <div class="about-bg">
             <img src="cinematic_1_wallstreet.png" alt="Background">
         </div>
@@ -122,15 +131,7 @@
                     advantages. From national finals to elite-level tax optimization, my mission is to deliver the
                     technical certainty the global market demands.</p>
 
-                <div class="testimonial-block fade-up">
-                    <i class="fa-solid fa-quote-left quote-icon"></i>
-                    <p class="testimonial-text" data-i18n="testimonial_text">"The work Mohammed and his team produced
-                        wasn&#39;t just technical—it was
-                        <strong>generational</strong> in Morocco&#39;s financial landscape."
-                    </p>
-                    <span class="testimonial-author" data-i18n="testimonial_author">— From official Mentors &amp;
-                        Referees</span>
-                </div>
+                
 
             </div>
         </div>
@@ -268,15 +269,15 @@
                         <i class="fa-brands fa-python"></i>
                         <span class="sg-title" data-i18n="skills_g1">Programming</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-python"></i> <span data-i18n="skill_python">Python</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> <span data-i18n="skill_tensorflow">TensorFlow</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> <span data-i18n="skill_pytorch">PyTorch</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-database"></i> <span data-i18n="skill_sql">SQL</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-file-excel"></i> <span data-i18n="skill_excel">VBA / Excel</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-table"></i> <span data-i18n="skill_pandas">Pandas</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-calculator"></i> <span data-i18n="skill_numpy">NumPy</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-code-branch"></i> <span data-i18n="skill_scikit">Scikit-learn</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-brands fa-python"></i> <span data-i18n="skill_python">Python</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> <span data-i18n="skill_tensorflow">TensorFlow</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> <span data-i18n="skill_pytorch">PyTorch</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-database"></i> <span data-i18n="skill_sql">SQL</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> <span data-i18n="skill_excel">VBA / Excel</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-table"></i> <span data-i18n="skill_pandas">Pandas</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-calculator"></i> <span data-i18n="skill_numpy">NumPy</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-code-branch"></i> <span data-i18n="skill_scikit">Scikit-learn</span></span>
                     </div>
                 </div>
 
@@ -286,14 +287,14 @@
                         <i class="fa-solid fa-chart-bar"></i>
                         <span class="sg-title" data-i18n="skills_g2">Data &amp; BI</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_powerbi">PowerBI</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> <span data-i18n="skill_tableau">Tableau</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-area"></i> <span data-i18n="skill_matplotlib">Matplotlib</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-column"></i> <span data-i18n="skill_seaborn">Seaborn</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-simple"></i> <span data-i18n="skill_plotly">Plotly</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-layer-group"></i> <span data-i18n="skill_streamlit">Streamlit</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_pandas_profiling">Pandas Profiling</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_powerbi">PowerBI</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> <span data-i18n="skill_tableau">Tableau</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-area"></i> <span data-i18n="skill_matplotlib">Matplotlib</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-column"></i> <span data-i18n="skill_seaborn">Seaborn</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-simple"></i> <span data-i18n="skill_plotly">Plotly</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> <span data-i18n="skill_streamlit">Streamlit</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_pandas_profiling">Pandas Profiling</span></span>
                     </div>
                 </div>
 
@@ -303,13 +304,13 @@
                         <i class="fa-solid fa-file-invoice-dollar"></i>
                         <span class="sg-title" data-i18n="skills_g3">Finance &amp; Accounting</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_modeling">Financial Modeling</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_tax">Tax Planning (MA)</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-building-columns"></i> <span data-i18n="skill_reconciliation">Bank Reconciliation</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-clipboard-check"></i> <span data-i18n="skill_audit">Audit Frameworks</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-book-open"></i> <span data-i18n="skill_ifrs">IFRS Standards</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-money-bill-trend-up"></i> <span data-i18n="skill_fiscal_opt">Fiscal Optimization</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_modeling">Financial Modeling</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_tax">Tax Planning (MA)</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-building-columns"></i> <span data-i18n="skill_reconciliation">Bank Reconciliation</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-clipboard-check"></i> <span data-i18n="skill_audit">Audit Frameworks</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-book-open"></i> <span data-i18n="skill_ifrs">IFRS Standards</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-money-bill-trend-up"></i> <span data-i18n="skill_fiscal_opt">Fiscal Optimization</span></span>
                     </div>
                 </div>
 
@@ -319,13 +320,13 @@
                         <i class="fa-solid fa-brain"></i>
                         <span class="sg-title" data-i18n="skills_g4">AI &amp; Strategy</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> <span data-i18n="skill_lstm_trans">LSTMs / Transformers</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-language"></i> <span data-i18n="skill_nlp_finbert">NLP / FinBERT</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="skill_vector_search">Vector Search (FAISS)</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="skill_critical">Critical Thinking</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-globe"></i> <span data-i18n="skill_geopolitical">Geopolitical Analysis</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-comments"></i> <span data-i18n="skill_strategic_comm">Strategic Communication</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> <span data-i18n="skill_lstm_trans">LSTMs / Transformers</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-language"></i> <span data-i18n="skill_nlp_finbert">NLP / FinBERT</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="skill_vector_search">Vector Search (FAISS)</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> <span data-i18n="skill_critical">Critical Thinking</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-globe"></i> <span data-i18n="skill_geopolitical">Geopolitical Analysis</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-comments"></i> <span data-i18n="skill_strategic_comm">Strategic Communication</span></span>
                     </div>
                 </div>
 
@@ -335,13 +336,13 @@
                         <i class="fa-solid fa-chart-line"></i>
                         <span class="sg-title" data-i18n="skills_g5">Financial Modeling & Valuation</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="skill_dcf">DCF Modeling</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_three_statement">3-Statement Models</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_lbo">LBO Fundamentals</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_ev_ebitda">EV/EBITDA Valuation</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_scenario">Scenario Analysis</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-coins"></i> <span data-i18n="skill_working_capital">Working Capital Analysis</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="skill_dcf">DCF Modeling</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_three_statement">3-Statement Models</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_lbo">LBO Fundamentals</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="skill_ev_ebitda">EV/EBITDA Valuation</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> <span data-i18n="skill_scenario">Scenario Analysis</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-coins"></i> <span data-i18n="skill_working_capital">Working Capital Analysis</span></span>
                     </div>
                 </div>
 
@@ -351,13 +352,13 @@
                         <i class="fa-solid fa-cloud"></i>
                         <span class="sg-title" data-i18n="skills_g6">Cloud, ERP & Infrastructure</span>
                     </div>
-                    <div class="sg-tags">
-                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-aws"></i> <span data-i18n="skill_aws_gcp">AWS / GCP</span></span>
-                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-database"></i> <span data-i18n="skill_postgres_redis">PostgreSQL / Redis</span></span>
-                        <span class="sg-tag"><i class="fa-brands fa-docker"></i> <span data-i18n="skill_docker">Docker</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-server"></i> <span data-i18n="skill_erp">ERP Awareness (SAP/Oracle)</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-snowflake"></i> <span data-i18n="skill_snowflake">Snowflake (learning)</span></span>
-                        <span class="sg-tag"><i class="fa-solid fa-gear"></i> <span data-i18n="skill_fastapi_celery">FastAPI / Celery</span></span>
+                    <div class="skill-tags">
+                        <span class="skill-tag sg-tag--strong"><i class="fa-brands fa-aws"></i> <span data-i18n="skill_aws_gcp">AWS / GCP</span></span>
+                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-database"></i> <span data-i18n="skill_postgres_redis">PostgreSQL / Redis</span></span>
+                        <span class="skill-tag"><i class="fa-brands fa-docker"></i> <span data-i18n="skill_docker">Docker</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-server"></i> <span data-i18n="skill_erp">ERP Awareness (SAP/Oracle)</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-snowflake"></i> <span data-i18n="skill_snowflake">Snowflake (learning)</span></span>
+                        <span class="skill-tag"><i class="fa-solid fa-gear"></i> <span data-i18n="skill_fastapi_celery">FastAPI / Celery</span></span>
                     </div>
                 </div>
 
@@ -426,7 +427,7 @@
                 </div>
                 <nav class="footer-links">
                     <a href="#about" data-i18n="nav_about_short">About</a>
-                    <a href="#experience" data-i18n="nav_experience_short">Methodology</a>
+                    <a href="#experience" data-i18n="nav_experience">Methodology</a>
                     <a href="#projects" data-i18n="nav_projects_short">Projects</a>
                     <a href="#skills" data-i18n="nav_skills_short">Skills</a>
                     <a href="#contact" data-i18n="nav_contact_short">Contact</a>
@@ -453,6 +454,7 @@
     </footer>
 
 
+    <script src="translations.js?v=1.2"></script>
     <script src="script.js?v=1.2"></script>
 </body>
 

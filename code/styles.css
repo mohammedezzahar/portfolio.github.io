@@ -793,7 +793,7 @@ h2 em {
 
 .testimonial-block {
     background: rgba(255, 255, 255, 0.03);
-    border-left: 2px solid var(--accent);
+    border-inline-start: 2px solid var(--accent);
     padding: 32px;
     margin: 48px 0;
     position: relative;
@@ -1037,7 +1037,7 @@ h2 em {
     width: 24px;
     color: #60A5FA;
     font-size: 14px;
-    margin-right: 4px;
+    margin-inline-end: 4px;
     text-align: center;
     opacity: 0.9;
 }
@@ -1377,7 +1377,7 @@ h2 em {
     font-family: var(--font-tech);
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.28);
-    margin-right: 0.5rem;
+    margin-inline-end: 0.5rem;
 }
 
 .pill-links a::after {
@@ -1774,17 +1774,17 @@ h2 em {
 /* RTL Support */
 [dir="rtl"] {
     direction: rtl;
-    text-align: right;
+    text-align: end;
 }
 
 [dir="rtl"] .hero-status-dot {
-    margin-right: 0;
-    margin-left: 10px;
+    margin-inline-end: 0;
+    margin-inline-start: 10px;
 }
 
 [dir="rtl"] .nav-num {
-    margin-right: 0;
-    margin-left: 8px;
+    margin-inline-end: 0;
+    margin-inline-start: 8px;
 }
 
 [dir="rtl"] .s-mini {
@@ -2255,8 +2255,8 @@ h2 em {
 /* Methodology Timeline */
 .methodology-timeline {
     margin: 6rem 0;
-    padding-left: 3rem;
-    border-left: 1px solid var(--border);
+    padding-inline-start: 3rem;
+    border-inline-start: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -2437,7 +2437,7 @@ h2 em {
 .methodology h2,
 .projects h2,
 .skills-section h2 {
-    text-align: left;
+    text-align: start;
 }
 
 .methodology .eyebrow,
@@ -2694,7 +2694,7 @@ h2 em {
     background: var(--border);
     border: 1px solid var(--border);
     margin-bottom: 40px;
-    text-align: left;
+    text-align: start;
 }
 
 .contact-grid .contact-item:last-child:nth-child(odd) {
@@ -2973,8 +2973,8 @@ a.contact-item:hover .ci-value {
     align-items: center;
     gap: 16px;
     padding: 0 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-inline-start: 1px solid rgba(255, 255, 255, 0.1);
+    border-inline-end: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .pill-socials a {
@@ -3574,4 +3574,156 @@ html.lang-ar .project-lang-switch,
 html[dir="rtl"] .project-lang-switch {
     right: auto;
     left: 24px;
+}
+
+/* ==========================================================================
+   Refactored Arabic Fonts, Contrast, Navbar & Skill Tags
+   ========================================================================== */
+
+/* 2. Arabic Font Loading */
+body.font-ar {
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 1.05em;
+  line-height: 1.9;
+  letter-spacing: 0;
+}
+
+body.font-ar h1,
+body.font-ar h2,
+body.font-ar h3,
+body.font-ar h4,
+body.font-ar h5,
+body.font-ar span,
+body.font-ar a,
+body.font-ar p {
+  font-family: 'Tajawal', sans-serif !important;
+}
+
+body.font-ar h1,
+body.font-ar h2,
+body.font-ar h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+/* 3. Hero Section Contrast - Dark Overlay */
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.35) 60%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1,
+.hero p,
+.hero .tagline,
+.hero-tagline-text,
+.hero-job-eyebrow {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+}
+
+/* 4. Navbar Contrast & Active Language Indicator */
+nav, .hero-nav-pill {
+  background: rgba(10, 10, 10, 0.75) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.lang-btn {
+  opacity: 0.5 !important;
+  font-weight: 400 !important;
+  transition: opacity 0.2s, border-bottom 0.2s;
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent !important;
+  text-shadow: none !important;
+}
+
+.lang-btn.active {
+  opacity: 1 !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #c9a84c !important; /* gold accent */
+  text-shadow: none !important;
+}
+
+/* 5. About Section Styles */
+.about-section {
+  padding: 80px 0;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 var(--padding-global);
+}
+
+.about-section .section-label {
+  display: block;
+  font-family: var(--font-tech);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #c9a84c;
+  margin-bottom: 16px;
+}
+
+.about-section h2 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.about-section h2 em {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+
+/* 8. Skill Tags Visual Upgrade */
+.skill-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  margin: 4px 3px;
+  color: rgba(255, 255, 255, 0.85);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.skill-tag:hover {
+  background: rgba(201, 168, 76, 0.15);
+  border-color: rgba(201, 168, 76, 0.4);
 }
