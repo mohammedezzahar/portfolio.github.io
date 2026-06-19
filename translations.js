@@ -11,6 +11,7 @@ const translations = {
     nav_projects_short: "Projects",
     nav_skills_short: "Skills",
     nav_contact_short: "Contact",
+    nav_logo: "M. Ezzahar",
 
     // Hero
     hero_name_first: "MOHAMMED",
@@ -299,6 +300,7 @@ const translations = {
     nav_projects_short: "Projets",
     nav_skills_short: "Compétences",
     nav_contact_short: "Contact",
+    nav_logo: "M. Ezzahar",
 
     // Hero
     hero_name_first: "MOHAMMED",
@@ -587,6 +589,7 @@ const translations = {
     nav_projects_short: "المشاريع",
     nav_skills_short: "المهارات",
     nav_contact_short: "تواصل",
+    nav_logo: "محمد الزهر",
 
     // Hero
     hero_name_first: "محمد",

@@ -170,6 +170,10 @@ img {
     transition: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.nav-logo {
+    display: none;
+}
+
 @keyframes navFloat {
 
     0%,
@@ -1655,58 +1659,93 @@ h2 em {
         display: flex !important;
         position: fixed !important;
         top: 15px !important;
-        width: 95% !important;
+        width: 90% !important;
         max-width: 480px !important;
-        padding: 6px 10px !important;
-        gap: 6px !important;
+        padding: 8px 20px !important;
         z-index: 10001 !important;
         justify-content: space-between !important;
-        overflow-x: auto !important;
-        white-space: nowrap !important;
+        align-items: center !important;
+        border-radius: 100px !important;
+        background: rgba(8, 9, 15, 0.95) !important;
+        backdrop-filter: blur(16px) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        overflow: visible !important;
+        white-space: normal !important;
         flex-wrap: nowrap !important;
-        scrollbar-width: none !important; /* Hide scrollbar for Firefox */
-        -ms-overflow-style: none !important;  /* Hide scrollbar for IE/Edge */
+        scrollbar-width: none !important;
     }
 
-    .hero-nav-pill::-webkit-scrollbar {
-        display: none !important; /* Hide scrollbar for Chrome/Safari/Opera */
+    .nav-logo {
+        display: block !important;
+        font-family: var(--font-editorial) !important;
+        font-weight: 700 !important;
+        font-style: italic !important;
+        font-size: 16px !important;
+        color: var(--text) !important;
     }
 
-    .pill-socials {
+    .nav-burger {
         display: flex !important;
-        gap: 6px !important;
-        padding: 0 6px !important;
-        border-inline-start: 1px solid rgba(255, 255, 255, 0.1) !important;
-        border-inline-end: 1px solid rgba(255, 255, 255, 0.1) !important;
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        z-index: 10002 !important;
+        background: transparent !important;
+        border: none !important;
+        width: 32px !important;
+        height: 32px !important;
+        padding: 0 !important;
+        cursor: pointer !important;
+        border-radius: 0 !important;
     }
 
-    .pill-socials a {
-        font-size: 11px !important;
+    .nav-mobile-menu {
+        display: flex !important;
+        overflow-y: auto !important;
     }
 
+    .pill-links,
+    .pill-socials,
+    .pill-lang,
     .pill-divider {
         display: none !important;
     }
 
-    .pill-links {
-        gap: 6px !important;
+    /* Mobile Language Switcher container */
+    .mobile-lang-container {
+        margin-top: 20px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid var(--border) !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
     }
 
-    .pill-links a {
-        font-size: 9px !important;
+    .mobile-lang-container .lang-switch {
+        display: flex !important;
+        gap: 16px !important;
+        align-items: center !important;
     }
 
-    .pill-links a .nav-num {
-        display: none !important;
+    .mobile-lang-container .lang-btn {
+        background: transparent !important;
+        border: none !important;
+        border-bottom: 2px solid transparent !important;
+        padding-bottom: 4px !important;
+        font-family: var(--font-tech) !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        color: rgba(255,255,255,0.5) !important;
+        opacity: 0.6 !important;
+        cursor: pointer !important;
+        transition: 0.3s !important;
     }
 
-    .hero-nav-pill .lang-btn {
-        font-size: 9px !important;
-    }
-
-    .nav-burger,
-    .nav-mobile-menu {
-        display: none !important;
+    .mobile-lang-container .lang-btn.active {
+        color: var(--text) !important;
+        border-bottom-color: var(--text) !important;
+        opacity: 1 !important;
     }
 
 
