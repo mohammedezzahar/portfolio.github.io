@@ -1655,29 +1655,45 @@ h2 em {
         display: flex !important;
         position: fixed !important;
         top: 15px !important;
-        width: max-content !important;
-        max-width: 95% !important;
-        padding: 6px 16px !important;
-        gap: 16px !important;
+        width: 95% !important;
+        max-width: 480px !important;
+        padding: 6px 10px !important;
+        gap: 6px !important;
         z-index: 10001 !important;
-        justify-content: center !important;
+        justify-content: space-between !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        flex-wrap: nowrap !important;
+        scrollbar-width: none !important; /* Hide scrollbar for Firefox */
+        -ms-overflow-style: none !important;  /* Hide scrollbar for IE/Edge */
+    }
+
+    .hero-nav-pill::-webkit-scrollbar {
+        display: none !important; /* Hide scrollbar for Chrome/Safari/Opera */
     }
 
     .pill-socials {
-        display: none !important;
+        display: flex !important;
+        gap: 6px !important;
+        padding: 0 6px !important;
+        border-inline-start: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-inline-end: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .pill-socials a {
+        font-size: 11px !important;
     }
 
     .pill-divider {
-        height: 12px !important;
-        background: rgba(0, 0, 0, 0.2) !important;
+        display: none !important;
     }
 
     .pill-links {
-        gap: 10px !important;
+        gap: 6px !important;
     }
 
     .pill-links a {
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     .pill-links a .nav-num {
@@ -1685,7 +1701,7 @@ h2 em {
     }
 
     .hero-nav-pill .lang-btn {
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     .nav-burger,
