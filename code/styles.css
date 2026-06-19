@@ -1655,19 +1655,16 @@ h2 em {
         display: flex !important;
         position: fixed !important;
         top: 15px !important;
-        width: 95% !important;
-        max-width: 480px !important;
-        padding: 6px 12px !important;
-        gap: 8px !important;
+        width: max-content !important;
+        max-width: 95% !important;
+        padding: 6px 16px !important;
+        gap: 16px !important;
         z-index: 10001 !important;
+        justify-content: center !important;
     }
 
     .pill-socials {
-        gap: 8px !important;
-    }
-
-    .pill-socials a {
-        font-size: 13px !important;
+        display: none !important;
     }
 
     .pill-divider {
