@@ -40,66 +40,11 @@
     <!-- Global Elements -->
     <div class="grain-overlay"></div>
 
-    <nav class="hero-nav-pill">
-        <div class="nav-logo" data-i18n="nav_logo">M. Ezzahar</div>
-        <div class="pill-links">
-            <a href="#about" data-section="about" data-i18n="nav_about">About</a>
-            <a href="#experience" data-section="experience" data-i18n="nav_experience">Experience</a>
-            <a href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
-            <a href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
-            <a href="#contact" data-section="contact" data-i18n="nav_contact">Contact</a>
-        </div>
+    <!-- Desktop Header -->
+    <header id="desktop-header"></header>
 
-        <div class="pill-socials">
-            <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank" title="LinkedIn" data-i18n-title="title_linkedin" class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" data-i18n-title="title_github" class="social-github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" data-i18n-title="title_x" class="social-x"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" data-i18n-title="title_medium" class="social-medium"><i class="fa-brands fa-medium"></i></a>
-            <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit" data-i18n-title="title_reddit" class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
-            <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" data-i18n-title="title_substack" class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
-            <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube" data-i18n-title="title_youtube" class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-
-        <div class="pill-lang">
-            <div class="lang-switch">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="fr">FR</button>
-                <button class="lang-btn" data-lang="ar">AR</button>
-            </div>
-        </div>
-
-        <button class="nav-burger" id="nav-burger" aria-label="Toggle Navigation" aria-expanded="false">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </button>
-    </nav>
-
-    <!-- Mobile Navigation Drawer -->
-    <nav class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true">
-        <div class="mobile-links">
-            <a href="#about" data-i18n="nav_about">About</a>
-            <a href="#experience" data-section="experience" data-i18n="nav_experience">Experience</a>
-            <a href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
-            <a href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
-            <a href="#contact" data-section="contact" data-i18n="nav_contact">Contact</a>
-        </div>
-        <div class="mobile-socials">
-            <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank" title="LinkedIn" data-i18n-title="title_linkedin" class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" data-i18n-title="title_github" class="social-github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" data-i18n-title="title_x" class="social-x"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" data-i18n-title="title_medium" class="social-medium"><i class="fa-brands fa-medium"></i></a>
-            <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit" data-i18n-title="title_reddit" class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
-            <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" data-i18n-title="title_substack" class="social-substack"><i class="fa-solid fa-bookmark"></i></a>
-            <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube" data-i18n-title="title_youtube" class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="mobile-lang-container">
-            <div class="lang-switch">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="fr">FR</button>
-                <button class="lang-btn" data-lang="ar">AR</button>
-            </div>
-        </div>
-    </nav>
+    <!-- Mobile Header & Drawer -->
+    <header id="mobile-header"></header>
 
 
     <!-- Section 1: Hero -->
@@ -484,6 +429,7 @@
     </footer>
 
 
+    <script src="navConfig.js"></script>
     <script src="translations.js?v=1.3"></script>
     <script src="script.js?v=1.3"></script>
 </body>
