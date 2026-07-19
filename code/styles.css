@@ -3813,3 +3813,16 @@ body.font-ar .name-last {
     margin-top: -0.35em !important;
     font-weight: 700 !important;
 }
+
+/* Image-free Minimalist Layout Overrides */
+.mf-image,
+.mc-image,
+.f-img,
+.p-img {
+    display: none !important;
+}
+
+.method-featured,
+.featured-project {
+    grid-template-columns: 1fr !important;
+}
