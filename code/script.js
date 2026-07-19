@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Build Desktop Header
         desktopHeader.innerHTML = `
             <nav class="hero-nav-pill">
-                <div class="nav-logo" data-i18n="nav_logo">M. Ezzahar</div>
                 <div class="pill-links">
                     ${navConfig.links.map(link => `
                         <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Build Mobile Header (distinct slide-in layout & accessibility)
         mobileHeader.innerHTML = `
             <nav class="hero-nav-pill">
-                <div class="nav-logo" data-i18n="nav_logo">M. Ezzahar</div>
                 <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
                     <span class="burger-line"></span>
                     <span class="burger-line"></span>

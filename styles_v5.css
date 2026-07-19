@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Reem+Kufi:wght@400;700&family=Kufam:wght@400;700&family=El+Messiri:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400&display=swap');
 
 :root {
-    /* Color Palette - Monochrome Luxury */
-    --bg: #08090F;
-    --bg-2: #0D0E17;
-    --bg-3: #11131E;
-    --border: rgba(255, 255, 255, 0.07);
-    --border-m: rgba(255, 255, 255, 0.12);
-    --text: #F0F2F5;
-    --text-dim: #7A8490;
-    --text-mid: #B8C0CC;
-    --accent: #FFFFFF;
-    /* Shift to Pure White */
-    --accent-dim: rgba(255, 255, 255, 0.15);
-    --accent-glow: rgba(255, 255, 255, 0.35);
-    --warn: #D1D5DB;
-    /* Silver/Gray */
-    --warm: #E5E7EB;
-    /* Lighter Silver */
+    /* Color Palette - Calvin-inspired Monochrome Light */
+    --bg-primary:    #ffffff;   /* main page background */
+    --bg-secondary:  #f4f4f4;   /* section background, alternating panels */
+    --bg-tertiary:   #e8e8e8;   /* cards, feature boxes, borders */
+    --text-primary:  #111111;   /* headings, body copy — near-black */
+    --text-secondary:#4a4a4a;   /* muted/secondary copy, captions */
+    --border:        #d8d8d8;   /* dividers, card outlines */
+    --accent:        #1a1a1a;   /* replace all yellow/gold accent usage with dark gray/black */
+
+    /* Legacy compatibility variables */
+    --bg: var(--bg-primary);
+    --bg-2: var(--bg-secondary);
+    --bg-3: var(--bg-tertiary);
+    --text: var(--text-primary);
+    --text-dim: var(--text-secondary);
+    --text-mid: var(--text-secondary);
+    --border-m: #c8c8c8;
+    --accent-dim: rgba(26, 26, 26, 0.15);
+    --accent-glow: rgba(0, 0, 0, 0.05);
+    --warn: #4a4a4a;
+    --warm: #eaeaea;
 
     /* Typography - Rebuilt for Luxury Finance */
     --font-display: 'Outfit', sans-serif;
@@ -3825,4 +3829,234 @@ body.font-ar .name-last {
 .method-featured,
 .featured-project {
     grid-template-columns: 1fr !important;
+}
+
+/* ==========================================================================
+   Monochrome Light Theme & Calvin-Inspired Layout Overrides
+   ========================================================================== */
+
+/* 1. Navbar & Navigation Pill Overrides */
+.hero-nav-pill {
+    background: rgba(255, 255, 255, 0.90) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+.pill-links a {
+    color: var(--text-dim) !important;
+}
+
+.pill-links a:hover,
+.pill-links a.active {
+    color: var(--text) !important;
+}
+
+/* Language Switcher Overrides */
+.lang-btn {
+    color: var(--text-dim) !important;
+    opacity: 0.6 !important;
+    border-bottom: none !important;
+}
+
+.lang-btn:hover {
+    color: var(--text) !important;
+    opacity: 1 !important;
+}
+
+.hero-nav-pill .lang-btn.active,
+.project-lang-switch .lang-btn.active {
+    color: var(--text) !important;
+    opacity: 1 !important;
+    font-weight: 800 !important;
+    border-bottom: none !important;
+    text-shadow: none !important;
+}
+
+/* 2. Hero Section Centering & Typographic Hierarchy */
+.hero-text {
+    width: 100% !important;
+    max-width: 840px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.hero-name {
+    font-family: var(--font-editorial) !important;
+    font-size: clamp(2.2rem, 5vw, 4.8rem) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0 !important;
+    text-align: center !important;
+    color: var(--text-primary) !important;
+    white-space: nowrap !important; /* Force single line on desktop */
+}
+
+@media (max-width: 768px) {
+    .hero-name {
+        white-space: normal !important; /* Allow wrap on mobile */
+    }
+}
+
+.hero-job-eyebrow {
+    font-family: var(--font-tech) !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    margin-top: 16px !important; /* Space directly below name */
+    margin-bottom: 0 !important;
+    color: #888888 !important;
+    display: inline-block !important;
+    background: none !important;
+    -webkit-text-fill-color: #888888 !important;
+    text-shadow: none !important;
+}
+
+.hero-tagline-text {
+    font-family: var(--font-editorial) !important;
+    font-size: clamp(1.1rem, 2.2vw, 1.45rem) !important;
+    font-style: italic !important;
+    color: var(--text-secondary) !important;
+    max-width: 680px !important;
+    margin: 32px auto 0 !important;
+    line-height: 1.55 !important;
+    text-align: center !important;
+    text-shadow: none !important;
+}
+
+/* 3. Section Sizing & Padding (calvin.ooo breathing room) */
+section {
+    padding: 130px var(--padding-global) !important; /* Radical whitespace */
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 80px 24px !important;
+    }
+}
+
+/* 4. Social Links Monochrome Overrides */
+.pill-socials a,
+.hero-socials a,
+.mobile-socials a,
+.footer-socials a {
+    color: var(--text-dim) !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+.pill-socials a:hover,
+.hero-socials a:hover,
+.mobile-socials a:hover,
+.footer-socials a:hover {
+    color: var(--text) !important;
+    transform: translateY(-3px) scale(1.1) !important;
+}
+
+/* Remove Brand Colors */
+.pill-socials a.social-linkedin, .pill-socials a.social-github, .pill-socials a.social-youtube,
+.hero-socials a.social-linkedin, .hero-socials a.social-github, .hero-socials a.social-youtube,
+.mobile-socials a.social-linkedin, .mobile-socials a.social-github, .mobile-socials a.social-youtube,
+.footer-socials a.social-linkedin, .footer-socials a.social-github, .footer-socials a.social-youtube {
+    color: var(--text-dim) !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+/* 5. Eyebrows & Status Indicators */
+.eyebrow,
+.section-label,
+.detail-eyebrow,
+.about-section .section-label {
+    color: #888888 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    font-family: var(--font-tech) !important;
+    font-weight: 700 !important;
+}
+
+.status-dot {
+    background: var(--accent) !important;
+    box-shadow: none !important;
+}
+
+/* 6. Skill Tags (Light Gray Chips) */
+.sg-tag,
+.tech-badge {
+    background: var(--bg-tertiary) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 4px !important;
+    font-family: var(--font-tech) !important;
+}
+
+.sg-tag:hover,
+.tech-badge:hover {
+    background: var(--accent) !important;
+    color: var(--bg-primary) !important;
+    border-color: var(--accent) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: none !important;
+}
+
+/* 7. Button & CTA Styling */
+.btn,
+.cta-button,
+button[type="submit"] {
+    background: var(--accent) !important;
+    color: var(--bg-primary) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 4px !important;
+    font-family: var(--font-tech) !important;
+    transition: 0.3s !important;
+}
+
+.btn:hover,
+.cta-button:hover,
+button[type="submit"]:hover {
+    background: var(--bg-primary) !important;
+    color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    box-shadow: none !important;
+}
+
+/* 8. Card Grid Styling Overrides (calvin.ooo cards) */
+.p-card,
+.skill-group-v2,
+.method-card-v3,
+.skill-group {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: none !important;
+    border-radius: 4px !important;
+}
+
+.p-card:hover,
+.skill-group-v2:hover,
+.method-card-v3:hover,
+.skill-group:hover {
+    border-color: var(--accent) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    background: var(--bg-secondary) !important;
+}
+
+/* Project detail back button style */
+.project-nav-back {
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+.project-nav-back:hover {
+    background: var(--bg-secondary) !important;
+    color: var(--accent) !important;
+}
+
+.project-specs {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
 }
