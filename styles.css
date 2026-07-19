@@ -349,13 +349,6 @@ h2 em {
     z-index: 0;
     overflow: hidden;
     background-color: var(--bg);
-    /* Minimalist premium finance grid and center glow */
-    background-image: 
-        radial-gradient(circle at 50% 35%, rgba(8, 9, 15, 0.2) 0%, rgba(8, 9, 15, 0.8) 80%),
-        url('hero_finance_bg.png');
-    background-size: 100% 100%, cover;
-    background-position: center center;
-    opacity: 0.6;
 }
 
 .hero-bg img {
@@ -368,7 +361,7 @@ h2 em {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: linear-gradient(to bottom, rgba(8, 9, 15, 0.65) 0%, rgba(8, 9, 15, 0.8) 60%, rgba(8, 9, 15, 0.98) 100%);
     z-index: 1;
 }
 
@@ -652,12 +645,6 @@ h2 em {
     height: 100%;
     z-index: 0;
     background-color: var(--bg-2);
-    background-image: 
-        linear-gradient(to bottom, rgba(13, 14, 23, 0.7) 0%, rgba(13, 14, 23, 0.95) 100%),
-        url('philosophy_finance_bg.png');
-    background-size: 100% 100%, cover;
-    background-position: center center;
-    opacity: 0.45;
 }
 
 .about-bg img {
@@ -670,7 +657,10 @@ h2 em {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: linear-gradient(90deg,
+            rgba(8, 9, 15, 0.9) 0%,
+            rgba(8, 9, 15, 0.6) 50%,
+            rgba(8, 9, 15, 0.3) 100%);
     z-index: 1;
 }
 
@@ -1094,30 +1084,13 @@ h2 em {
 
 /* CTA Banner */
 .cta-banner {
-    position: relative;
     padding: 140px var(--padding-global);
     background-color: var(--bg-3);
-    background-image: 
-        linear-gradient(to bottom, rgba(17, 19, 30, 0.6) 0%, rgba(17, 19, 30, 0.95) 100%),
-        url('cta_finance_bg.png');
-    background-size: 100% 100%, cover;
-    background-position: center center;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
     text-align: center;
-    overflow: hidden;
 }
 
 .cta-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    z-index: 1;
-    pointer-events: none;
+    display: none;
 }
 
 .cta-content {
@@ -1923,13 +1896,6 @@ body.no-scroll {
     z-index: 0;
     transition: transform 0.1s linear;
     background-color: var(--bg-2);
-    /* Minimalist premium finance grid and center glow */
-    background-image: 
-        linear-gradient(to bottom, rgba(13, 14, 23, 0.6) 0%, var(--bg) 100%),
-        url('cta_finance_bg.png');
-    background-size: 100% 100%, cover;
-    background-position: center center;
-    opacity: 0.5;
 }
 
 .project-detail-hero .hero-bg img {
@@ -1942,7 +1908,7 @@ body.no-scroll {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 40%, var(--bg));
     z-index: 1;
 }
 
