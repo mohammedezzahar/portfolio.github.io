@@ -7,54 +7,50 @@ document.addEventListener('DOMContentLoaded', () => {
     if (desktopHeader && mobileHeader && typeof navConfig !== 'undefined') {
         // Build Desktop Header
         desktopHeader.innerHTML = `
-            <nav class="hero-nav-pill">
-                <div class="pill-links">
-                    ${navConfig.links.map(link => `
-                        <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
-                    `).join('')}
-                </div>
-                <div class="pill-divider"></div>
-                <a href="Mohammed_Ezzahar_Resume.pdf" target="_blank" class="nav-resume-btn" data-i18n="nav_resume">Resume</a>
-                <div class="pill-divider"></div>
-                <div class="pill-socials">
-                    ${navConfig.socials.map(social => `
-                        <a href="${social.url}" target="_blank" data-i18n-title="${social.i18nTitleKey}" class="social-${social.platform}">
-                            <i class="${social.iconClass}"></i>
-                        </a>
-                    `).join('')}
-                </div>
-                <div class="pill-lang">
-                    <div class="lang-switch">
-                        ${navConfig.languages.map(lang => `
-                            <button class="lang-btn" data-lang="${lang.code}">${lang.label}</button>
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo" data-i18n="nav_logo">M. Ezzahar</a>
+                <div class="nav-menu">
+                    <div class="nav-links">
+                        ${navConfig.links.map(link => `
+                            <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
                         `).join('')}
                     </div>
+                    <div class="nav-actions">
+                        <button class="theme-toggle-btn" aria-label="Toggle Theme">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                        <div class="lang-switch">
+                            ${navConfig.languages.map(lang => `
+                                <button class="lang-btn" data-lang="${lang.code}">${lang.label}</button>
+                            `).join('')}
+                        </div>
+                        <a href="#contact" class="nav-cta-btn" data-i18n="nav_cta">Get in touch</a>
+                    </div>
                 </div>
-            </nav>
+            </div>
         `;
 
         // Build Mobile Header (distinct slide-in layout & accessibility)
         mobileHeader.innerHTML = `
-            <nav class="hero-nav-pill">
-                <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-            </nav>
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo" data-i18n="nav_logo">M. Ezzahar</a>
+                <div class="nav-actions-mobile">
+                    <button class="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+                </div>
+            </div>
             <div class="nav-mobile-overlay" id="nav-mobile-overlay"></div>
             <nav class="nav-mobile-menu" id="nav-mobile-menu" aria-hidden="true" role="dialog" aria-modal="true">
                 <div class="mobile-links">
                     ${navConfig.links.map(link => `
                         <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
                     `).join('')}
-                    <a href="Mohammed_Ezzahar_Resume.pdf" target="_blank" class="nav-resume-btn mobile-resume-btn" data-i18n="nav_resume" style="margin-top: 20px; text-align: center; display: block;">Resume</a>
-                </div>
-                <div class="mobile-socials">
-                    ${navConfig.socials.map(social => `
-                        <a href="${social.url}" target="_blank" data-i18n-title="${social.i18nTitleKey}" class="social-${social.platform}">
-                            <i class="${social.iconClass}"></i>
-                        </a>
-                    `).join('')}
+                    <a href="#contact" class="nav-cta-btn mobile-cta-btn" data-i18n="nav_cta" style="margin-top: 20px; text-align: center; display: block;">Get in touch</a>
                 </div>
                 <div class="mobile-lang-container">
                     <div class="lang-switch">
@@ -147,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('nav-burger');
     const mobileMenu = document.getElementById('nav-mobile-menu');
     const overlay = document.getElementById('nav-mobile-overlay');
-    const navLinks = document.querySelectorAll('.pill-links a, .mobile-links a');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-links a');
     const sections = document.querySelectorAll('section[id]');
 
     function toggleMenu(forceClose = false) {
@@ -415,12 +411,19 @@ document.addEventListener('DOMContentLoaded', () => {
             phoneLink.href = `tel:${pCode}${pNum}`;
             phoneVal.textContent = `${pCode} 6 09 23 32 84`;
         }
+
+        // Obfuscate footer email as well
+        const footerEmailLink = document.getElementById("footer-email-link");
+        if (footerEmailLink) {
+            footerEmailLink.href = `mailto:${user}@${domain}`;
+            footerEmailLink.textContent = `${user}@${domain}`;
+        }
     };
     obfuscateContact();
 
     // --- Category Filter Logic ---
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectElements = document.querySelectorAll('.featured-project, .p-card');
+    const projectElements = document.querySelectorAll('.featured-project-wheeler, .project-card-v4');
 
     if (filterButtons.length > 0 && projectElements.length > 0) {
         filterButtons.forEach(button => {
@@ -449,4 +452,39 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // --- Light/Dark Theme Switching Logic ---
+    const initTheme = () => {
+        const theme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        updateToggleIcons(theme);
+    };
+
+    const updateToggleIcons = (theme) => {
+        const icons = document.querySelectorAll('.theme-toggle-btn i');
+        icons.forEach(icon => {
+            if (theme === 'dark') {
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                icon.className = 'fa-solid fa-moon';
+            }
+        });
+    };
+
+    const toggleTheme = () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateToggleIcons(newTheme);
+    };
+
+    // Global listener on theme toggles
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.theme-toggle-btn')) {
+            toggleTheme();
+        }
+    });
+
+    initTheme();
 });

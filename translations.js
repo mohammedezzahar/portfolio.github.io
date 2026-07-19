@@ -1,5 +1,46 @@
 const translations = {
   en: {
+    // Redesign Keys
+    nav_about: "About",
+    nav_approach: "Approach",
+    nav_projects: "Projects",
+    nav_contact: "Contact",
+    nav_cta: "Get in touch",
+    
+    hero_name_1: "MOHAMMED",
+    hero_name_2: "EZZAHAR",
+    hero_location: "Based in Meknès, Morocco",
+    hero_statement: "Engineering the intersection of accounting integrity, Python automation, and machine learning models.",
+    hero_cta_email: "Email me",
+    hero_cta_linkedin: "Explore LinkedIn",
+    
+    cred_title: "CREDENTIALS",
+    cred_aliffa: "ALIFFA STARTUP (CO-FOUNDER & CFO)",
+    cred_uni: "UNIVERSITÉ MOULAY ISMAIL (LICENCE COMPTABILITÉ)",
+    cred_injaz: "INJAZ AL-MAGHRIB (NATIONAL FINALIST)",
+    
+    eyebrow_about: "01 / ABOUT",
+    eyebrow_approach: "02 / APPROACH",
+    eyebrow_projects: "03 / PROJECTS",
+    eyebrow_validation: "04 / RECOGNITION",
+    eyebrow_skills: "05 / SKILLS",
+    eyebrow_contact: "06 / CONTACT",
+    
+    meta_position: "Position",
+    meta_location: "Location",
+    meta_industry: "Industry",
+    meta_website: "Website",
+    
+    proj_f_headline: "5M+ transaction records and rules-based bottlenecks. Built an XGBoost fraud classifier combined with deep recommender vectors to achieve 91% precision.",
+    proj_year: "Year",
+    proj_tech_stack: "Tech Stack",
+    proj_outbound: "Review case study",
+    
+    footer_collab: "Let's work together.",
+    footer_keep_in_touch: "Let's keep in touch",
+    footer_newsletter_placeholder: "Your email address",
+    footer_newsletter_btn: "Subscribe",
+
     // Nav
     nav_about: "About",
     nav_experience: "Approach",
@@ -343,6 +384,47 @@ const translations = {
     proj_f_tech_item_4_p: "Docker, AWS EC2, S3"
   },
   fr: {
+    // Redesign Keys
+    nav_about: "À propos",
+    nav_approach: "Approche",
+    nav_projects: "Projets",
+    nav_contact: "Contact",
+    nav_cta: "Me contacter",
+    
+    hero_name_1: "MOHAMMED",
+    hero_name_2: "EZZAHAR",
+    hero_location: "Basé à Meknès, Maroc",
+    hero_statement: "Ingénierie à l'intersection de la rigueur comptable, de l'automatisation Python et du machine learning.",
+    hero_cta_email: "M'envoyer un email",
+    hero_cta_linkedin: "Profil LinkedIn",
+    
+    cred_title: "RÉFÉRENCES",
+    cred_aliffa: "STARTUP ALIFFA (COFONDATEUR & CFO)",
+    cred_uni: "UNIVERSITÉ MOULAY ISMAIL (LICENCE COMPTABILITÉ)",
+    cred_injaz: "INJAZ AL-MAGHRIB (FINALISTE NATIONAL)",
+    
+    eyebrow_about: "01 / À PROPOS",
+    eyebrow_approach: "02 / APPROCHE",
+    eyebrow_projects: "03 / PROJETS",
+    eyebrow_validation: "04 / RECONNAISSANCE",
+    eyebrow_skills: "05 / COMPÉTENCES",
+    eyebrow_contact: "06 / CONTACT",
+    
+    meta_position: "Poste",
+    meta_location: "Lieu",
+    meta_industry: "Secteur",
+    meta_website: "Site Web",
+    
+    proj_f_headline: "Plus de 5M d'enregistrements et goulots d'étranglement basés sur des règles. Développement d'un classificateur de fraude XGBoost combiné à des vecteurs de recommandation profonds pour atteindre une précision de 91%.",
+    proj_year: "Année",
+    proj_tech_stack: "Technologies",
+    proj_outbound: "Voir l'étude de cas",
+    
+    footer_collab: "Travaillons ensemble.",
+    footer_keep_in_touch: "Restons en contact",
+    footer_newsletter_placeholder: "Votre adresse email",
+    footer_newsletter_btn: "S'abonner",
+
     // Nav
     nav_about: "À propos",
     nav_experience: "Approche",
@@ -632,6 +714,47 @@ const translations = {
     proj_f_tech_item_4_p: "Docker, AWS EC2, S3"
   },
   ar: {
+    // Redesign Keys
+    nav_about: "نبذة",
+    nav_approach: "المنهج",
+    nav_projects: "المشاريع",
+    nav_contact: "اتصل بي",
+    nav_cta: "اتصل بي",
+    
+    hero_name_1: "محمد",
+    hero_name_2: "الزهر",
+    hero_location: "مستقر في مكناس، المغرب",
+    hero_statement: "هندسة التقاطع بين نزاهة المحاسبة، وأتمتة بايثون، ونماذج التعلم الآلي.",
+    hero_cta_email: "راسلني",
+    hero_cta_linkedin: "حساب لينكد إن",
+    
+    cred_title: "المؤهلات",
+    cred_aliffa: "شركة أليفا الناشئة (شريك مؤسس ومدير مالي)",
+    cred_uni: "جامعة مولاي إسماعيل (إجازة في المحاسبة)",
+    cred_injaz: "إنجاز المغرب (نهائيات وطنية)",
+    
+    eyebrow_about: "٠١ / نبذة",
+    eyebrow_approach: "٠٢ / المنهج",
+    eyebrow_projects: "٠٣ / المشاريع",
+    eyebrow_validation: "٠٤ / التقدير",
+    eyebrow_skills: "٠٥ / المهارات",
+    eyebrow_contact: "٠٦ / الاتصال",
+    
+    meta_position: "المنصب",
+    meta_location: "الموقع",
+    meta_industry: "القطاع",
+    meta_website: "الموقع الإلكتروني",
+    
+    proj_f_headline: "أكثر من ٥ ملايين سجل معاملات وعوائق برمجية قائمة على القواعد. بناء مصنف احتيال XGBoost مدمج بمتجهات توصية عميقة لتحقيق دقة ٩١٪.",
+    proj_year: "السنة",
+    proj_tech_stack: "التقنيات المستخدمة",
+    proj_outbound: "مراجعة دراسة الحالة",
+    
+    footer_collab: "لنعمل معاً.",
+    footer_keep_in_touch: "نبقى على اتصال",
+    footer_newsletter_placeholder: "بريدك الإلكتروني",
+    footer_newsletter_btn: "اشتراك",
+
     // Nav
     nav_about: "من أنا",
     nav_experience: "المنهج",
