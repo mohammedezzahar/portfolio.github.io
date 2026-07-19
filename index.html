@@ -1,240 +1,122 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
-    <!-- Language and Direction Sync -->
-    <script>
-        (function() {
-            const savedLang = localStorage.getItem('lang') || 'en';
-            document.documentElement.lang = savedLang;
-            document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
-            if (savedLang === 'ar') {
-                document.documentElement.classList.add('lang-ar');
-            } else {
-                document.documentElement.classList.remove('lang-ar');
-            }
-        })();
-    </script>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">Mohammed Ezzahar | Financial &amp; Data Analyst</title>
-    <meta name="description" content="Mohammed Ezzahar — Financial &amp; Data Analyst specializing in AI Modeling and Accounting.">
+    <title>Mohammed Ezzahar | Financial &amp; Data Analyst</title>
+    <meta name="description"
+        content="Mohammed Ezzahar — Financial &amp; Data Analyst specializing in AI Modeling and Accounting.">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Mohammed Ezzahar | Financial &amp; Data Analyst">
-    <meta property="og:image" content="images/logo.png">
+    <meta property="og:image" content="cinematic_3_boardroom.png">
     <meta property="og:description" content="Mastery in Accounting &amp; AI Modeling">
 
     <link rel="icon" href="youtube_art/logo.png" type="image/png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles_v5.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Premium Grain overlay -->
+    <!-- Global Elements -->
     <div class="grain-overlay"></div>
 
-    <!-- Desktop Header -->
-    <header id="desktop-header"></header>
+    <nav class="hero-nav-pill">
+        <div class="pill-links">
+            <a href="#about" data-section="about" data-i18n="nav_about">About</a>
+            <a href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
+            <a href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
+            <a href="#contact" data-section="contact" data-i18n="nav_contact">Contact</a>
+        </div>
 
-    <!-- Mobile Header & Drawer -->
-    <header id="mobile-header"></header>
+
+
+        <div class="pill-lang">
+            <div class="lang-switch">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Section 1: Hero -->
     <section class="hero" id="hero">
+        <div class="hero-bg" id="hero-parallax">
+            <img src="cinematic_3_boardroom.png" alt="Financial Context">
+        </div>
+        <div class="hero-overlay"></div>
+
         <div class="container hero-container">
-            <div class="hero-top-meta fade-up">
-                <span class="hero-location" data-i18n="hero_location">Based in Meknès, Morocco</span>
-            </div>
-            
-            <h1 class="hero-name fade-up">
-                <span class="name-line" data-i18n="hero_name_1">MOHAMMED</span>
-                <span class="name-line" data-i18n="hero_name_2">EZZAHAR</span>
-            </h1>
-            
-            <p class="hero-positioning fade-up" data-i18n="hero_statement">
-                Engineering the intersection of accounting integrity, Python automation, and machine learning models.
-            </p>
-            
-            <div class="hero-ctas fade-up">
-                <a href="#contact" class="hero-cta-link email-cta">
-                    <span data-i18n="hero_cta_email">Email me</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <span class="cta-separator">•</span>
-                <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank" class="hero-cta-link linkedin-cta">
-                    <span data-i18n="hero_cta_linkedin">Explore LinkedIn</span>
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Credibility Bar (Harrison Wheeler style trust band) -->
-    <section class="credibility-bar fade-up">
-        <div class="container">
-            <div class="credibility-title" data-i18n="cred_title">CREDENTIALS</div>
-            <div class="credibility-row">
-                <div class="cred-item">
-                    <span class="cred-logo">ALIFFA</span>
-                    <span class="cred-role" data-i18n="cred_aliffa">ALIFFA STARTUP (CO-FOUNDER &amp; CFO)</span>
+            <div class="hero-text">
+                <div class="hero-socials fade-up">
+                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn"
+                        class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/MohammedEzzahar" target="_blank" title="X (Twitter)" class="social-x"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@mohammedezzahar278" target="_blank" title="Medium" class="social-medium"><i
+                            class="fa-brands fa-medium"></i></a>
+                    <a href="https://www.reddit.com/user/MotheDatawizard/" target="_blank" title="Reddit"
+                        class="social-reddit"><i class="fa-brands fa-reddit"></i></a>
+                    <a href="https://substack.com/@mohammedezzahar1" target="_blank" title="Bookmark" class="social-substack"><i
+                            class="fa-solid fa-bookmark"></i></a>
+                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube"
+                        class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <div class="cred-divider">/</div>
-                <div class="cred-item">
-                    <span class="cred-logo">UMI</span>
-                    <span class="cred-role" data-i18n="cred_uni">UNIVERSITÉ MOULAY ISMAIL (LICENCE COMPTABILITÉ)</span>
-                </div>
-                <div class="cred-divider">/</div>
-                <div class="cred-item">
-                    <span class="cred-logo">INJAZ</span>
-                    <span class="cred-role" data-i18n="cred_injaz">INJAZ AL-MAGHRIB (NATIONAL FINALIST)</span>
-                </div>
+                <h1 class="hero-name fade-up">
+                    <span class="name-first" data-i18n="hero_name_first">MOHAMMED</span>
+                    <span class="name-last" data-i18n="hero_name_last">EZZAHAR</span>
+                </h1>
+                <div class="hero-job-eyebrow fade-up" data-i18n="hero_eyebrow">Financial &amp; Data Analyst</div>
+                <div class="hero-divider fade-up"></div>
+                <p class="hero-tagline-text fade-up" data-i18n="hero_tagline">Mastery in Accounting &amp; AI Modeling
+                </p>
             </div>
         </div>
+
     </section>
 
 
     <!-- Section 2: About -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_about">01 / ABOUT</div>
-                <hr class="header-divider">
-                <h2 data-i18n="about_title">Professional Biography</h2>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-bio-text fade-up">
-                    <p class="about-lead" data-i18n="about_lead">
-                        Bridging the gap between ledger data and financial decisions. My approach focuses on creating clear, auditable automated workflows that turn transaction volumes into structured insights.
-                    </p>
-                    <p class="about-p-main" data-i18n="about_body">
-                        Financial analyst and developer specializing in accounting automation and machine learning applications. Co-founder of ALIFFA, focused on building secure data pipelines and financial models.
-                    </p>
-                </div>
-                <div class="about-bio-secondary fade-up">
-                    <p data-i18n="about_p1">
-                        Trained in economics and accounting at <strong>Université Moulay Ismail</strong> and experienced in startup operations at <strong>ALIFFA</strong>, my work combines traditional accounting principles with software-driven automation.
-                    </p>
-                    <p data-i18n="about_p2">
-                        At ALIFFA, I design databases, manage tax modeling, and automate monthly reconciliation pipelines. My goal is to build secure, reproducible systems that simplify compliance and audit procedures.
-                    </p>
-                </div>
-            </div>
+    <section id="about" class="about-full-bleed">
+        <div class="about-bg">
+            <img src="cinematic_1_wallstreet.png" alt="Background">
         </div>
-    </section>
+        <div class="about-overlay"></div>
+        <div class="container about-grid">
+            <div class="about-text fade-up">
+                <div class="eyebrow" data-i18n="about_eyebrow">THE PHILOSOPHY</div>
+                <h2 data-i18n="about_h2">The Convergence of <em>Logic &amp; Capital</em></h2>
+                <p class="text-lead" data-i18n="about_lead">Bridge the gap between raw data and monumental decisions. My
+                    approach transcends simple analysis—it is about architecting clarity in a world of financial noise.
+                </p>
 
+                <p data-i18n="about_p1">Rooted in the academic precision of <strong>Université Moulay Ismail</strong>
+                    and forged in the high-stakes environment of <strong>ALIFFA Startup</strong>, my work represents a
+                    rare synthesis of <strong>Accounting Integrity</strong> and <strong>AI-Driven Innovation</strong>.
+                </p>
 
-    <!-- Section 3: Experience (Timeline List) -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_approach">02 / APPROACH</div>
-                <hr class="header-divider">
-                <h2 data-i18n="exp_h2">Professional Experience</h2>
-            </div>
-            
-            <div class="timeline-list">
-                <!-- Entry 1 -->
-                <div class="timeline-item fade-up">
-                    <div class="item-header">
-                        <div class="item-title-block">
-                            <h3 class="item-title">ALIFFA Startup</h3>
-                            <span class="item-subtitle">Co-Founder &amp; CFO/CTO</span>
-                        </div>
-                        <span class="item-date">2023 - 2024</span>
-                    </div>
-                    <p class="item-desc" data-i18n="exp_1_p">Co-led system migration on Microsoft Azure using resource-scaling strategies, and established a compliant accounting/reporting framework for the startup.</p>
-                    <div class="item-meta-row">
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_position">Position</span>
-                            <span class="meta-val">Co-Founder &amp; CFO</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_location">Location</span>
-                            <span class="meta-val">Meknès, Morocco</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_industry">Industry</span>
-                            <span class="meta-val">SaaS / PetTech</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_website">Website</span>
-                            <span class="meta-val"><a href="https://github.com/mohammedezzahar" target="_blank">aliffa.ma (Project)</a></span>
-                        </div>
-                    </div>
+                <p data-i18n="about_p2">As a Co-founder and CFO/CTO, I don't just build models; I engineer strategic
+                    advantages. From national finals to elite-level tax optimization, my mission is to deliver the
+                    technical certainty the global market demands.</p>
+
+                <div class="testimonial-block fade-up">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text" data-i18n="testimonial_text">"The work Mohammed and his team produced
+                        wasn&#39;t just technical—it was
+                        <strong>generational</strong> in Morocco&#39;s financial landscape."
+                    </p>
+                    <span class="testimonial-author" data-i18n="testimonial_author">— From official Mentors &amp;
+                        Referees</span>
                 </div>
-                
-                <!-- Entry 2 -->
-                <div class="timeline-item fade-up">
-                    <div class="item-header">
-                        <div class="item-title-block">
-                            <h3 class="item-title">Accounting Automation</h3>
-                            <span class="item-subtitle">Automation Engineer</span>
-                        </div>
-                        <span class="item-date">2025</span>
-                    </div>
-                    <p class="item-desc" data-i18n="exp_2_p">Designed custom ETL processes utilizing Pandas and fuzzy-matching logic to replace manual statistical sampling with 100% population transaction testing.</p>
-                    <div class="item-meta-row">
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_position">Position</span>
-                            <span class="meta-val">Data Engineer</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_location">Location</span>
-                            <span class="meta-val">Remote / Academic</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_industry">Industry</span>
-                            <span class="meta-val">Enterprise Automation</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_website">Website</span>
-                            <span class="meta-val"><a href="https://github.com/mohammedezzahar" target="_blank">github.com</a></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Entry 3 -->
-                <div class="timeline-item fade-up">
-                    <div class="item-header">
-                        <div class="item-title-block">
-                            <h3 class="item-title">Technical Synthesis</h3>
-                            <span class="item-subtitle">Financial Analyst</span>
-                        </div>
-                        <span class="item-date">2025</span>
-                    </div>
-                    <p class="item-desc" data-i18n="exp_3_p">Bridging Moroccan GAAP and IFRS reporting integrity with Python automation to streamline auditing and compliance pipelines.</p>
-                    <div class="item-meta-row">
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_position">Position</span>
-                            <span class="meta-val">Financial &amp; Tax Analyst</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_location">Location</span>
-                            <span class="meta-val">Meknès, Morocco</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_industry">Industry</span>
-                            <span class="meta-val">Financial Advisory</span>
-                        </div>
-                        <div class="meta-col">
-                            <span class="meta-lbl" data-i18n="meta_website">Website</span>
-                            <span class="meta-val"><a href="https://github.com/mohammedezzahar" target="_blank">github.com</a></span>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -243,336 +125,245 @@
     <!-- Section 4: Projects -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_projects">03 / PROJECTS</div>
-                <hr class="header-divider">
-                <h2 data-i18n="projects_h2">Selected Works</h2>
-            </div>
+            <div class="eyebrow fade-up" data-i18n="projects_eyebrow">SELECTED WORKS</div>
+            <h2 class="fade-up" data-i18n="projects_h2">Portfolio <em>Excellence</em></h2>
 
-            <!-- Projects Category Filter -->
-            <div class="projects-filter fade-up">
-                <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="filter_all">All</button>
-                <button class="filter-btn" data-filter="finance" aria-pressed="false" data-i18n="filter_finance">Finance</button>
-                <button class="filter-btn" data-filter="ai" aria-pressed="false" data-i18n="filter_ai">AI &amp; Data</button>
-            </div>
-
-            <!-- Harrison Wheeler Style Featured Project -->
-            <div class="featured-project-wheeler fade-up" data-category="ai">
-                <div class="fpw-meta">
-                    <span class="fpw-chip">FINTECH &amp; AI</span>
-                    <span class="fpw-year">2026</span>
+            <div class="featured-project fade-up">
+                <div class="f-img">
+                    <img src="cinematic_4_tradingdesk.png" alt="Fintech AI Engine">
                 </div>
-                <h3 class="fpw-headline" data-i18n="proj_f_headline">5M+ transaction records and rules-based bottlenecks. Built an XGBoost fraud classifier combined with deep recommender vectors to achieve 91% precision.</h3>
-                <p class="fpw-sentence" data-i18n="proj_f_p">Built an XGBoost fraud classifier trained on a labeled transaction dataset, evaluated against a baseline rules-based system, alongside a Transformer-based product recommendation model. View case study for metric validation &amp; charts.</p>
-                <a href="project-fintech-ai.html" class="fpw-link">
-                    <span data-i18n="proj_outbound">Review case study</span> <i class="fa-solid fa-arrow-right"></i>
+                <a href="project-fintech-ai.html" class="f-content">
+                    <div class="eyebrow" data-i18n="proj_f_eyebrow">FEATURED · FINTECH &amp; AI</div>
+                    <h3 data-i18n="proj_f_title">Fintech &amp; AI Analytics Engine</h3>
+                    <p class="text-mid" data-i18n="proj_f_p">A comprehensive risk management platform specializing in
+                        the deployment of AI for real-time asset management and automated data analysis.</p>
                 </a>
             </div>
 
-            <!-- Grid of Cards (Andrey Mitko Pattern) -->
-            <div class="projects-grid-v2">
-                <!-- Card 1 -->
-                <div class="project-card-v4 fade-up" data-category="finance">
-                    <div class="pc-top">
-                        <span class="pc-category">ACCOUNTING · AUTOMATION</span>
-                        <span class="pc-year">2025</span>
+            <div class="projects-grid">
+                <a href="project-bank-reconciliation.html" class="p-card fade-up">
+                    <div class="p-img">
+                        <div class="p-badge">01</div>
+                        <img src="cinematic_wide_2.png" alt="Bank Pipeline">
                     </div>
-                    <div class="pc-image-wrapper">
-                        <!-- SVG graphic representation -->
-                        <svg viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%; background:var(--bg-secondary); border-radius:4px; padding:10px;">
-                            <path d="M 0 30 L 400 30 M 0 80 L 400 80 M 0 130 L 400 130" stroke="var(--border)" stroke-width="1" stroke-dasharray="3 3" />
-                            <rect x="15" y="45" width="90" height="70" rx="3" fill="var(--bg-primary)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="60" y="75" font-family="var(--font-sans)" font-size="8" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">BANK PDF STATEMENT</text>
-                            <text x="60" y="90" font-family="var(--font-sans)" font-size="7" fill="var(--text-secondary)" text-anchor="middle">Ingestion ETL</text>
-                            
-                            <path d="M 105 80 L 135 80" stroke="var(--accent-navy)" stroke-width="1" stroke-dasharray="2 2" />
-                            <polygon points="135,78 140,80 135,82" fill="var(--accent-navy)" />
-                            
-                            <rect x="145" y="45" width="110" height="70" rx="3" fill="var(--bg-primary)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="200" y="75" font-family="var(--font-sans)" font-size="8" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">FUZZY MATCHING</text>
-                            <text x="200" y="90" font-family="var(--font-sans)" font-size="7" fill="var(--text-secondary)" text-anchor="middle">Levenshtein logic</text>
-                            
-                            <path d="M 255 80 L 285 80" stroke="var(--accent-navy)" stroke-width="1" stroke-dasharray="2 2" />
-                            <polygon points="285,78 290,80 285,82" fill="var(--accent-navy)" />
-                            
-                            <rect x="295" y="45" width="90" height="70" rx="3" fill="var(--accent-navy)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="340" y="75" font-family="var(--font-sans)" font-size="8" fill="var(--bg-primary)" text-anchor="middle" font-weight="bold">RECONCILED</text>
-                            <text x="340" y="90" font-family="var(--font-sans)" font-size="7" fill="var(--bg-primary)" text-anchor="middle">Ledger Update</text>
-                        </svg>
-                    </div>
-                    <div class="pc-content">
+                    <div class="p-info">
+                        <div class="eyebrow" data-i18n="proj_1_eyebrow">ACCOUNTING · AUTOMATION</div>
                         <h4 data-i18n="proj_1_title">Bank Reconciliation Pipeline</h4>
-                        <p data-i18n="proj_1_p">Developed an automated Python and SQL ETL pipeline using Levenshtein distance matching logic to reconcile ledger entries with bank statement transactions. View case study for matching logic details &amp; metrics.</p>
-                        <div class="pc-stack">
-                            <span class="pc-tag">Python</span>
-                            <span class="pc-tag">Pandas</span>
-                            <span class="pc-tag">SQL</span>
-                        </div>
-                        <a href="project-bank-reconciliation.html" class="pc-link">
-                            <span data-i18n="proj_outbound">Review case study</span> <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                        <p class="text-mid" data-i18n="proj_1_p">Automated reconciliation system reducing manual
+                            verification by 80% using custom Python logic.</p>
                     </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="project-card-v4 fade-up" data-category="ai">
-                    <div class="pc-top">
-                        <span class="pc-category">DATA SCIENCE · NLP</span>
-                        <span class="pc-year">2025</span>
+                </a>
+                <a href="project-market-bot.html" class="p-card fade-up">
+                    <div class="p-img">
+                        <div class="p-badge">02</div>
+                        <img src="cinematic_1_wallstreet.png" alt="Market Bot">
                     </div>
-                    <div class="pc-image-wrapper">
-                        <!-- SVG graphic representation -->
-                        <svg viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%; background:var(--bg-secondary); border-radius:4px; padding:10px;">
-                            <path d="M 50 20 L 50 140 L 350 140" stroke="var(--text-primary)" stroke-width="1" />
-                            <g fill="#4caf50" opacity="0.6">
-                                <circle cx="280" cy="50" r="5" />
-                                <circle cx="260" cy="65" r="4" />
-                                <circle cx="300" cy="70" r="6" />
-                            </g>
-                            <text x="280" y="95" font-family="var(--font-sans)" font-size="7" fill="var(--text-secondary)" text-anchor="middle">Positive</text>
-                            
-                            <g fill="#f44336" opacity="0.6">
-                                <circle cx="120" cy="110" r="6" />
-                                <circle cx="140" cy="95" r="4" />
-                                <circle cx="110" cy="120" r="5" />
-                            </g>
-                            <text x="120" y="80" font-family="var(--font-sans)" font-size="7" fill="var(--text-secondary)" text-anchor="middle">Negative</text>
-                        </svg>
+                    <div class="p-info">
+                        <div class="eyebrow" data-i18n="proj_2_eyebrow">DATA SCIENCE · FINANCE</div>
+                        <h4 data-i18n="proj_2_title">Sentiment-AI Market Bot</h4>
+                        <p class="text-mid" data-i18n="proj_2_p">Natural Language Processing bot filtering market
+                            sentiment from news feeds to forecast trends.</p>
                     </div>
-                    <div class="pc-content">
-                        <h4 data-i18n="proj_2_title">NLP Customer Sentiment Model</h4>
-                        <p data-i18n="proj_2_p">Fine-tuned a BERT-based classification model and semantic embedding pipeline to categorize customer sentiment polarities and group support interactions. View case study for validation dataset &amp; classification report.</p>
-                        <div class="pc-stack">
-                            <span class="pc-tag">BERT</span>
-                            <span class="pc-tag">PyTorch</span>
-                            <span class="pc-tag">HuggingFace</span>
-                        </div>
-                        <a href="project-market-bot.html" class="pc-link">
-                            <span data-i18n="proj_outbound">Review case study</span> <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                </a>
+                <a href="project-tax-study.html" class="p-card fade-up">
+                    <div class="p-img">
+                        <div class="p-badge">03</div>
+                        <img src="cinematic_3_boardroom.png" alt="Tax Study">
                     </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="project-card-v4 fade-up" data-category="finance">
-                    <div class="pc-top">
-                        <span class="pc-category">FINANCE · TAX STRATEGY</span>
-                        <span class="pc-year">2025</span>
-                    </div>
-                    <div class="pc-image-wrapper">
-                        <!-- SVG graphic representation -->
-                        <svg viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%; background:var(--bg-secondary); border-radius:4px; padding:10px;">
-                            <path d="M 40 20 L 40 140 L 370 140" stroke="var(--text-primary)" stroke-width="1" />
-                            <path d="M 40 50 L 370 50" stroke="#f44336" stroke-width="1.5" stroke-dasharray="3 3" />
-                            <path d="M 40 140 L 280 140 L 370 80" stroke="#4caf50" stroke-width="2" />
-                            <text x="350" y="40" font-family="var(--font-sans)" font-size="7" fill="#f44336" text-anchor="end">Standard 30%</text>
-                            <text x="200" y="130" font-family="var(--font-sans)" font-size="7" fill="#4caf50">Free Zone 0% IS</text>
-                        </svg>
-                    </div>
-                    <div class="pc-content">
+                    <div class="p-info">
+                        <div class="eyebrow" data-i18n="proj_3_eyebrow">FINANCE · TAX STRATEGY</div>
                         <h4 data-i18n="proj_3_title">Corporate Tax Impact Study</h4>
-                        <p data-i18n="proj_3_p">Econometric study modeling Corporate Tax (IS) impact for enterprises transitioning to Free Trade Zones under the Moroccan Finance Law. View case study for Power BI dashboards &amp; investment horizon projections.</p>
-                        <div class="pc-stack">
-                            <span class="pc-tag">Excel</span>
-                            <span class="pc-tag">STATA</span>
-                            <span class="pc-tag">EViews</span>
-                        </div>
-                        <a href="project-tax-study.html" class="pc-link">
-                            <span data-i18n="proj_outbound">Review case study</span> <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                        <p class="text-mid" data-i18n="proj_3_p">Comprehensive analysis of Moroccan fiscal frameworks
+                            for institutional investment planning.</p>
                     </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="project-card-v4 fade-up" data-category="ai">
-                    <div class="pc-top">
-                        <span class="pc-category">AI · MULTI-MODAL</span>
-                        <span class="pc-year">2025</span>
+                </a>
+                <a href="project-recommender.html" class="p-card fade-up">
+                    <div class="p-img">
+                        <div class="p-badge">04</div>
+                        <img src="cinematic_wide_3.png" alt="Recommender">
                     </div>
-                    <div class="pc-image-wrapper">
-                        <!-- SVG graphic representation -->
-                        <svg viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%; background:var(--bg-secondary); border-radius:4px; padding:10px;">
-                            <rect x="20" y="60" width="80" height="40" rx="3" fill="var(--bg-primary)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="60" y="85" font-family="var(--font-sans)" font-size="7" fill="var(--text-primary)" text-anchor="middle">Client Vectors</text>
-                            
-                            <path d="M 100 80 L 150 80" stroke="var(--accent-navy)" stroke-width="1" />
-                            <polygon points="150,77 155,80 150,83" fill="var(--accent-navy)" />
-                            
-                            <rect x="160" y="45" width="100" height="70" rx="3" fill="var(--bg-primary)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="210" y="75" font-family="var(--font-sans)" font-size="8" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">FAISS SEARCH</text>
-                            <text x="210" y="90" font-family="var(--font-sans)" font-size="7" fill="#4caf50" text-anchor="middle">5M+ vectors</text>
-                            
-                            <path d="M 260 80 L 310 80" stroke="var(--accent-navy)" stroke-width="1" />
-                            <polygon points="310,77 315,80 310,83" fill="var(--accent-navy)" />
-                            
-                            <rect x="320" y="60" width="60" height="40" rx="3" fill="var(--accent-navy)" stroke="var(--accent-navy)" stroke-width="1" />
-                            <text x="350" y="85" font-family="var(--font-sans)" font-size="7" fill="var(--bg-primary)" text-anchor="middle">Top-K Rec</text>
-                        </svg>
-                    </div>
-                    <div class="pc-content">
+                    <div class="p-info">
+                        <div class="eyebrow" data-i18n="proj_4_eyebrow">AI · MULTI-MODAL</div>
                         <h4 data-i18n="proj_4_title">Deep Recommender System</h4>
-                        <p data-i18n="proj_4_p">Deep neural network translating client profiles and risk histories into dense embedding vectors for product matching using FAISS similarity search. View case study for vector performance metrics.</p>
-                        <div class="pc-stack">
-                            <span class="pc-tag">TensorFlow</span>
-                            <span class="pc-tag">FAISS</span>
-                            <span class="pc-tag">Auto-encoder</span>
-                        </div>
-                        <a href="project-recommender.html" class="pc-link">
-                            <span data-i18n="proj_outbound">Review case study</span> <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                        <p class="text-mid" data-i18n="proj_4_p">Multi-vector recommendation engine for personalized
+                            financial product matching.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
-
-
-    <!-- Section 4.5: Recognition & Validation -->
-    <section id="validation" class="validation-section">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_validation">04 / RECOGNITION</div>
-                <hr class="header-divider">
-                <h2 data-i18n="validation_h2">Academic &amp; Professional Milestones</h2>
-            </div>
-            
-            <div class="validation-grid">
-                <div class="val-card fade-up">
-                    <h4 data-i18n="val_1_title">National Finalist – Injaz Al-Maghrib (2023)</h4>
-                    <p data-i18n="val_1_desc">Co-founded a PetTech SaaS startup project selected in the top 5% of 40+ national teams. Secured 10,000 MAD in academic seed funding after pitching to a jury of 12 investor experts.</p>
-                </div>
-                <div class="val-card fade-up">
-                    <h4 data-i18n="val_2_title">Financial Modeling Workshops</h4>
-                    <p data-i18n="val_2_desc">Served as Workshop Lead for the Club Finance &amp; Économie at Université Moulay Ismail, designing and teaching hands-on financial modeling and automation sessions to 50+ peers.</p>
-                </div>
-                <div class="val-card fade-up">
-                    <h4 data-i18n="val_3_title">Fiscal Advisory Jury Review</h4>
-                    <p data-i18n="val_3_desc">Defended a comprehensive corporate tax (IS) optimization model for Moroccan Free Zone transition, receiving high academic marks and recognition from economic faculty panel.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Section 5: Skills -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_skills">05 / SKILLS</div>
-                <hr class="header-divider">
-                <h2 data-i18n="skills_h2">Technical Infrastructure</h2>
-            </div>
+            <div class="eyebrow fade-up" data-i18n="skills_eyebrow">TECHNICAL ARSENAL</div>
+            <h2 class="fade-up" data-i18n="skills_h2">Technical <em>Infrastructure</em></h2>
 
             <div class="skills-grid-v2">
+
                 <div class="skill-group-v2 fade-up">
                     <span class="sg-counter">01</span>
                     <div class="sg-header">
                         <i class="fa-brands fa-python"></i>
                         <span class="sg-title" data-i18n="skills_g1">Programming</span>
                     </div>
-                </div>
-
-                <div class="skill-group-v2 fade-up">
-                    <span class="sg-counter">05</span>
-                    <div class="sg-header">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <span class="sg-title" data-i18n="skills_g5">Financial Modeling &amp; Valuation</span>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="skill_dcf">DCF Modeling</span></span>
-                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> <span data-i18n="skill_three_statement">3-Statement Models</span></span>
-                        <span class="skill-tag"><i class="fa-solid fa-scale-balanced"></i> <span data-i18n="skill_lbo">LBO Fundamentals</span></span>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-brain"></i> TensorFlow</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-fire"></i> PyTorch</span>
+                        <span class="sg-tag"><i class="fa-solid fa-database"></i> SQL</span>
+                        <span class="sg-tag"><i class="fa-solid fa-file-excel"></i> VBA / Excel</span>
+                        <span class="sg-tag"><i class="fa-solid fa-table"></i> Pandas</span>
+                        <span class="sg-tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
+                        <span class="sg-tag"><i class="fa-solid fa-code-branch"></i> Scikit-learn</span>
                     </div>
                 </div>
 
                 <div class="skill-group-v2 fade-up">
-                    <span class="sg-counter">06</span>
+                    <span class="sg-counter">02</span>
                     <div class="sg-header">
-                        <i class="fa-solid fa-cloud"></i>
-                        <span class="sg-title" data-i18n="skills_g6">Cloud, ERP &amp; Infrastructure</span>
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span class="sg-title" data-i18n="skills_g2">Data &amp; BI</span>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag sg-tag--strong"><i class="fa-brands fa-aws"></i> <span data-i18n="skill_aws_gcp">AWS / GCP</span></span>
-                        <span class="skill-tag sg-tag--strong"><i class="fa-solid fa-database"></i> <span data-i18n="skill_postgres_redis">PostgreSQL / Redis</span></span>
-                        <span class="skill-tag"><i class="fa-brands fa-docker"></i> <span data-i18n="skill_docker">Docker</span></span>
-                        <span class="skill-tag"><i class="fa-solid fa-server"></i> <span data-i18n="skill_erp">ERP Awareness (SAP/Oracle)</span></span>
-                        <span class="skill-tag"><i class="fa-solid fa-snowflake"></i> <span data-i18n="skill_snowflake">Snowflake (learning)</span></span>
-                        <span class="skill-tag"><i class="fa-solid fa-gear"></i> <span data-i18n="skill_fastapi_celery">FastAPI / Celery</span></span>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-pie"></i> PowerBI</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-chart-line"></i> Tableau</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-area"></i> Matplotlib</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-column"></i> Seaborn</span>
+                        <span class="sg-tag"><i class="fa-solid fa-chart-simple"></i> Plotly</span>
+                        <span class="sg-tag"><i class="fa-solid fa-layer-group"></i> Streamlit</span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Pandas Profiling</span>
                     </div>
                 </div>
+
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">03</span>
+                    <div class="sg-header">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span class="sg-title" data-i18n="skills_g3">Finance &amp; Accounting</span>
+                    </div>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-file-invoice-dollar"></i> Financial
+                            Modeling</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-scale-balanced"></i> Tax Planning
+                            (MA)</span>
+                        <span class="sg-tag"><i class="fa-solid fa-building-columns"></i> Bank Reconciliation</span>
+                        <span class="sg-tag"><i class="fa-solid fa-clipboard-check"></i> Audit Frameworks</span>
+                        <span class="sg-tag"><i class="fa-solid fa-book-open"></i> IFRS Standards</span>
+                        <span class="sg-tag"><i class="fa-solid fa-money-bill-trend-up"></i> Fiscal Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skill-group-v2 fade-up">
+                    <span class="sg-counter">04</span>
+                    <div class="sg-header">
+                        <i class="fa-solid fa-brain"></i>
+                        <span class="sg-title" data-i18n="skills_g4">AI &amp; Strategy</span>
+                    </div>
+                    <div class="sg-tags">
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-network-wired"></i> LSTMs /
+                            Transformers</span>
+                        <span class="sg-tag sg-tag--strong"><i class="fa-solid fa-language"></i> NLP / FinBERT</span>
+                        <span class="sg-tag"><i class="fa-solid fa-magnifying-glass"></i> Vector Search (FAISS)</span>
+                        <span class="sg-tag"><i class="fa-solid fa-lightbulb"></i> Critical Thinking</span>
+                        <span class="sg-tag"><i class="fa-solid fa-globe"></i> Geopolitical Analysis</span>
+                        <span class="sg-tag"><i class="fa-solid fa-comments"></i> Strategic Communication</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
 
     <!-- Section 6: Contact -->
     <section id="contact" class="contact-section">
         <div class="container contact-container">
-            <div class="section-header fade-up">
-                <div class="eyebrow" data-i18n="eyebrow_contact">06 / CONTACT</div>
-                <hr class="header-divider">
-                <h2 data-i18n="contact_h2">Let's Build Something Real</h2>
-            </div>
+            <div class="eyebrow fade-up" data-i18n="contact_eyebrow">OPEN TO OPPORTUNITIES</div>
+            <h2 class="fade-up" data-i18n="contact_h2">Let's Build <em>Something Real</em></h2>
             <p class="contact-lead fade-up" data-i18n="contact_lead">
-                Whether you're an institutional investor, a recruiting partner, or building something at the intersection of finance and AI — I want to hear from you.
+                Whether you're an institutional investor, a recruiting partner,
+                or building something at the intersection of finance and AI —
+                I want to hear from you.
             </p>
 
-            <div class="contact-split fade-up">
-                <!-- Column 1: Contact Form -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="0c476717-3801-44bb-8b17-062e249f056d"> <!-- Web3Forms Key -->
-                    <div class="form-row">
-                        <input type="text" name="name" placeholder="Name" required data-i18n-placeholder="form_name">
-                        <input type="email" name="email" placeholder="Email" required data-i18n-placeholder="form_email">
-                    </div>
-                    <input type="text" name="organization" placeholder="Organization (Optional)" data-i18n-placeholder="form_org">
-                    <textarea name="message" placeholder="Message" required data-i18n-placeholder="form_msg"></textarea>
-                    <button type="submit" class="btn btn-navy" data-i18n="form_submit">Send Message</button>
-                </form>
+            <div class="contact-grid fade-up">
 
-                <!-- Column 2: Direct Info -->
-                <div class="contact-info-list">
-                    <a href="#" id="email-link" class="contact-item"></a>
+                <a href="mailto:mohammedezzahar278@gmail.com" class="contact-item">
+                    <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">EMAIL</span>
+                        <span class="ci-value">mohammedezzahar278@gmail.com</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                </a>
+
+                <a href="tel:+212609233284" class="contact-item">
+                    <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">PHONE</span>
+                        <span class="ci-value">+212 6 09 23 32 84</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                </a>
+
+                <div class="contact-item contact-item--static">
+                    <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="ci-body">
+                        <span class="ci-label">LOCATION</span>
+                        <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
+                    </div>
                 </div>
-                <span data-i18n="contact_avail">Currently available for full-time roles and consulting engagements</span>
+
+
+
+            </div>
+
+            <div class="contact-availability fade-up">
+                <span class="avail-dot"></span>
+                <span data-i18n="contact_avail">Currently available for full-time roles and consulting
+                    engagements</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Andrey Mitko/Harrison Wheeler style) -->
-    <footer class="footer fade-up">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-split">
-                <div class="footer-left">
-                    <h2 class="footer-collab-heading" data-i18n="footer_collab">Let's work together.</h2>
-                    <a href="#" class="footer-email-link" id="footer-email-link">m.ezzahar@edu.umi.ac.ma</a>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-name">Mohammed Ezzahar</span>
+                    <span class="footer-role" data-i18n="footer_role">Financial &amp; Data Analyst · AI Developer</span>
                 </div>
-                <div class="footer-right">
-                    <div class="newsletter-block">
-                        <span class="newsletter-title" data-i18n="footer_keep_in_touch">Let's keep in touch</span>
-                        <form action="https://api.web3forms.com/submit" method="POST" class="newsletter-form">
-                            <input type="hidden" name="access_key" value="0c476717-3801-44bb-8b17-062e249f056d">
-                            <input type="email" name="email" placeholder="Your email address" required data-i18n-placeholder="footer_newsletter_placeholder">
-                            <button type="submit" class="btn btn-navy" data-i18n="footer_newsletter_btn">Subscribe</button>
-                        </form>
-                    </div>
+                <nav class="footer-links">
+                    <a href="#about" data-i18n="nav_about_short">About</a>
+                    <a href="#experience" data-i18n="nav_experience_short">Methodology</a>
+                    <a href="#projects" data-i18n="nav_projects_short">Projects</a>
+                    <a href="#skills" data-i18n="nav_skills_short">Skills</a>
+                    <a href="#contact" data-i18n="nav_contact_short">Contact</a>
+                </nav>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank"
+                        class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/mohammedezzahar" target="_blank" class="social-github"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/MohammedEzzahar" target="_blank" class="social-x"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://medium.com/@mohammedezzahar278" target="_blank" class="social-medium"><i
+                            class="fa-brands fa-medium"></i></a>
+                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" class="social-youtube"><i
+                            class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-            
-            <div class="footer-bottom-row">
+            <div class="footer-bottom">
                 <span class="copyright">© 2026 Mohammed Ezzahar</span>
-                <div class="footer-socials-row">
-                    <a href="https://www.linkedin.com/in/mohammedezzahar" target="_blank" class="footer-social-link"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/mohammedezzahar" target="_blank" class="footer-social-link"><i class="fa-brands fa-github"></i></a>
-                </div>
+                <span class="dot">·</span>
+                <span data-i18n="footer_location">Meknès, Morocco</span>
             </div>
         </div>
     </footer>
 
 
-    <script src="navConfig_v5.js"></script>
-    <script src="translations.js?v=1.5"></script>
-    <script src="script.js?v=1.5"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
