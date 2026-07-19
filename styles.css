@@ -376,6 +376,13 @@ h2 em {
     text-align: center;
 }
 
+.hero-text {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .hero-content {
     max-width: 1200px;
     padding: 0 20px;
