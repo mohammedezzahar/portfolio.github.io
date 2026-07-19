@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
                     `).join('')}
                 </div>
+                <div class="pill-divider"></div>
+                <a href="Mohammed_Ezzahar_Resume.pdf" target="_blank" class="nav-resume-btn" data-i18n="nav_resume">Resume</a>
+                <div class="pill-divider"></div>
                 <div class="pill-socials">
                     ${navConfig.socials.map(social => `
                         <a href="${social.url}" target="_blank" data-i18n-title="${social.i18nTitleKey}" class="social-${social.platform}">
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${navConfig.links.map(link => `
                         <a href="${link.href}" data-section="${link.id}" data-i18n="${link.i18nKey}"></a>
                     `).join('')}
+                    <a href="Mohammed_Ezzahar_Resume.pdf" target="_blank" class="nav-resume-btn mobile-resume-btn" data-i18n="nav_resume" style="margin-top: 20px; text-align: center; display: block;">Resume</a>
                 </div>
                 <div class="mobile-socials">
                     ${navConfig.socials.map(social => `
@@ -314,6 +318,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Translate placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (typeof translations !== 'undefined' && translations[lang] && translations[lang][key] !== undefined) {
+                el.setAttribute('placeholder', translations[lang][key]);
+            }
+        });
+
         // Translate title attributes
         document.querySelectorAll('[data-i18n-title]').forEach(el => {
             const key = el.getAttribute('data-i18n-title');
@@ -383,4 +395,58 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
         projectRevealObserver.observe(el);
     });
+
+    // --- Direct Info Obfuscation (Anti-Scraping) ---
+    const obfuscateContact = () => {
+        const user = "m.ezzahar";
+        const domain = "edu.umi.ac.ma";
+        const emailLink = document.getElementById("email-link");
+        const emailVal = document.getElementById("email-val");
+        if (emailLink && emailVal) {
+            emailLink.href = `mailto:${user}@${domain}`;
+            emailVal.textContent = `${user}@${domain}`;
+        }
+
+        const pCode = "+212";
+        const pNum = "609233284";
+        const phoneLink = document.getElementById("phone-link");
+        const phoneVal = document.getElementById("phone-val");
+        if (phoneLink && phoneVal) {
+            phoneLink.href = `tel:${pCode}${pNum}`;
+            phoneVal.textContent = `${pCode} 6 09 23 32 84`;
+        }
+    };
+    obfuscateContact();
+
+    // --- Category Filter Logic ---
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectElements = document.querySelectorAll('.featured-project, .p-card');
+
+    if (filterButtons.length > 0 && projectElements.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                // Update active state & accessibility
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-pressed', 'false');
+                });
+                button.classList.add('active');
+                button.setAttribute('aria-pressed', 'true');
+                
+                // Apply visual filter
+                projectElements.forEach(el => {
+                    const category = el.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        el.style.display = '';
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    } else {
+                        el.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
 });

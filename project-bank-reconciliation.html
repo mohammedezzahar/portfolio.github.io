@@ -110,8 +110,44 @@
                 <p data-i18n="proj_1_challenge">Processing thousands of transactions across multiple bank accounts manually was creating a severe bottleneck during monthly closings. Inconsistent vendor descriptions, date offsets, and human data-entry errors complicated the matching process.</p>
 
                 <!-- Video Demonstration Frame -->
-                <div class="video-frame fade-up">
-                    <img src="cinematic_wide_3.png" alt="Pipeline Demonstration Preview">
+                <!-- SVG Data Flow Visualization -->
+                <div class="video-frame fade-up" style="border: none; background: transparent; padding: 0; box-shadow: none;">
+                    <svg viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background:var(--bg-secondary); border:1px solid var(--border); border-radius:4px; padding:20px;">
+                        <!-- Background grid lines -->
+                        <path d="M 0 40 L 800 40 M 0 110 L 800 110 M 0 180 L 800 180" stroke="var(--border)" stroke-width="1" stroke-dasharray="4 4" />
+                        
+                        <!-- Step 1: Statement Ingestion -->
+                        <rect x="20" y="70" width="160" height="80" rx="4" fill="var(--bg-primary)" stroke="var(--accent)" stroke-width="1" />
+                        <text x="100" y="110" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">STATEMENT INGESTION</text>
+                        <text x="100" y="130" font-family="var(--font-tech)" font-size="9" fill="var(--text-secondary)" text-anchor="middle">API &amp; PDF PDFPLUMBER ETL</text>
+                        
+                        <!-- Arrow 1 -->
+                        <path d="M 180 110 L 220 110" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3" />
+                        <polygon points="220,107 227,110 220,113" fill="var(--accent)" />
+                        
+                        <!-- Step 2: Fuzzy Matching Logic -->
+                        <rect x="230" y="70" width="180" height="80" rx="4" fill="var(--bg-primary)" stroke="var(--accent)" stroke-width="1" />
+                        <text x="320" y="110" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">FUZZY MATCHING ENGINE</text>
+                        <text x="320" y="130" font-family="var(--font-tech)" font-size="9" fill="var(--text-secondary)" text-anchor="middle">LEVENSHTEIN DESCRIPTION COMPARISON</text>
+                        
+                        <!-- Arrow 2 -->
+                        <path d="M 410 110 L 450 110" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3" />
+                        <polygon points="450,107 457,110 450,113" fill="var(--accent)" />
+                        
+                        <!-- Step 3: Reconciliation Engine -->
+                        <rect x="460" y="70" width="160" height="80" rx="4" fill="var(--bg-primary)" stroke="var(--accent)" stroke-width="1" />
+                        <text x="540" y="110" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">SQL RECONCILIATION</text>
+                        <text x="540" y="130" font-family="var(--font-tech)" font-size="9" fill="var(--text-secondary)" text-anchor="middle">100% TRANSACTION TESTS</text>
+                        
+                        <!-- Arrow 3 -->
+                        <path d="M 620 110 L 660 110" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="3 3" />
+                        <polygon points="660,107 667,110 660,113" fill="var(--accent)" />
+                        
+                        <!-- Step 4: Ledger / Exception Dashboard -->
+                        <rect x="670" y="70" width="110" height="80" rx="4" fill="var(--accent)" stroke="var(--accent)" stroke-width="1" />
+                        <text x="725" y="110" font-family="var(--font-tech)" font-size="11" fill="var(--bg-primary)" text-anchor="middle" font-weight="bold">LEDGER</text>
+                        <text x="725" y="130" font-family="var(--font-tech)" font-size="9" fill="var(--bg-primary)" text-anchor="middle">AUDIT TRAIL</text>
+                    </svg>
                 </div>
 
                 <h3 data-i18n="detail_h_solution">The Solution & Execution</h3>
@@ -134,9 +170,7 @@
                 </div>
             </div>
 
-            <div class="project-gallery">
-                <div class="gallery-img fade-up"><img src="cinematic_wide_3.png" alt="Pipeline Logic"></div>
-                <div class="gallery-img fade-up"><img src="cinematic_1_wallstreet.png" alt="Dashboard View"></div>
+            <div class="project-gallery" style="display:none;">
             </div>
 
             <!-- Conclusion & CTA -->
@@ -176,8 +210,8 @@
 
 
 
-    <script src="translations.js?v=1.2"></script>
-    <script src="script.js?v=1.2"></script>
+    <script src="translations.js?v=1.5"></script>
+    <script src="script.js?v=1.5"></script>
 </body>
 
 </html>

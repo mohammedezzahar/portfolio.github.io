@@ -8,8 +8,7 @@ const navConfig = {
   ],
   socials: [
     { platform: "linkedin", url: "https://www.linkedin.com/in/mohammedezzahar", iconClass: "fa-brands fa-linkedin", i18nTitleKey: "title_linkedin" },
-    { platform: "github", url: "https://github.com/mohammedezzahar", iconClass: "fa-brands fa-github", i18nTitleKey: "title_github" },
-    { platform: "youtube", url: "https://www.youtube.com/@MohammedEzzahar-g1o", iconClass: "fa-brands fa-youtube", i18nTitleKey: "title_youtube" }
+    { platform: "github", url: "https://github.com/mohammedezzahar", iconClass: "fa-brands fa-github", i18nTitleKey: "title_github" }
   ],
   languages: [
     { code: "en", label: "EN" },

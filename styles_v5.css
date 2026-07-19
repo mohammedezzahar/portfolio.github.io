@@ -4060,3 +4060,221 @@ button[type="submit"]:hover {
     background: var(--bg-secondary) !important;
     border: 1px solid var(--border) !important;
 }
+
+/* Category Filter Tabs */
+.projects-filter {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+    padding: 8px 18px !important;
+    font-family: var(--font-tech) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: var(--text-dim) !important;
+    border-radius: 4px !important;
+    cursor: pointer;
+    transition: all 0.3s !important;
+}
+
+.filter-btn:hover {
+    color: var(--text) !important;
+    border-color: var(--accent) !important;
+}
+
+.filter-btn.active {
+    background: var(--accent) !important;
+    color: var(--bg-primary) !important;
+    border-color: var(--accent) !important;
+}
+
+/* Contact Form & Obfuscated Layout */
+.contact-split {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    margin-top: 50px;
+}
+
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--border) !important;
+    padding: 16px 20px !important;
+    color: var(--text-primary) !important;
+    font-family: var(--font-body) !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+    outline: none !important;
+    transition: 0.3s !important;
+    width: 100% !important;
+}
+
+.contact-form textarea {
+    min-height: 160px !important;
+    resize: vertical !important;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent) !important;
+    background: var(--bg-secondary) !important;
+}
+
+.contact-form button[type="submit"] {
+    padding: 18px !important;
+    width: 100% !important;
+    cursor: pointer !important;
+}
+
+.resume-cta-card {
+    border: 1px dashed var(--accent) !important;
+}
+
+/* Navbar Resume Button */
+.nav-resume-btn {
+    font-family: var(--font-tech) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+    padding: 6px 14px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 4px !important;
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.3s !important;
+}
+
+.nav-resume-btn:hover {
+    background: var(--accent) !important;
+    color: var(--bg-primary) !important;
+    border-color: var(--accent) !important;
+}
+
+.mobile-resume-btn {
+    width: max-content;
+    margin: 20px auto 0 !important;
+}
+
+/* Validation Section & Cards */
+.validation-section {
+    background: var(--bg-secondary) !important;
+    border-top: 1px solid var(--border) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.validation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.val-card {
+    background: var(--bg-primary) !important;
+    border: 1px solid var(--border) !important;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.val-card h4 {
+    font-family: var(--font-tech) !important;
+    font-size: 14px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    margin-bottom: 16px !important;
+    color: var(--text-primary) !important;
+}
+
+.val-card p {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    color: var(--text-secondary) !important;
+}
+
+/* Two-Tier Cards Styling & Layout Priority */
+.featured-project {
+    border: 1px solid var(--accent) !important;
+    border-radius: 4px !important;
+    background: var(--bg-primary) !important;
+    padding: 48px !important;
+}
+
+.featured-project h3 {
+    font-size: 26px !important;
+    margin-bottom: 16px !important;
+    font-family: var(--font-editorial) !important;
+}
+
+.featured-project .read-more-btn {
+    display: inline-block !important;
+    margin-top: 24px !important;
+    padding: 10px 20px !important;
+    border: 1px solid var(--accent) !important;
+    font-family: var(--font-tech) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    border-radius: 4px !important;
+    background: var(--accent) !important;
+    color: var(--bg-primary) !important;
+    transition: all 0.3s !important;
+}
+
+.featured-project:hover {
+    background: var(--bg-secondary) !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03) !important;
+}
+
+.featured-project:hover .read-more-btn {
+    background: var(--bg-primary) !important;
+    color: var(--accent) !important;
+}
+
+.proj-metadata {
+    font-family: var(--font-tech) !important;
+    font-size: 10.5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #888888 !important;
+    margin-bottom: 16px !important;
+}
+
+@media (max-width: 992px) {
+    .validation-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .contact-split {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}

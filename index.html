@@ -147,6 +147,28 @@
         </div>
     </section>
 
+    <!-- Section: Recognition & Validation -->
+    <section id="validation" class="validation-section">
+        <div class="container">
+            <div class="eyebrow fade-up" data-i18n="validation_eyebrow">RECOGNITION &amp; VALIDATION</div>
+            <h2 class="fade-up" data-i18n="validation_h2">Academic &amp; Professional <em>Milestones</em></h2>
+            
+            <div class="validation-grid">
+                <div class="val-card fade-up">
+                    <h4 data-i18n="val_1_title">National Finalist – Injaz Al-Maghrib (2023)</h4>
+                    <p data-i18n="val_1_desc">Co-founded a PetTech SaaS startup project selected in the top 5% of 40+ national teams. Secured 10,000 MAD in academic seed funding after pitching to a jury of 12 investor experts.</p>
+                </div>
+                <div class="val-card fade-up">
+                    <h4 data-i18n="val_2_title">Financial Modeling Workshops</h4>
+                    <p data-i18n="val_2_desc">Served as Workshop Lead for the Club Finance &amp; Économie at Université Moulay Ismail, designing and teaching hands-on financial modeling and automation sessions to 50+ peers.</p>
+                </div>
+                <div class="val-card fade-up">
+                    <h4 data-i18n="val_3_title">Fiscal Advisory Jury Review</h4>
+                    <p data-i18n="val_3_desc">Defended a comprehensive corporate tax (IS) optimization model for Moroccan Free Zone transition, receiving high academic marks and recognition from economic faculty panel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 4: Projects -->
     <section id="projects" class="projects">
@@ -154,48 +176,54 @@
             <div class="eyebrow fade-up" data-i18n="projects_eyebrow">SELECTED WORKS</div>
             <h2 class="fade-up" data-i18n="projects_h2">Portfolio <em>Excellence</em></h2>
 
-            <div class="featured-project fade-up">
-                <!-- Image removed -->
-                <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/FinTech-Fraud-Detection.md" class="f-content">
+            <!-- Projects Category Filter -->
+            <div class="projects-filter fade-up">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="filter_all">All</button>
+                <button class="filter-btn" data-filter="finance" aria-pressed="false" data-i18n="filter_finance">Finance</button>
+                <button class="filter-btn" data-filter="ai" aria-pressed="false" data-i18n="filter_ai">AI &amp; Data</button>
+            </div>
+
+            <div class="featured-project fade-up" data-category="ai">
+                <a href="project-fintech-ai.html" class="f-content">
                     <div class="eyebrow" data-i18n="proj_f_eyebrow">FEATURED · FINTECH &amp; AI</div>
                     <h3 data-i18n="proj_f_title">Fintech &amp; AI Analytics Engine</h3>
-                    <p class="text-mid" data-i18n="proj_f_p">XGBoost fraud classifier achieving 91% precision with 30% false-positive reduction on live transaction data — combined with a Transformer-based financial product recommender that lifted session depth 8%. Stack: Python · PyTorch · XGBoost · PostgreSQL · Docker · AWS.</p>
+                    <div class="proj-metadata" data-i18n="proj_f_meta">Jan–Mar 2026 · Startup Initiative · 5M+ vector comparisons</div>
+                    <p class="text-mid" data-i18n="proj_f_p">Built an XGBoost fraud classifier trained on a labeled transaction dataset, evaluated against a baseline rules-based system, alongside a Transformer-based product recommendation model. View case study for metric validation &amp; charts.</p>
+                    <span class="read-more-btn" data-i18n="proj_view_arch">Review Architecture →</span>
                 </a>
             </div>
 
             <div class="projects-grid">
-                <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/Bank-Reconciliation-Pipeline.md" class="p-card fade-up">
-                    <!-- Image removed -->
+                <a href="project-bank-reconciliation.html" class="p-card fade-up" data-category="finance">
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_1_eyebrow">ACCOUNTING · AUTOMATION</div>
                         <h4 data-i18n="proj_1_title">Bank Reconciliation Pipeline</h4>
-                        <p class="text-mid" data-i18n="proj_1_p">Automated reconciliation pipeline saving 15 hours/week and eliminating 95% of manual entry errors using custom Python and SQL logic.</p>
+                        <div class="proj-metadata" data-i18n="proj_1_meta">Oct–Dec 2025 · Corporate Automation · 10,000+ transactions</div>
+                        <p class="text-mid" data-i18n="proj_1_p">Developed an automated Python and SQL ETL pipeline using Levenshtein distance matching logic to reconcile ledger entries with bank statement transactions. View case study for matching logic details &amp; metrics.</p>
                     </div>
                 </a>
-                <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/NLP-Market-Bot.md" class="p-card fade-up">
-                    <!-- Image removed -->
+                <a href="project-market-bot.html" class="p-card fade-up" data-category="ai">
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_2_eyebrow">DATA SCIENCE · NLP</div>
                         <h4 data-i18n="proj_2_title">NLP Customer Sentiment Model</h4>
-                        <p class="text-mid" data-i18n="proj_2_p">BERT-based generation model and semantic embedding pipeline for customer insight extraction.</p>
+                        <div class="proj-metadata" data-i18n="proj_2_meta">Mar–May 2025 · Enterprise Digitization · 50,000+ interactions</div>
+                        <p class="text-mid" data-i18n="proj_2_p">Fine-tuned a BERT-based classification model and semantic embedding pipeline to categorize customer sentiment polarities and group support interactions. View case study for validation dataset &amp; classification report.</p>
                     </div>
                 </a>
-                <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/Corporate-Tax-Impact-Study.md" class="p-card fade-up">
-                    <!-- Image removed -->
+                <a href="project-tax-study.html" class="p-card fade-up" data-category="finance">
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_3_eyebrow">FINANCE · TAX STRATEGY</div>
                         <h4 data-i18n="proj_3_title">Corporate Tax Impact Study</h4>
-                        <p class="text-mid" data-i18n="proj_3_p">Comprehensive analysis of Moroccan fiscal frameworks
-                            for institutional investment planning.</p>
+                        <div class="proj-metadata" data-i18n="proj_3_meta">Jul–Sep 2025 · Advisory Case Study · 5-year fiscal projections</div>
+                        <p class="text-mid" data-i18n="proj_3_p">Econometric study modeling Corporate Tax (IS) impact for enterprises transitioning to Free Trade Zones under the Moroccan Finance Law. View case study for Power BI dashboards &amp; investment horizon projections.</p>
                     </div>
                 </a>
-                <a href="https://github.com/mohammedezzahar/MyProjects/blob/main/Deep-Recommender-System.md" class="p-card fade-up">
-                    <!-- Image removed -->
+                <a href="project-recommender.html" class="p-card fade-up" data-category="ai">
                     <div class="p-info">
                         <div class="eyebrow" data-i18n="proj_4_eyebrow">AI · MULTI-MODAL</div>
                         <h4 data-i18n="proj_4_title">Deep Recommender System</h4>
-                        <p class="text-mid" data-i18n="proj_4_p">Multi-vector recommendation engine for personalized
-                            financial product matching.</p>
+                        <div class="proj-metadata" data-i18n="proj_4_meta">Nov 2025 · FinTech Application · 5M+ vector database size</div>
+                        <p class="text-mid" data-i18n="proj_4_p">Deep neural network translating client profiles and risk histories into dense embedding vectors for product matching using FAISS similarity search. View case study for vector performance metrics.</p>
                     </div>
                 </a>
             </div>
@@ -324,42 +352,62 @@
                 I want to hear from you.
             </p>
 
-            <div class="contact-grid fade-up">
-
-                <a href="mailto:m.ezzahar@edu.umi.ac.ma" class="contact-item">
-                    <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="ci-body">
-                        <span class="ci-label" data-i18n="ci_label_email">EMAIL</span>
-                        <span class="ci-value" dir="ltr">m.ezzahar@edu.umi.ac.ma</span>
+            <div class="contact-split fade-up">
+                <!-- Column 1: Contact Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="0c476717-3801-44bb-8b17-062e249f056d"> <!-- Web3Forms Key -->
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" required data-i18n-placeholder="form_name">
+                        <input type="email" name="email" placeholder="Email" required data-i18n-placeholder="form_email">
                     </div>
-                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
-                </a>
+                    <input type="text" name="organization" placeholder="Organization (Optional)" data-i18n-placeholder="form_org">
+                    <textarea name="message" placeholder="Message" required data-i18n-placeholder="form_msg"></textarea>
+                    <button type="submit" class="btn" data-i18n="form_submit">Send Message</button>
+                </form>
 
-                <a href="tel:+212609233284" class="contact-item">
-                    <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
-                    <div class="ci-body">
-                        <span class="ci-label" data-i18n="ci_label_phone">PHONE</span>
-                        <span class="ci-value" dir="ltr">+212 6 09 23 32 84</span>
-                    </div>
-                    <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
-                </a>
+                <!-- Column 2: Direct Info -->
+                <div class="contact-info-list">
+                    <a href="#" id="email-link" class="contact-item">
+                        <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="ci-body">
+                            <span class="ci-label" data-i18n="ci_label_email">EMAIL</span>
+                            <span class="ci-value" dir="ltr" id="email-val">[Loading email...]</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                    </a>
 
-                <div class="contact-item contact-item--static">
-                    <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div class="ci-body">
-                        <span class="ci-label" data-i18n="ci_label_location">LOCATION</span>
-                        <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
+                    <a href="#" id="phone-link" class="contact-item">
+                        <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="ci-body">
+                            <span class="ci-label" data-i18n="ci_label_phone">PHONE</span>
+                            <span class="ci-value" dir="ltr" id="phone-val">[Loading phone...]</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                    </a>
+
+                    <div class="contact-item contact-item--static">
+                        <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="ci-body">
+                            <span class="ci-label" data-i18n="ci_label_location">LOCATION</span>
+                            <span class="ci-value" data-i18n="contact_location">Meknès, Morocco · Available Remotely</span>
+                        </div>
                     </div>
+
+                    <!-- Secondary CTA: Resume Download -->
+                    <a href="Mohammed_Ezzahar_Resume.pdf" target="_blank" class="contact-item resume-cta-card">
+                        <div class="ci-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="ci-body">
+                            <span class="ci-label" data-i18n="ci_label_resume">RESUME</span>
+                            <span class="ci-value" data-i18n="contact_download_resume">Download CV / Resume (PDF)</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right ci-arrow"></i>
+                    </a>
                 </div>
-
-
-
             </div>
 
             <div class="contact-availability fade-up">
                 <span class="avail-dot"></span>
-                <span data-i18n="contact_avail">Currently available for full-time roles and consulting
-                    engagements</span>
+                <span data-i18n="contact_avail">Currently available for full-time roles and consulting engagements</span>
             </div>
         </div>
     </section>
@@ -374,7 +422,7 @@
                 </div>
                 <nav class="footer-links">
                     <a href="#about" data-i18n="nav_about_short">About</a>
-                    <a href="#experience" data-i18n="nav_experience">Methodology</a>
+                    <a href="#experience" data-i18n="nav_experience">Approach</a>
                     <a href="#projects" data-i18n="nav_projects_short">Projects</a>
                     <a href="#skills" data-i18n="nav_skills_short">Skills</a>
                     <a href="#contact" data-i18n="nav_contact_short">Contact</a>
@@ -384,8 +432,6 @@
                         class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/mohammedezzahar" target="_blank" class="social-github"><i
                             class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" class="social-youtube"><i
-                            class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">

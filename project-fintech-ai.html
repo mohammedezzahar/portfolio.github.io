@@ -103,8 +103,39 @@
                 <p data-i18n="proj_f_challenge">Financial platforms face the dual challenge of protecting assets from sophisticated fraud while simultaneously improving user engagement through hyper-personalized financial product recommendations. Existing systems were producing too many false-positive alerts, causing friction in legitimate transactions.</p>
 
                 <!-- Video Demonstration Frame -->
-                <div class="video-frame fade-up">
-                    <img src="cinematic_wide_1.png" alt="System Demonstration Preview">
+                <!-- SVG PR Curve Chart -->
+                <div class="video-frame fade-up" style="border: none; background: transparent; padding: 0; box-shadow: none;">
+                    <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background:var(--bg-secondary); border:1px solid var(--border); border-radius:4px; padding:20px;">
+                        <!-- Grid -->
+                        <path d="M 60 20 L 60 200 L 760 200" stroke="var(--text-primary)" stroke-width="1.5" />
+                        <path d="M 60 65 L 760 65 M 60 110 L 760 110 M 60 155 L 760 155" stroke="var(--border)" stroke-dasharray="3 3" />
+                        
+                        <!-- Y-Axis Labels (Precision) -->
+                        <text x="50" y="25" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">1.0</text>
+                        <text x="50" y="68" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">0.9</text>
+                        <text x="50" y="113" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">0.8</text>
+                        <text x="50" y="158" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">0.7</text>
+                        <text x="50" y="203" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">0.0</text>
+                        
+                        <!-- X-Axis Labels (Recall) -->
+                        <text x="60" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">0.0</text>
+                        <text x="235" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">0.25</text>
+                        <text x="410" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">0.50</text>
+                        <text x="585" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">0.75</text>
+                        <text x="760" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">1.00</text>
+                        
+                        <text x="410" y="235" font-family="var(--font-tech)" font-size="10" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">RECALL</text>
+                        <text x="15" y="110" font-family="var(--font-tech)" font-size="10" fill="var(--text-primary)" text-anchor="middle" font-weight="bold" transform="rotate(-90 15 110)">PRECISION</text>
+                        
+                        <!-- PR Curve (XGBoost) -->
+                        <path d="M 60 25 C 200 25, 400 30, 600 55 C 655 60, 680 80, 760 180" stroke="var(--accent)" stroke-width="2.5" />
+                        
+                        <!-- Highlight Stat: 91% Precision at 85% Recall -->
+                        <circle cx="655" cy="61" r="5" fill="var(--accent)" />
+                        <path d="M 655 61 L 655 200 M 60 61 L 655 61" stroke="var(--text-dim)" stroke-width="1" stroke-dasharray="2 2" />
+                        <rect x="530" y="15" width="220" height="35" rx="3" fill="var(--bg-primary)" stroke="var(--border)" stroke-width="1" />
+                        <text x="640" y="37" font-family="var(--font-tech)" font-size="10" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">XGBoost: 91% Precision @ 85% Recall</text>
+                    </svg>
                 </div>
 
                 <h3 data-i18n="detail_h_solution">The Solution & Execution</h3>
@@ -131,9 +162,7 @@
                 </div>
             </div>
 
-            <div class="project-gallery">
-                <div class="gallery-img fade-up"><img src="cinematic_wide_1.png" alt="Analytics Dashboard"></div>
-                <div class="gallery-img fade-up"><img src="cinematic_wide_2.png" alt="System Architecture"></div>
+            <div class="project-gallery" style="display:none;">
             </div>
 
             <!-- Conclusion & CTA -->
@@ -182,8 +211,8 @@
 
 
 
-    <script src="translations.js?v=1.2"></script>
-    <script src="script.js?v=1.2"></script>
+    <script src="translations.js?v=1.5"></script>
+    <script src="script.js?v=1.5"></script>
 </body>
 
 </html>

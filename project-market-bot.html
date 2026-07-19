@@ -106,8 +106,54 @@
                 <p data-i18n="proj_2_challenge">Unstructured chat and ticketing data contained immense, untapped business value. However, the sheer volume made manual analysis impossible, causing the product team to miss critical shifts in customer sentiment that could act as leading indicators for churn.</p>
 
                 <!-- Video Demonstration Frame -->
-                <div class="video-frame fade-up">
-                    <img src="cinematic_wide_1.png" alt="Sentiment Bot Preview">
+                <!-- SVG Semantic Embedding Clusters -->
+                <div class="video-frame fade-up" style="border: none; background: transparent; padding: 0; box-shadow: none;">
+                    <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background:var(--bg-secondary); border:1px solid var(--border); border-radius:4px; padding:20px;">
+                        <!-- Grid -->
+                        <path d="M 60 20 L 60 200 L 760 200" stroke="var(--text-primary)" stroke-width="1.5" />
+                        <path d="M 60 65 L 760 65 M 60 110 L 760 110 M 60 155 L 760 155" stroke="var(--border)" stroke-dasharray="3 3" />
+                        
+                        <!-- Y-Axis Labels -->
+                        <text x="50" y="110" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle" transform="rotate(-90 50 110)">UMAP DIMENSION 2</text>
+                        <text x="410" y="225" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">UMAP DIMENSION 1</text>
+                        
+                        <!-- Cluster 1: Positive Sentiment (Right-top) -->
+                        <g fill="#4caf50" opacity="0.6">
+                            <circle cx="550" cy="60" r="6" />
+                            <circle cx="580" cy="70" r="5" />
+                            <circle cx="560" cy="90" r="7" />
+                            <circle cx="610" cy="50" r="6" />
+                            <circle cx="620" cy="80" r="8" />
+                            <circle cx="640" cy="65" r="5" />
+                            <circle cx="590" cy="95" r="6" />
+                            <circle cx="660" cy="85" r="7" />
+                        </g>
+                        <text x="600" y="125" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" font-weight="bold" text-anchor="middle">POSITIVE SENTIMENT</text>
+                        
+                        <!-- Cluster 2: Negative Sentiment (Left-bottom) -->
+                        <g fill="#f44336" opacity="0.6">
+                            <circle cx="160" cy="140" r="7" />
+                            <circle cx="180" cy="160" r="5" />
+                            <circle cx="150" cy="175" r="8" />
+                            <circle cx="210" cy="150" r="6" />
+                            <circle cx="230" cy="170" r="7" />
+                            <circle cx="190" cy="180" r="6" />
+                            <circle cx="250" cy="155" r="5" />
+                            <circle cx="220" cy="185" r="8" />
+                        </g>
+                        <text x="200" y="125" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" font-weight="bold" text-anchor="middle">NEGATIVE SENTIMENT (PAIN POINTS)</text>
+                        
+                        <!-- Cluster 3: Neutral (Center) -->
+                        <g fill="#ffeb3b" opacity="0.6">
+                            <circle cx="380" cy="100" r="6" />
+                            <circle cx="400" cy="115" r="5" />
+                            <circle cx="420" cy="90" r="8" />
+                            <circle cx="370" cy="130" r="7" />
+                            <circle cx="430" cy="120" r="6" />
+                            <circle cx="450" cy="105" r="5" />
+                        </g>
+                        <text x="410" y="155" font-family="var(--font-tech)" font-size="11" fill="var(--text-primary)" font-weight="bold" text-anchor="middle">NEUTRAL / GENERAL</text>
+                    </svg>
                 </div>
 
                 <h3 data-i18n="detail_h_solution">The Solution & Execution</h3>
@@ -130,9 +176,7 @@
                 </div>
             </div>
 
-            <div class="project-gallery">
-                <div class="gallery-img fade-up"><img src="cinematic_wide_1.png" alt="Bot Logic"></div>
-                <div class="gallery-img fade-up"><img src="cinematic_3_boardroom.png" alt="Trading Analysis"></div>
+            <div class="project-gallery" style="display:none;">
             </div>
 
             <!-- Conclusion & CTA -->
@@ -172,8 +216,8 @@
 
 
 
-    <script src="translations.js?v=1.2"></script>
-    <script src="script.js?v=1.2"></script>
+    <script src="translations.js?v=1.5"></script>
+    <script src="script.js?v=1.5"></script>
 </body>
 
 </html>

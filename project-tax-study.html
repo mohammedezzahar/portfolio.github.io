@@ -106,8 +106,44 @@
                 <p data-i18n="proj_3_challenge">Navigating Moroccan tax laws is complex for foreign and domestic institutional investors. Manually calculating the long-term ROI impact of transitioning operations to a Free Trade Zone under the Moroccan Finance Law is prone to error and lacks predictive scenario analysis.</p>
 
                 <!-- Information Architecture Frame -->
-                <div class="video-frame fade-up">
-                    <img src="cinematic_wide_2.png" alt="Strategic Planning Preview">
+                <!-- SVG Fiscal Tax Savings Line Chart -->
+                <div class="video-frame fade-up" style="border: none; background: transparent; padding: 0; box-shadow: none;">
+                    <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; background:var(--bg-secondary); border:1px solid var(--border); border-radius:4px; padding:20px;">
+                        <!-- Grid -->
+                        <path d="M 60 20 L 60 200 L 760 200" stroke="var(--text-primary)" stroke-width="1.5" />
+                        <path d="M 60 65 L 760 65 M 60 110 L 760 110 M 60 155 L 760 155" stroke="var(--border)" stroke-dasharray="3 3" />
+                        
+                        <!-- Y-Axis Labels (IS Rate) -->
+                        <text x="50" y="25" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">30%</text>
+                        <text x="50" y="82" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">20%</text>
+                        <text x="50" y="141" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">10%</text>
+                        <text x="50" y="200" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="end">0%</text>
+                        
+                        <!-- X-Axis Labels (Years) -->
+                        <text x="60" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">Year 0</text>
+                        <text x="235" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">Year 1</text>
+                        <text x="410" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">Year 2</text>
+                        <text x="585" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">Year 3</text>
+                        <text x="760" y="215" font-family="var(--font-tech)" font-size="10" fill="var(--text-secondary)" text-anchor="middle">Year 5+</text>
+                        
+                        <!-- Y-Axis Label -->
+                        <text x="15" y="110" font-family="var(--font-tech)" font-size="10" fill="var(--text-primary)" text-anchor="middle" font-weight="bold" transform="rotate(-90 15 110)">EFFECTIVE TAX RATE (IS)</text>
+                        
+                        <!-- Line 1: Standard Corporate Tax (IS) -> Constant at 30% (y=25) -->
+                        <path d="M 60 25 L 760 25" stroke="#f44336" stroke-width="2" stroke-dasharray="4 4" />
+                        <text x="680" y="40" font-family="var(--font-tech)" font-size="9" fill="#f44336" font-weight="bold">Standard rate (30%)</text>
+                        
+                        <!-- Line 2: Free Zone Corporate Tax -> 0% for 5 years, then 15% -->
+                        <!-- Year 0-5 at 0% (y=200), Year 5+ at 15% (y=112.5) -->
+                        <path d="M 60 200 L 585 200 L 760 112.5" stroke="#4caf50" stroke-width="2.5" />
+                        <text x="320" y="190" font-family="var(--font-tech)" font-size="9" fill="#4caf50" font-weight="bold">Moroccan Free Zone (0% IS for 5 yrs, then 15%)</text>
+                        
+                        <!-- Highlight savings difference -->
+                        <path d="M 585 200 L 585 25" stroke="var(--text-dim)" stroke-width="1.5" stroke-dasharray="2 2" />
+                        <polygon points="585,130 582,120 588,120" fill="var(--text-primary)" />
+                        <rect x="600" y="80" width="140" height="35" rx="3" fill="var(--bg-primary)" stroke="var(--border)" stroke-width="1" />
+                        <text x="670" y="102" font-family="var(--font-tech)" font-size="10" fill="var(--text-primary)" text-anchor="middle" font-weight="bold">20% Projected Savings</text>
+                    </svg>
                 </div>
 
                 <h3 data-i18n="detail_h_solution">The Solution & Execution</h3>
@@ -130,9 +166,7 @@
                 </div>
             </div>
 
-            <div class="project-gallery">
-                <div class="gallery-img fade-up"><img src="cinematic_wide_2.png" alt="Fiscal Framework"></div>
-                <div class="gallery-img fade-up"><img src="cinematic_wide_3.png" alt="Strategic Planning"></div>
+            <div class="project-gallery" style="display:none;">
             </div>
 
             <!-- Conclusion & CTA -->
@@ -172,8 +206,8 @@
 
 
 
-    <script src="translations.js?v=1.2"></script>
-    <script src="script.js?v=1.2"></script>
+    <script src="translations.js?v=1.5"></script>
+    <script src="script.js?v=1.5"></script>
 </body>
 
 </html>
