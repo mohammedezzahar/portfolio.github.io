@@ -12,3 +12,6 @@ _agent/
 # Windows specific
 Desktop.ini
 $RECYCLE.BIN/
+
+# Ignore local submodule directory
+MyProjects/
