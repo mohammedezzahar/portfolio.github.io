@@ -141,6 +141,13 @@ const translations = {
     exp_3_title: "Technical Synthesis",
     exp_3_p: "Bridging Moroccan GAAP and IFRS reporting integrity with Python automation to streamline auditing and compliance pipelines.",
 
+    // Experience
+    exp_eyebrow: "PROFESSIONAL EXPERIENCE",
+    exp_h2: "Career <em>Milestones</em>",
+    exp_aliffa_title: "Co-Founder & CFO/CTO",
+    exp_aliffa_date: "2023 — Present",
+    exp_aliffa_desc: "Led financial strategy, developed AI models for market analysis, and optimized tax compliance for the startup. Engineered data pipelines and recommendation systems to drive engagement and revenue.",
+    
     // Projects
     projects_eyebrow: "SELECTED WORKS",
     projects_h2: "Portfolio <em>Excellence</em>",
@@ -470,6 +477,13 @@ const translations = {
     exp_2_p: "Conçu des processus ETL personnalisés utilisant Pandas et la logique de correspondance floue pour remplacer l'échantillonnage statistique manuel par des tests de transaction sur 100 % de la population.",
     exp_3_title: "Synthèse Technique",
     exp_3_p: "Associer l'intégrité du reporting des normes comptables marocaines (CGNC) et des normes IFRS avec l'automatisation Python pour rationaliser les pipelines d'audit et de conformité.",
+
+    // Experience
+    exp_eyebrow: "EXPÉRIENCE PROFESSIONNELLE",
+    exp_h2: "Jalons de <em>Carrière</em>",
+    exp_aliffa_title: "Co-Fondateur & CFO/CTO",
+    exp_aliffa_date: "2023 — Présent",
+    exp_aliffa_desc: "Direction de la stratégie financière, développement de modèles d'IA pour l'analyse du marché et optimisation de la conformité fiscale. Ingénierie des pipelines de données et des systèmes de recommandation pour stimuler l'engagement et les revenus.",
 
     // Projects
     projects_eyebrow: "TRAVAUX SÉLECTIONNÉS",
@@ -827,6 +841,13 @@ const translations = {
     exp_2_p: "صممت عمليات ETL مخصصة باستخدام Pandas ومنطق المطابقة التقريبية لاستبدال المعاينة الإحصائية اليدوية بفحص المعاملات لجميع البيانات بنسبة 100%.",
     exp_3_title: "التكامل التقني",
     exp_3_p: "الربط بين معايير المحاسبة المغربية (CGNC) والمعايير الدولية لإعداد التقارير المالية (IFRS) مع أتمتة بايثون لتسهيل مسارات التدقيق والامتثال.",
+
+    // Experience
+    exp_eyebrow: "الخبرة المهنية",
+    exp_h2: "محطات <em>المهنة</em>",
+    exp_aliffa_title: "مؤسس مشارك والمدير المالي/التقني",
+    exp_aliffa_date: "2023 — الحاضر",
+    exp_aliffa_desc: "قيادة الاستراتيجية المالية، تطوير نماذج الذكاء الاصطناعي لتحليل السوق، وتحسين الامتثال الضريبي للشركة الناشئة. هندسة مسارات البيانات وأنظمة التوصية لدفع التفاعل والإيرادات.",
 
     // Projects
     projects_eyebrow: "أعمال مختارة",
