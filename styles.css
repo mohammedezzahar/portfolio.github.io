@@ -1788,8 +1788,9 @@ h2 em {
 }
 
 [lang="ar"] .hero-name {
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(3rem, 8vw, 6rem);
     line-height: 1.2;
+    gap: 0.25em;
 }
 
 [lang="ar"] .eyebrow {
