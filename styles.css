@@ -358,13 +358,11 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    /* Moved from center to bottom */
+    align-items: center;
     justify-content: center;
-    padding-bottom: 15px;
-    /* Precise edge positioning */
+    padding-top: 100px;
+    padding-bottom: 40px;
     z-index: 10;
-    /* High z-index to stay above overlays */
     position: relative;
     text-align: center;
 }
