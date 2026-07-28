@@ -1633,11 +1633,12 @@ h2 em {
         display: flex !important;
         position: fixed !important;
         top: 15px !important;
-        width: 95% !important;
-        max-width: 480px !important;
+        width: max-content !important;
+        max-width: 95% !important;
         padding: 6px 12px !important;
         gap: 8px !important;
         z-index: 10001 !important;
+        justify-content: center !important;
     }
 
     .pill-socials {
@@ -1679,12 +1680,22 @@ h2 em {
         margin-bottom: 1.5rem;
     }
 
+    .hero-container {
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
     .hero-name {
         font-size: clamp(1.6rem, 9.5vw, 3rem);
         line-height: 0.85;
         white-space: normal;
         margin-bottom: 0.25rem;
-        /* Extreme reduction */
+    }
+
+    [lang="ar"] .hero-name {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        line-height: 1;
     }
 
     .hero-job-eyebrow {
