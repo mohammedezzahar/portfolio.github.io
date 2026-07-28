@@ -314,7 +314,7 @@ h2 em {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 2rem;
     display: flex;
     align-items: center;
@@ -358,10 +358,11 @@ h2 em {
 .hero-container {
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    justify-content: flex-start;
+    padding-top: 180px;
+    padding-bottom: 80px;
     z-index: 10;
     position: relative;
     text-align: center;
@@ -3005,8 +3006,9 @@ a.contact-item:hover .ci-value {
 @media (max-width: 768px) {
     .hero-container {
         align-items: center !important;
-        padding-top: 140px !important;
-        padding-bottom: 20px !important;
+        justify-content: flex-start !important;
+        padding-top: 160px !important;
+        padding-bottom: 40px !important;
     }
     .hero-name, [lang="ar"] .hero-name {
         font-size: clamp(2.5rem, 12vw, 4.5rem) !important;
