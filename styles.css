@@ -1777,13 +1777,18 @@ h2 em {
 [dir="rtl"] .s-mini {
     align-items: flex-end;
 }
+[lang="ar"] {
+    --font-display: var(--font-arabic);
+    --font-editorial: var(--font-arabic);
+    --font-tech: var(--font-arabic);
+    --font-body: var(--font-arabic);
+    font-family: var(--font-arabic);
+}
 
-/* Arabic Typography Refinements */
 [lang="ar"] h1,
 [lang="ar"] h2,
 [lang="ar"] h3,
 [lang="ar"] h4 {
-    font-family: var(--font-arabic);
     letter-spacing: 0;
 }
 
@@ -1799,10 +1804,6 @@ h2 em {
 
 [lang="ar"] .eyebrow {
     letter-spacing: 0.05em;
-}
-
-[lang="ar"] body {
-    font-family: var(--font-arabic);
 }
 
 /* --- Project Detail Styles --- */
