@@ -418,11 +418,11 @@ h2 em {
 
 .hero-job-eyebrow {
     font-family: var(--font-tech);
-    font-size: 0.85rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.4em;
-    margin-bottom: 0.75rem;
+    letter-spacing: 0.3em;
+    margin-bottom: 1.25rem;
     background: linear-gradient(90deg, #3b82f6 0%, #94a3b8 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -432,17 +432,16 @@ h2 em {
 
 .hero-name {
     font-family: var(--font-editorial);
-    font-size: clamp(1.8rem, 6vw, 4.8rem);
+    font-size: clamp(3rem, 10vw, 7.5rem);
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 0.9;
-    margin-bottom: 0.75rem;
-    /* Reduced further */
-    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.05em;
+    gap: 0.1em;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -467,13 +466,13 @@ h2 em {
 
 .hero-tagline-text {
     font-family: var(--font-editorial);
-    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.2rem);
     font-style: italic;
     color: var(--text-mid);
     letter-spacing: 0.05em;
-    max-width: 650px;
+    max-width: 900px;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: 1.6;
     opacity: 0.9;
 }
 
@@ -3012,9 +3011,9 @@ a.contact-item:hover .ci-value {
         padding-bottom: 20px !important;
     }
     .hero-name, [lang="ar"] .hero-name {
-        font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
-        line-height: 1.0 !important;
-        gap: 0em !important;
+        font-size: clamp(2.5rem, 12vw, 4.5rem) !important;
+        line-height: 1.05 !important;
+        gap: 0.1em !important;
     }
     .hero-socials {
         display: flex !important;
