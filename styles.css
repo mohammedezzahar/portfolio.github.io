@@ -936,6 +936,22 @@ h2 em {
     opacity: 0.15;
 }
 
+.skills-parallax {
+    background-image: url('skylinenight.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.15;
+}
+
+.contact-parallax {
+    background-image: url('mistskyline.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.15;
+}
+
 .relative-z {
     position: relative;
     z-index: 2;

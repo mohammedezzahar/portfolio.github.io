@@ -2,6 +2,7 @@ const translations = {
   en: {
     // Redesign Keys
     nav_about: "About",
+    nav_experience: "Experience",
     nav_approach: "Approach",
     nav_projects: "Projects",
     nav_contact: "Contact",
@@ -393,6 +394,7 @@ const translations = {
   fr: {
     // Redesign Keys
     nav_about: "À propos",
+    nav_experience: "Expérience",
     nav_approach: "Approche",
     nav_projects: "Projets",
     nav_contact: "Contact",
@@ -730,6 +732,7 @@ const translations = {
   ar: {
     // Redesign Keys
     nav_about: "نبذة",
+    nav_experience: "خبرة",
     nav_approach: "المنهج",
     nav_projects: "المشاريع",
     nav_contact: "اتصل بي",

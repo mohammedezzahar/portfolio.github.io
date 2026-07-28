@@ -28,6 +28,7 @@
     <nav class="hero-nav-pill">
         <div class="pill-links">
             <a href="#about" data-section="about" data-i18n="nav_about">About</a>
+            <a href="#experience" data-section="experience" data-i18n="nav_experience">Experience</a>
             <a href="#projects" data-section="projects" data-i18n="nav_projects">Projects</a>
             <a href="#skills" data-section="skills" data-i18n="nav_skills">Skills</a>
             <a href="#contact" data-section="contact" data-i18n="nav_contact">Contact</a>
@@ -54,7 +55,15 @@
 
         <div class="container hero-container">
             <div class="hero-text">
-                <div class="hero-socials fade-up">
+                <h1 class="hero-name fade-up">
+                    <span class="name-first" data-i18n="hero_name_first">MOHAMMED</span>
+                    <span class="name-last" data-i18n="hero_name_last">EZZAHAR</span>
+                </h1>
+                <div class="hero-job-eyebrow fade-up" data-i18n="hero_eyebrow">Financial &amp; Data Analyst</div>
+                <div class="hero-divider fade-up"></div>
+                <p class="hero-tagline-text fade-up" data-i18n="hero_tagline">Mastery in Accounting &amp; AI Modeling
+                </p>
+                <div class="hero-socials fade-up" style="margin-top: 1.5rem;">
                     <a href="https://www.linkedin.com/in/mohammed-ezzahar-579760319/" target="_blank" title="LinkedIn"
                         class="social-linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/mohammedezzahar" target="_blank" title="GitHub" class="social-github"><i
@@ -70,14 +79,6 @@
                     <a href="https://www.youtube.com/@MohammedEzzahar-g1o" target="_blank" title="YouTube"
                         class="social-youtube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-                <h1 class="hero-name fade-up">
-                    <span class="name-first" data-i18n="hero_name_first">MOHAMMED</span>
-                    <span class="name-last" data-i18n="hero_name_last">EZZAHAR</span>
-                </h1>
-                <div class="hero-job-eyebrow fade-up" data-i18n="hero_eyebrow">Financial &amp; Data Analyst</div>
-                <div class="hero-divider fade-up"></div>
-                <p class="hero-tagline-text fade-up" data-i18n="hero_tagline">Mastery in Accounting &amp; AI Modeling
-                </p>
             </div>
         </div>
 
@@ -129,13 +130,18 @@
             <div class="eyebrow fade-up" data-i18n="exp_eyebrow">PROFESSIONAL EXPERIENCE</div>
             <h2 class="fade-up" data-i18n="exp_h2">Career <em>Milestones</em></h2>
 
-            <div class="experience-card fade-up">
-                <div class="exp-header">
-                    <h3 class="exp-company">Aliffa Startup</h3>
-                    <div class="exp-date" data-i18n="exp_aliffa_date">2023 — Present</div>
+            <div class="experience-card fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div>
+                    <div class="exp-header">
+                        <h3 class="exp-company">Aliffa Startup</h3>
+                        <div class="exp-date" data-i18n="exp_aliffa_date">2023 — Present</div>
+                    </div>
+                    <div class="exp-role eyebrow" data-i18n="exp_aliffa_title">Co-Founder & CFO/CTO</div>
+                    <p class="text-mid exp-desc" data-i18n="exp_aliffa_desc">Led financial strategy, developed AI models for market analysis, and optimized tax compliance for the startup. Engineered data pipelines and recommendation systems to drive engagement and revenue.</p>
                 </div>
-                <div class="exp-role eyebrow" data-i18n="exp_aliffa_title">Co-Founder & CFO/CTO</div>
-                <p class="text-mid exp-desc" data-i18n="exp_aliffa_desc">Led financial strategy, developed AI models for market analysis, and optimized tax compliance for the startup. Engineered data pipelines and recommendation systems to drive engagement and revenue.</p>
+                <div class="exp-image-container" style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border);">
+                    <img src="aliffa_experience.jpg" alt="Aliffa Experience" style="width: 100%; height: auto; display: block; filter: grayscale(20%);">
+                </div>
             </div>
         </div>
     </section>
@@ -198,8 +204,9 @@
     </section>
 
     <!-- Section 5: Skills -->
-    <section id="skills" class="skills-section">
-        <div class="container">
+    <section id="skills" class="skills-section relative" style="position: relative;">
+        <div class="hero-bg skills-parallax"></div>
+        <div class="container relative-z">
             <div class="eyebrow fade-up" data-i18n="skills_eyebrow">TECHNICAL ARSENAL</div>
             <h2 class="fade-up" data-i18n="skills_h2">Technical <em>Infrastructure</em></h2>
 
@@ -280,8 +287,9 @@
     </section>
 
     <!-- Section 6: Contact -->
-    <section id="contact" class="contact-section">
-        <div class="container contact-container">
+    <section id="contact" class="contact-section relative" style="position: relative;">
+        <div class="hero-bg contact-parallax"></div>
+        <div class="container contact-container relative-z">
             <div class="eyebrow fade-up" data-i18n="contact_eyebrow">OPEN TO OPPORTUNITIES</div>
             <h2 class="fade-up" data-i18n="contact_h2">Let's Build <em>Something Real</em></h2>
             <p class="contact-lead fade-up" data-i18n="contact_lead">
