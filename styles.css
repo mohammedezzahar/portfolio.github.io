@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400&display=swap');
 
 :root {
     /* Color Palette - Monochrome Luxury */
@@ -24,7 +24,7 @@
     --font-editorial: 'Playfair Display', serif;
     --font-tech: 'JetBrains Mono', monospace;
     --font-body: 'Outfit', sans-serif;
-    --font-arabic: 'Cairo', sans-serif;
+    --font-arabic: 'IBM Plex Sans Arabic', sans-serif;
 
     /* Spacing */
     --padding-global: 60px;
@@ -1789,8 +1789,8 @@ h2 em {
 
 [lang="ar"] .hero-name {
     font-size: clamp(3rem, 8vw, 6rem);
-    line-height: 1.2;
-    gap: 0.1em;
+    line-height: 1.0;
+    gap: 0em;
 }
 
 [lang="ar"] .hero-container {
@@ -2963,7 +2963,8 @@ a.contact-item:hover .ci-value {
     }
     .hero-name, [lang="ar"] .hero-name {
         font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
-        line-height: 1.2 !important;
+        line-height: 1.0 !important;
+        gap: 0em !important;
     }
     .hero-socials {
         display: flex !important;
