@@ -2953,12 +2953,12 @@ a.contact-item:hover .ci-value {
 @media (max-width: 768px) {
     .hero-container {
         align-items: center !important;
-        padding-top: 80px !important;
+        padding-top: 140px !important;
         padding-bottom: 20px !important;
     }
     .hero-name, [lang="ar"] .hero-name {
         font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
-        line-height: 1 !important;
+        line-height: 1.2 !important;
     }
     .hero-socials {
         display: flex !important;
