@@ -317,7 +317,7 @@ h2 em {
     min-height: 100vh;
     padding-top: 2rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background: #000;
     position: relative;
     overflow: hidden;
