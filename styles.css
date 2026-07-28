@@ -1800,6 +1800,7 @@ h2 em {
 
 [lang="ar"] .hero-container {
     align-items: center !important;
+    padding-top: 120px !important;
 }
 
 [lang="ar"] .eyebrow {
