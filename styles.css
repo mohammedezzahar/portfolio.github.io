@@ -2949,3 +2949,19 @@ a.contact-item:hover .ci-value {
         padding: 32px 28px;
     }
 }
+/* Final Mobile Overrides */
+@media (max-width: 768px) {
+    .hero-container {
+        align-items: center !important;
+        padding-top: 80px !important;
+        padding-bottom: 20px !important;
+    }
+    .hero-name, [lang="ar"] .hero-name {
+        font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+        line-height: 1 !important;
+    }
+    .hero-socials {
+        display: flex !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
